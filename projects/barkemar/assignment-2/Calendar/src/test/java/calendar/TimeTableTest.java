@@ -12,6 +12,9 @@ import static org.junit.Assert.*;
 
 public class TimeTableTest {
 
+
+
+
 	  //tests that the getApptRange function works correctly
 		// could not test
 	 @Test
@@ -150,6 +153,14 @@ public class TimeTableTest {
 		assertEquals(null, timeTable.deleteAppt(null, null));
 		assertEquals(null, timeTable.deleteAppt(appts, null));
 		 assertEquals(null, timeTable.deleteAppt(null, appt3));
+
+	 }
+
+	 @Test
+	 public void testD() throws Throwable {
+
+
+
 
 	 }
 
