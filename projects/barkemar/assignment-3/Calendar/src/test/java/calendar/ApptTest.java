@@ -38,6 +38,42 @@ public class ApptTest {
 		assertEquals("This is my birthday party.", appt.getDescription());
 	}
 
+	@Test
+	public void testRecur()  throws Throwable  {
+
+		int startHour = 4;
+		int startMinute = 2;
+		int startDay = 2;
+		int startMonth = 2;
+		int startYear = 2000;
+		String title = "Birthday title";
+		String description = "this is my description";
+		//Construct a new Appointment object with the initial data
+		Appt appt = new Appt(startHour,	startMinute,startDay,startMonth,startYear,title,description);
+
+
+		int[] recurDaysArray = null;
+		int recurBy = 6;
+		int recurIncrement = 6;
+		int recurNumber = 6;
+		appt.setRecurrence(recurDaysArray, recurBy, recurIncrement, recurNumber);
+
+
+		int RecurNumber = appt.getRecurNumber();
+		assertEquals(RecurNumber, 6);
+
+		RecurNumber = appt.getRecurBy();
+		assertEquals(RecurNumber, 6);
+
+
+		assertEquals(appt.isRecurring(), true);
+
+
+		assertEquals(appt.getRecurIncrement(), 6);
+
+	}
+
+
 	/**
 	 * Test that the set methods work as expected.
 	 */
@@ -55,6 +91,28 @@ public class ApptTest {
 		// assertions
 		appt.setStartHour(15);
 		assertEquals(15, appt.getStartHour());
+		//making suer that isValid() is called within the setStartHour function:
+
+		Appt apptValidRemoved = new Appt(7, startMinute, startDay, startMonth, startYear, title, description);
+		apptValidRemoved.setStartHour(99);
+		assertEquals(apptValidRemoved.getValid(), false);
+
+		Appt apptValidRemoved2 = new Appt(7, 7, startDay, startMonth, startYear, title, description);
+		apptValidRemoved2.setStartMinute(77);
+		assertEquals(apptValidRemoved2.getValid(), false);
+
+		Appt apptValidRemoved3 = new Appt(7, 7, 7, startMonth, startYear, title, description);
+		apptValidRemoved3.setStartDay(99);
+		assertEquals(apptValidRemoved3.getValid(), false);
+
+	//	Appt apptValidRemoved4 = new Appt(7, 7, 7, 7, startYear, title, description);
+	//	apptValidRemoved4.setStartMonth(0);
+	//	assertEquals(apptValidRemoved4.getValid(), false);
+
+//		Appt apptValidRemoved5 = new Appt(7, 7, 7, startMonth, startYear, title, description);
+//		apptValidRemoved5.setStartYear(9);
+//		assertEquals(apptValidRemoved5.getValid(), false);
+
 		appt.setStartMinute(10);
 		assertEquals(10, appt.getStartMinute());
 		appt.setStartDay(10);
@@ -78,18 +136,205 @@ public class ApptTest {
 
 	}
 
+
+	//Test the representationApp function
+	@Test
+	public void testRep() throws Throwable {
+
+		int startHour=21;
+		int startMinute=11;
+		int startDay=22;
+		int startMonth=02;
+		int startYear=2010;
+		String title="BirthdayTitle";
+		String description="BirthdayDescription";
+		Appt Appt1 = new Appt(startHour,startMinute ,startDay ,startMonth ,startYear ,title,description);
+		// assertions
+	//	System.out.println(Appt1.toString());
+		String newString = "\t2/22/2010 at 9:11pm ,BirthdayTitle, BirthdayDescription\n";
+
+		assertEquals(newString, Appt1.toString());
+
+		/*
+				String half = (getStartHour() > 11) ? "pm" : "am";
+				//if StartHour > 11: pm,
+				 if StartHour  < 11; am
+		 */
+		Appt Appt2 = new Appt(9,startMinute ,startDay ,startMonth ,startYear ,title,description);
+	//	System.out.println(Appt2.toString());
+		newString = "\t2/22/2010 at 9:11am ,BirthdayTitle, BirthdayDescription\n";
+		assertEquals(newString, Appt2.toString());
+
+		Appt Appt3 = new Appt(11,startMinute ,startDay ,startMonth ,startYear ,title,description);
+	//	System.out.println(Appt3.toString());
+		newString = "\t2/22/2010 at 11:11am ,BirthdayTitle, BirthdayDescription\n";
+		assertEquals(newString, Appt3.toString());
+
+		Appt Appt4 = new Appt(12,startMinute ,startDay ,startMonth ,startYear ,title,description);
+		//	System.out.println(Appt4.toString());
+		newString = "\t2/22/2010 at 12:11pm ,BirthdayTitle, BirthdayDescription\n";
+		assertEquals(newString, Appt4.toString());
+
+		Appt Appt5 = new Appt(13,startMinute ,startDay ,startMonth ,startYear ,title,description);
+		//	System.out.println(Appt4.toString());
+		newString = "\t2/22/2010 at 1:11pm ,BirthdayTitle, BirthdayDescription\n";
+		assertEquals(newString, Appt5.toString());
+
+	}
+
+
 	/**
 	 *   Test that the isValid function works  correctly
 	 */
 	@Test
 	public void test021() throws Throwable {
-//		Appt appt = new Appt(2, 4, 2, 11, 2019, ":ttt", "ddd");
-		//cant just test to confirm that something is a data type. Assume it will always receive boolean.s
-		//	assertEquals(appt.getValid(), Boolean);
 
+		int startHour = 6;
+		int startMinute = 7;
+		int startDay = 7;
+		int startMonth = 7;
+		int startYear = 2012;
+		String title = "Birthday title";
+		String description = "this is my description";
+		//Construct a new Appointment object with the initial data
+		Appt appt = new Appt(startHour,	startMinute,startDay,startMonth,startYear,title,description);
+
+
+		/*setHour
+			Testing:  if(startHour<=0 || startHour>23)
+						return false
+				//MY ADDED ERROR:
+			Original: if(startHour < 0 …)
+			Bug:      if(startHour <= 0
+
+		*/
+		Appt appt0 = new Appt(0,	startMinute,startDay,startMonth,startYear,title,description);
+		assertEquals(   appt0.getValid() , false);
+
+		Appt apptneg4 = new Appt(-4,	startMinute,startDay,startMonth,startYear,title,description);
+		assertEquals(   apptneg4.getValid() , false);
+
+		Appt appt1 = new Appt(1,	startMinute,startDay,startMonth,startYear,title,description);
+		assertEquals(   appt1.getValid() , true);
+
+		Appt appt23 = new Appt(23,	startMinute,startDay,startMonth,startYear,title,description);
+		assertEquals(  appt23.getValid() , true);
+
+		Appt appt24 = new Appt(24,	startMinute,startDay,startMonth,startYear,title,description);
+		assertEquals(  appt24.getValid() , false);
+
+		Appt appt33 = new Appt(33,	startMinute,startDay,startMonth,startYear,title,description);
+		assertEquals(  appt33.getValid() , false);
+
+
+		/*test Minute
+				if(startMinute<0 || startMinute>59)
+        			this.valid=false;
+		*/
+		Appt apptneg = new Appt(startHour,	-1,startDay,startMonth,startYear,title,description);
+		assertEquals(apptneg.getValid(), false);
+
+		Appt apptmin0 = new Appt(startHour,	0,startDay,startMonth,startYear,title,description);
+		assertEquals(apptmin0.getValid(), true);
+
+		Appt apptminMiddle = new Appt(startHour,	23,startDay,startMonth,startYear,title,description);
+		assertEquals(apptminMiddle.getValid(), true);
+
+		Appt apptmin59 = new Appt(startHour,59,startDay,startMonth,startYear,title,description);
+		assertEquals(apptmin59.getValid(), true);
+
+		Appt appt60 = new Appt(startHour,60,startDay,startMonth,startYear,title,description);
+		assertEquals(appt60.getValid(), false);
+
+		Appt apptmin99 = new Appt(startHour,99,startDay,startMonth,startYear,title,description);
+		assertEquals(apptmin99.getValid(), false);
+
+		/*test Day
+						if(startDay<1 || startDay>NumDaysInMonth)
+							this.valid=false;
+		 */
+		Appt apptdayneg1 = new Appt(startHour,	startMinute,-1,startMonth,startYear,title,description);
+		assertEquals(apptdayneg1.getValid(), false);
+
+		Appt apptday1 = new Appt(startHour,	startMinute,1,startMonth,startYear,title,description);
+		assertEquals(apptday1.getValid(), true);
+
+		Appt apptday2 = new Appt(startHour,	startMinute,2,startMonth,startYear,title,description);
+		assertEquals(apptday2.getValid(), true);
+
+		int NumDaysInMonth = CalendarUtil.NumDaysInMonth(startYear,startMonth-1);
+		Appt apptdayNDIM = new Appt(startHour,	startMinute,NumDaysInMonth-1, startMonth,startYear,title,description);
+		//startday = numdaysinmonth-1
+		assertEquals(apptdayNDIM.getValid(), true);
+
+		Appt apptdayNDIM2 = new Appt(startHour,	startMinute,NumDaysInMonth, startMonth,startYear,title,description);
+		//startday = numdaysinmonth
+		assertEquals(apptdayNDIM2.getValid(), true);
+
+		Appt apptdayNDIM3 = new Appt(startHour,	startMinute, NumDaysInMonth+1, startMonth,startYear,title,description);
+		//startday = numdaysinmonth+1
+		assertEquals(apptdayNDIM3.getValid(), false);
+
+		/* startMonth
+						if(startMonth<1 || startMonth>12)
+                			this.valid=false;
+
+		Appt appt = new Appt(startHour,	startMinute,startDay,startMonth,startYear,title,description);
+		 */
+
+		//  int NumDaysInMonth= CalendarUtil.NumDaysInMonth(startYear,startMonth-1);
+		// in order to get to the if(startMonth statements, these conditions need to be true:
+		//			startHour must be between 1 and 23
+		//			startDay must be between 1 and NumDaysInMonth
+
+
+
+//		Appt apptmonthneg = new Appt(startHour,startMinute, startDay, 0,startYear,title,description);
+//		int NumDaysInMonth= CalendarUtil.NumDaysInMonth(startYear,startMonth-1);
+//			NumDaysInMonth = CalendarUtil.NumDaysInMonth(2012, -1)
+// 						   = not valid, cant test
+//		assertEquals(apptmonthneg.getValid(), false);
+
+
+//		Appt apptmonth1 = new Appt(startHour,startMinute, startDay, 1,startYear,title,description);
+//			NumDaysInMonth = CalendarUtil.NumDaysInMonth(2012, 0)
+// 						   = not valid, cant test
+//		assertEquals(apptmonth1.getValid(), false);
+
+
+
+		Appt apptmonth12 = new Appt(startHour,startMinute, startDay, 12,startYear,title,description);
+//			NumDaysInMonth = CalendarUtil.NumDaysInMonth(2012, 11)
+// 						   = valid, can test
+		assertEquals(apptmonth12.getValid(), true);
+
+		Appt apptmonth11 = new Appt(startHour,startMinute, startDay, 11,startYear,title,description);
+		assertEquals(apptmonth11.getValid(), true);
+
+
+
+//		Appt apptmonth13 = new Appt(startHour,startMinute, startDay, 13,startYear,title,description);
+//		assertEquals(apptmonth13.getValid(), false);
+
+	}
+
+	@Test
+	public void test09() throws Throwable {
+		//toString, representationApp, and compareTo test
+		Appt appt = new Appt(12, 2, 2, 2, 2000, "T", "D");
+		Appt appt2 = new Appt(3, 2, 2, 2, 2000, "T", "D");
+		Appt appt3 = new Appt(0, 0, 1, 2, 2000, "T", "D");
+
+
+
+		int iTest = appt.compareTo(appt2);
+		assertEquals(appt.compareTo(appt2), 9);
 
 
 	}
+
+
+
 
 	/**
 	 * Test that the setRecurrence() function works correctly

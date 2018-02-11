@@ -4,6 +4,7 @@ package calendar;
  *  TimeTable class.
  */
 import java.util.*;
+import java.util.concurrent.Future;
 
 
 import org.junit.Test;
@@ -13,7 +14,60 @@ import static org.junit.Assert.*;
 public class TimeTableTest {
 
 
+	@Test
+	// test getApptRange function
+	public void testapp1()  throws Throwable  {
 
+		TimeTable testTable = new TimeTable();
+		GregorianCalendar TodayDate = new GregorianCalendar(2018, 2, 11);
+		GregorianCalendar future = new GregorianCalendar(2018, 2, 13);
+		GregorianCalendar TomorrowDate = new GregorianCalendar(2018, 2, 12);
+
+		String title = "title";
+		String description = "description";
+		int year = 2018;
+		int month = 2;
+
+		Appt appt1 = new Appt(4, 10, 10, month, year, title, description);
+		Appt appt2 = new Appt(4, 11, 11, month, year, title, description);
+		Appt appt3 = new Appt(4, 12, 12, month, year, title, description);
+
+		LinkedList<Appt> appts = new LinkedList<Appt>();
+		appts.add(appt1);
+		appts.add(appt2);
+		appts.add(appt3);
+
+		testTable.deleteAppt( appts, appt1);
+		testTable.deleteAppt( appts, appt2);
+		testTable.deleteAppt( appts, appt3);
+
+
+		assertNotEquals(testTable, null);
+
+		assertNotEquals(appts, null);
+
+	    assertNotEquals(testTable.getApptRange(appts, TodayDate, TomorrowDate), null);
+
+		assertNotEquals(testTable.getApptRange(appts, TodayDate, future), null);
+
+		//testTable
+
+		/*
+		getApptsRange(list, firstday, LastDay)
+					if firstday is NOT before lastday: throw error
+		  */
+	//	assertNotEquals(testTable.getApptRange(appts, future, TodayDate), true);
+
+		// for ( int i = 1; i < appts.size() - 1; i++){
+		//appts.size = 2  ( 0 , 1 ,  2)
+		//System.out.println(appts.size());
+		//ORIGINAL NO-BUG:  from 1 to 2 (1)
+		for(int i = 1; i < appts.size(); i++){
+			System.out.println("in for loop, i="+i);
+		}
+		//with bug: from 1 to 1 ( never prints out once)
+		System.out.println("g:"+testTable.getApptRange(appts, TodayDate, TomorrowDate));
+	}
 
 	  //tests that the getApptRange function works correctly
 		// could not test
@@ -154,15 +208,44 @@ public class TimeTableTest {
 		assertEquals(null, timeTable.deleteAppt(appts, null));
 		 assertEquals(null, timeTable.deleteAppt(null, appt3));
 
-	 }
-
-	 @Test
-	 public void testD() throws Throwable {
-
+		 //mutation safeguards:
 
 
 
 	 }
+
+	@Test
+	// test permute function
+	public void testPermute()  throws Throwable  {
+		Appt Appt1 = new Appt(8,21 ,1 ,	11 ,	2018,	"t","d");
+		Appt Appt2 = new Appt(2,2 ,2 ,	11 ,	2018 ,"t","d");
+		Appt Appt3 = new Appt(2,3 ,3 ,11 ,2018 ,"t","d");
+		Appt Appt4 = new Appt(2,3 ,21 ,11 ,2018 ,"t","d");
+		Appt Appt5 = new Appt(2,5 ,110000 ,11 ,2018 ,"t","d");
+
+		TimeTable timetableTest = new TimeTable();
+		GregorianCalendar today = new GregorianCalendar(2018, 11, 2); //5
+		GregorianCalendar yesterday = new GregorianCalendar(2018, 11, 3); //4
+		GregorianCalendar tomorrow = new GregorianCalendar(2018, 11, 4); //30
+		LinkedList<Appt> appts = new LinkedList<Appt>();
+
+		int[] testArray = new int[]{0,1,2,3,4};
+
+
+		appts.add(Appt1);
+		appts.add(Appt2);
+		appts.add(Appt3);
+		appts.add(Appt4);
+		appts.add(Appt5);
+
+		timetableTest.getApptRange(appts, today, tomorrow);
+
+		timetableTest.permute(appts, testArray);
+
+		timetableTest.deleteAppt(appts, Appt1);
+
+
+	}
 
 	//test tht permute works
 	@Test
