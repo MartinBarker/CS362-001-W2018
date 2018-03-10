@@ -1,0 +1,7 @@
+Bug 1) 
+Bug Found in Appt.java: isValid() considers startMonth values = 1 to be invalid. When it should consider startMonth values = 1 to be valid, and only values less than 1 are invalid.
+This bug most notably impacts the startMonth variable value. If all other appt parameters are valid, but startMonth equals 1 (which should be valid), the appt will be deemed invalid. Which is a problem since other functions rely on the valid variable for an appt to be True before continuing. So this bug affects how other functions will operate, and makes the calendar program more unreliable. 
+
+Bug 2)
+Bug Found in Appt.java:  The isValid() call at the end of the appt constructor in Appt.java was not being called, because newly constructed appt objects did not have their valid value correctly set.
+This bug means that when an appt object is initially declared, its Valid value is not correctly set. Which leads to problems when other functions test to see if an appt is valid before continuing. This leads to unreliable code which does not work as intended, and considers valid appt objects to be invalid. 

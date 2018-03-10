@@ -1,0 +1,4601 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="1" failures="1" name="calendar.ApptRandomTest" time="0.212" errors="0" skipped="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_161\jre\bin"/>
+    <property name="java.vm.version" value="25.161-b12"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="D:\School\WINTER 2018\362\ass5\myrepo\CS362-001-W2018\projects\barkemar\assignment-5\barkemar\Calendar"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="D:\School\WINTER 2018\362\ass5\myrepo\CS362-001-W2018\projects\barkemar\assignment-5\barkemar\Calendar"/>
+    <property name="java.runtime.version" value="1.8.0_161-b12"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_161\jre\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\marti\AppData\Local\Temp\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="classworlds.conf" value="D:\Downloads\apache-maven-3.5.2\bin\..\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_161\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Haskell\bin;C:\Program Files\Haskell Platform\8.2.2\lib\extralibs\bin;C:\Program Files\Haskell Platform\8.2.2\bin;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Python36\Scripts;C:\youtube-dl\bin;D:\Software\;&quot;C:\Program Files;C:\Winnt;C:\Winnt\System32&quot;;D:\Software\010 Editor;C:\TDM-GCC-64\bin;C:\Program Files\Python36;C:\Program Files\Haskell Platform\8.2.2\mingw\bin;D:\Downloads\apache-maven-3.5.2\bin;D:\Downloads\apache-maven-3.5.2\bin;C:\Program Files\nodejs\;C:\Program Files\Java\jdk-9.0.4\bin;C:\Users\marti\AppData\Roaming\cabal\bin;C:\Users\marti\AppData\Roaming\local\bin;C:\Users\marti\AppData\Local\Programs\Python\Python36-32\Scripts\;C:\Users\marti\AppData\Local\Programs\Python\Python36-32\;C:\Program Files (x86)\GnuWin32\;C:\Users\marti\AppData\Roaming\npm;C:\Users\marti\AppData\Local\atom\bin;."/>
+    <property name="maven.conf" value="D:\Downloads\apache-maven-3.5.2\bin\../conf"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.0"/>
+    <property name="library.jansi.path" value="D:\Downloads\apache-maven-3.5.2\bin\..\lib\jansi-native"/>
+    <property name="user.home" value="C:\Users\marti"/>
+    <property name="user.timezone" value="America/Los_Angeles"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="user.name" value="marti"/>
+    <property name="java.class.path" value="D:\Downloads\apache-maven-3.5.2\bin\..\boot\plexus-classworlds-2.5.2.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_161\jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_161"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_161\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_161\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_161\jre\classes"/>
+    <property name="sun.stderr.encoding" value="cp437"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="D:\Downloads\apache-maven-3.5.2\bin\.."/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.stdout.encoding" value="cp437"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase classname="calendar.ApptRandomTest" name="radnomtest" time="0.212">
+    <failure message="expected:&lt;true&gt; but was:&lt;false&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;true&gt; but was:&lt;false&gt;
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:834)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at calendar.ApptRandomTest.radnomtest(ApptRandomTest.java:181)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</failure>
+    <system-out>Start testing...
+ Seed:1520717539781
+
+ Appt Values: 
+ startYear = 3161
+ ran_startHour = 48
+ ran_startMin = 2
+ ran_startDay=9
+ ran_startMonth = 7 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 2309
+ ran_startHour = 77
+ ran_startMin = 65
+ ran_startDay=21
+ ran_startMonth = 3 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 3713
+ ran_startHour = 10
+ ran_startMin = 72
+ ran_startDay=30
+ ran_startMonth = 2 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 9128
+ ran_startHour = 25
+ ran_startMin = 15
+ ran_startDay=46
+ ran_startMonth = 4 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 7766
+ ran_startHour = 32
+ ran_startMin = 76
+ ran_startDay=22
+ ran_startMonth = 2 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 1223
+ ran_startHour = 17
+ ran_startMin = 57
+ ran_startDay=68
+ ran_startMonth = 4 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 7981
+ ran_startHour = 74
+ ran_startMin = 67
+ ran_startDay=45
+ ran_startMonth = 8 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 7751
+ ran_startHour = 61
+ ran_startMin = 1
+ ran_startDay=41
+ ran_startMonth = 3 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 5177
+ ran_startHour = 65
+ ran_startMin = 28
+ ran_startDay=6
+ ran_startMonth = 10 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 1250
+ ran_startHour = 42
+ ran_startMin = 40
+ ran_startDay=17
+ ran_startMonth = 1 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 3957
+ ran_startHour = 78
+ ran_startMin = 75
+ ran_startDay=10
+ ran_startMonth = 1 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 9065
+ ran_startHour = 34
+ ran_startMin = 56
+ ran_startDay=55
+ ran_startMonth = 11 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 6604
+ ran_startHour = 59
+ ran_startMin = 27
+ ran_startDay=42
+ ran_startMonth = 9 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 4555
+ ran_startHour = 87
+ ran_startMin = 7
+ ran_startDay=23
+ ran_startMonth = 9 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 2909
+ ran_startHour = 85
+ ran_startMin = 40
+ ran_startDay=-5
+ ran_startMonth = 3 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 7382
+ ran_startHour = 77
+ ran_startMin = 40
+ ran_startDay=83
+ ran_startMonth = 12 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 2884
+ ran_startHour = 9
+ ran_startMin = 89
+ ran_startDay=85
+ ran_startMonth = 2 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 7985
+ ran_startHour = 47
+ ran_startMin = 56
+ ran_startDay=70
+ ran_startMonth = 7 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 8188
+ ran_startHour = 29
+ ran_startMin = 13
+ ran_startDay=69
+ ran_startMonth = 11 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 2981
+ ran_startHour = 60
+ ran_startMin = 68
+ ran_startDay=33
+ ran_startMonth = 3 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 5939
+ ran_startHour = 3
+ ran_startMin = 77
+ ran_startDay=72
+ ran_startMonth = 7 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 3198
+ ran_startHour = 39
+ ran_startMin = -4
+ ran_startDay=28
+ ran_startMonth = 10 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+ Seed:1520717539787
+
+ Appt Values: 
+ startYear = 2962
+ ran_startHour = 6
+ ran_startMin = 48
+ ran_startDay=34
+ ran_startMonth = 5 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 5549
+ ran_startHour = 27
+ ran_startMin = 64
+ ran_startDay=90
+ ran_startMonth = 8 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 9392
+ ran_startHour = 38
+ ran_startMin = 21
+ ran_startDay=32
+ ran_startMonth = 2 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 823
+ ran_startHour = 46
+ ran_startMin = 71
+ ran_startDay=80
+ ran_startMonth = 3 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 3637
+ ran_startHour = 70
+ ran_startMin = 83
+ ran_startDay=83
+ ran_startMonth = 1 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 199
+ ran_startHour = 76
+ ran_startMin = 21
+ ran_startDay=64
+ ran_startMonth = 8 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 368
+ ran_startHour = 50
+ ran_startMin = 67
+ ran_startDay=22
+ ran_startMonth = 8 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 7755
+ ran_startHour = 42
+ ran_startMin = 2
+ ran_startDay=17
+ ran_startMonth = 8 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 951
+ ran_startHour = 44
+ ran_startMin = 0
+ ran_startDay=33
+ ran_startMonth = 3 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 5318
+ ran_startHour = 46
+ ran_startMin = 23
+ ran_startDay=78
+ ran_startMonth = 6 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 7781
+ ran_startHour = -3
+ ran_startMin = 6
+ ran_startDay=41
+ ran_startMonth = 10 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 2469
+ ran_startHour = 72
+ ran_startMin = 88
+ ran_startDay=69
+ ran_startMonth = 11 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 8195
+ ran_startHour = 84
+ ran_startMin = 89
+ ran_startDay=12
+ ran_startMonth = 6 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 9829
+ ran_startHour = 4
+ ran_startMin = 32
+ ran_startDay=25
+ ran_startMonth = 1 
+This appt.getValid() should be equal to result = true
+Actual appt.getValid() = true
+
+ Appt Values: 
+ startYear = 966
+ ran_startHour = 6
+ ran_startMin = 58
+ ran_startDay=67
+ ran_startMonth = 10 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 9179
+ ran_startHour = 25
+ ran_startMin = 17
+ ran_startDay=87
+ ran_startMonth = 10 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 7665
+ ran_startHour = 42
+ ran_startMin = 88
+ ran_startDay=83
+ ran_startMonth = 5 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 7805
+ ran_startHour = 87
+ ran_startMin = 32
+ ran_startDay=39
+ ran_startMonth = 11 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+ Seed:1520717539789
+
+ Appt Values: 
+ startYear = 6773
+ ran_startHour = 78
+ ran_startMin = 50
+ ran_startDay=86
+ ran_startMonth = 3 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 2578
+ ran_startHour = 69
+ ran_startMin = 65
+ ran_startDay=37
+ ran_startMonth = 8 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 5563
+ ran_startHour = 33
+ ran_startMin = 32
+ ran_startDay=26
+ ran_startMonth = 4 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 3809
+ ran_startHour = 21
+ ran_startMin = 65
+ ran_startDay=86
+ ran_startMonth = 10 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 9875
+ ran_startHour = 12
+ ran_startMin = 88
+ ran_startDay=71
+ ran_startMonth = 8 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 124
+ ran_startHour = 77
+ ran_startMin = 47
+ ran_startDay=64
+ ran_startMonth = 6 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 426
+ ran_startHour = -3
+ ran_startMin = 82
+ ran_startDay=47
+ ran_startMonth = 1 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 6777
+ ran_startHour = 48
+ ran_startMin = 77
+ ran_startDay=42
+ ran_startMonth = 7 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 2240
+ ran_startHour = 4
+ ran_startMin = 86
+ ran_startDay=4
+ ran_startMonth = 4 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 7570
+ ran_startHour = 24
+ ran_startMin = 68
+ ran_startDay=11
+ ran_startMonth = 9 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 2728
+ ran_startHour = 45
+ ran_startMin = 56
+ ran_startDay=41
+ ran_startMonth = 10 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 135
+ ran_startHour = 40
+ ran_startMin = 78
+ ran_startDay=68
+ ran_startMonth = 12 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 252
+ ran_startHour = 59
+ ran_startMin = 10
+ ran_startDay=58
+ ran_startMonth = 1 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 499
+ ran_startHour = 59
+ ran_startMin = 79
+ ran_startDay=29
+ ran_startMonth = 5 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 2586
+ ran_startHour = 42
+ ran_startMin = 14
+ ran_startDay=37
+ ran_startMonth = 1 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 5210
+ ran_startHour = 61
+ ran_startMin = 7
+ ran_startDay=33
+ ran_startMonth = 9 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 9305
+ ran_startHour = 57
+ ran_startMin = 53
+ ran_startDay=87
+ ran_startMonth = 10 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 2646
+ ran_startHour = 5
+ ran_startMin = 41
+ ran_startDay=-5
+ ran_startMonth = 2 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 7209
+ ran_startHour = 66
+ ran_startMin = -5
+ ran_startDay=39
+ ran_startMonth = 12 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 6148
+ ran_startHour = 83
+ ran_startMin = 88
+ ran_startDay=52
+ ran_startMonth = 12 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+ Seed:1520717539793
+
+ Appt Values: 
+ startYear = 4844
+ ran_startHour = 65
+ ran_startMin = 62
+ ran_startDay=6
+ ran_startMonth = 11 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 5111
+ ran_startHour = 49
+ ran_startMin = -5
+ ran_startDay=10
+ ran_startMonth = 3 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 220
+ ran_startHour = 36
+ ran_startMin = 57
+ ran_startDay=3
+ ran_startMonth = 5 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 3291
+ ran_startHour = 13
+ ran_startMin = 86
+ ran_startDay=16
+ ran_startMonth = 1 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 3170
+ ran_startHour = 27
+ ran_startMin = 73
+ ran_startDay=15
+ ran_startMonth = 5 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 4223
+ ran_startHour = 55
+ ran_startMin = 2
+ ran_startDay=28
+ ran_startMonth = 5 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 7439
+ ran_startHour = 37
+ ran_startMin = 52
+ ran_startDay=65
+ ran_startMonth = 12 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 4566
+ ran_startHour = 18
+ ran_startMin = 74
+ ran_startDay=4
+ ran_startMonth = 4 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 6898
+ ran_startHour = 75
+ ran_startMin = 16
+ ran_startDay=18
+ ran_startMonth = 5 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 4755
+ ran_startHour = 52
+ ran_startMin = 87
+ ran_startDay=85
+ ran_startMonth = 4 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 692
+ ran_startHour = 1
+ ran_startMin = 86
+ ran_startDay=87
+ ran_startMonth = 12 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 9065
+ ran_startHour = 0
+ ran_startMin = 59
+ ran_startDay=64
+ ran_startMonth = 10 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 3380
+ ran_startHour = 25
+ ran_startMin = 2
+ ran_startDay=59
+ ran_startMonth = 4 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 9725
+ ran_startHour = 56
+ ran_startMin = 65
+ ran_startDay=-2
+ ran_startMonth = 11 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 4322
+ ran_startHour = 15
+ ran_startMin = 75
+ ran_startDay=2
+ ran_startMonth = 1 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 734
+ ran_startHour = 15
+ ran_startMin = 10
+ ran_startDay=4
+ ran_startMonth = 4 
+This appt.getValid() should be equal to result = true
+Actual appt.getValid() = true
+
+ Appt Values: 
+ startYear = 4593
+ ran_startHour = 19
+ ran_startMin = 79
+ ran_startDay=43
+ ran_startMonth = 6 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 4786
+ ran_startHour = 1
+ ran_startMin = 69
+ ran_startDay=77
+ ran_startMonth = 9 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 1378
+ ran_startHour = 5
+ ran_startMin = 42
+ ran_startDay=65
+ ran_startMonth = 12 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 3997
+ ran_startHour = 21
+ ran_startMin = 13
+ ran_startDay=45
+ ran_startMonth = 3 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 3353
+ ran_startHour = 31
+ ran_startMin = 14
+ ran_startDay=20
+ ran_startMonth = 11 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 616
+ ran_startHour = 3
+ ran_startMin = 45
+ ran_startDay=65
+ ran_startMonth = 2 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 2924
+ ran_startHour = 1
+ ran_startMin = 64
+ ran_startDay=62
+ ran_startMonth = 9 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 7312
+ ran_startHour = 30
+ ran_startMin = 39
+ ran_startDay=8
+ ran_startMonth = 7 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 8268
+ ran_startHour = 1
+ ran_startMin = 78
+ ran_startDay=38
+ ran_startMonth = 5 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 6327
+ ran_startHour = 85
+ ran_startMin = 50
+ ran_startDay=18
+ ran_startMonth = 5 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 4736
+ ran_startHour = 46
+ ran_startMin = 45
+ ran_startDay=30
+ ran_startMonth = 8 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 6633
+ ran_startHour = 68
+ ran_startMin = 75
+ ran_startDay=72
+ ran_startMonth = 8 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+ Seed:1520717539795
+
+ Appt Values: 
+ startYear = 8291
+ ran_startHour = 83
+ ran_startMin = 17
+ ran_startDay=79
+ ran_startMonth = 1 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 8894
+ ran_startHour = 70
+ ran_startMin = -2
+ ran_startDay=33
+ ran_startMonth = 5 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 7411
+ ran_startHour = 76
+ ran_startMin = 58
+ ran_startDay=50
+ ran_startMonth = 8 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 6983
+ ran_startHour = 19
+ ran_startMin = 81
+ ran_startDay=79
+ ran_startMonth = 1 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 9958
+ ran_startHour = -1
+ ran_startMin = 68
+ ran_startDay=64
+ ran_startMonth = 11 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 9510
+ ran_startHour = 77
+ ran_startMin = 17
+ ran_startDay=44
+ ran_startMonth = 2 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 6790
+ ran_startHour = 53
+ ran_startMin = 48
+ ran_startDay=4
+ ran_startMonth = 1 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 1575
+ ran_startHour = 47
+ ran_startMin = 51
+ ran_startDay=89
+ ran_startMonth = 11 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 3149
+ ran_startHour = 60
+ ran_startMin = 29
+ ran_startDay=78
+ ran_startMonth = 12 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 3916
+ ran_startHour = 43
+ ran_startMin = 73
+ ran_startDay=82
+ ran_startMonth = 6 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 7946
+ ran_startHour = 10
+ ran_startMin = 24
+ ran_startDay=23
+ ran_startMonth = 6 
+This appt.getValid() should be equal to result = true
+Actual appt.getValid() = true
+
+ Appt Values: 
+ startYear = 4149
+ ran_startHour = 20
+ ran_startMin = 58
+ ran_startDay=-5
+ ran_startMonth = 12 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 9227
+ ran_startHour = 46
+ ran_startMin = 13
+ ran_startDay=4
+ ran_startMonth = 9 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 1305
+ ran_startHour = 22
+ ran_startMin = 66
+ ran_startDay=45
+ ran_startMonth = 2 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 3569
+ ran_startHour = 46
+ ran_startMin = 37
+ ran_startDay=26
+ ran_startMonth = 7 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 6386
+ ran_startHour = 54
+ ran_startMin = 21
+ ran_startDay=66
+ ran_startMonth = 5 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 2596
+ ran_startHour = 32
+ ran_startMin = 53
+ ran_startDay=6
+ ran_startMonth = 8 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 2979
+ ran_startHour = 19
+ ran_startMin = 81
+ ran_startDay=84
+ ran_startMonth = 8 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 7538
+ ran_startHour = 45
+ ran_startMin = -5
+ ran_startDay=78
+ ran_startMonth = 12 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 9333
+ ran_startHour = 77
+ ran_startMin = 9
+ ran_startDay=2
+ ran_startMonth = 10 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 3349
+ ran_startHour = 43
+ ran_startMin = 23
+ ran_startDay=8
+ ran_startMonth = 8 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 5130
+ ran_startHour = 70
+ ran_startMin = 72
+ ran_startDay=49
+ ran_startMonth = 4 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 7685
+ ran_startHour = 83
+ ran_startMin = 53
+ ran_startDay=13
+ ran_startMonth = 6 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 8111
+ ran_startHour = 60
+ ran_startMin = 35
+ ran_startDay=58
+ ran_startMonth = 5 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 4208
+ ran_startHour = 19
+ ran_startMin = 15
+ ran_startDay=50
+ ran_startMonth = 12 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 8323
+ ran_startHour = 20
+ ran_startMin = 72
+ ran_startDay=71
+ ran_startMonth = 1 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 9368
+ ran_startHour = 27
+ ran_startMin = 47
+ ran_startDay=38
+ ran_startMonth = 6 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 4540
+ ran_startHour = 63
+ ran_startMin = 6
+ ran_startDay=1
+ ran_startMonth = 5 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 4598
+ ran_startHour = -3
+ ran_startMin = 34
+ ran_startDay=28
+ ran_startMonth = 11 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+ Seed:1520717539797
+
+ Appt Values: 
+ startYear = 1347
+ ran_startHour = 22
+ ran_startMin = 26
+ ran_startDay=60
+ ran_startMonth = 12 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 2334
+ ran_startHour = 61
+ ran_startMin = 20
+ ran_startDay=65
+ ran_startMonth = 7 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 56
+ ran_startHour = 0
+ ran_startMin = 37
+ ran_startDay=83
+ ran_startMonth = 8 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 3476
+ ran_startHour = 36
+ ran_startMin = 13
+ ran_startDay=59
+ ran_startMonth = 1 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 1053
+ ran_startHour = 14
+ ran_startMin = 24
+ ran_startDay=63
+ ran_startMonth = 11 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 8948
+ ran_startHour = 62
+ ran_startMin = 7
+ ran_startDay=72
+ ran_startMonth = 3 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 2269
+ ran_startHour = 69
+ ran_startMin = 90
+ ran_startDay=65
+ ran_startMonth = 9 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 8403
+ ran_startHour = 18
+ ran_startMin = 60
+ ran_startDay=36
+ ran_startMonth = 10 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 1325
+ ran_startHour = 75
+ ran_startMin = 48
+ ran_startDay=4
+ ran_startMonth = 7 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 8217
+ ran_startHour = 1
+ ran_startMin = 85
+ ran_startDay=88
+ ran_startMonth = 8 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 1268
+ ran_startHour = 5
+ ran_startMin = 78
+ ran_startDay=65
+ ran_startMonth = 5 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 1220
+ ran_startHour = 27
+ ran_startMin = 1
+ ran_startDay=42
+ ran_startMonth = 2 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 397
+ ran_startHour = -3
+ ran_startMin = 69
+ ran_startDay=22
+ ran_startMonth = 2 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 5782
+ ran_startHour = 80
+ ran_startMin = 53
+ ran_startDay=17
+ ran_startMonth = 12 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 8113
+ ran_startHour = 18
+ ran_startMin = 12
+ ran_startDay=85
+ ran_startMonth = 11 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 7652
+ ran_startHour = 58
+ ran_startMin = 35
+ ran_startDay=9
+ ran_startMonth = 2 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 9102
+ ran_startHour = 49
+ ran_startMin = 17
+ ran_startDay=48
+ ran_startMonth = 1 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 9833
+ ran_startHour = 23
+ ran_startMin = 38
+ ran_startDay=7
+ ran_startMonth = 1 
+This appt.getValid() should be equal to result = true
+Actual appt.getValid() = true
+
+ Appt Values: 
+ startYear = 2214
+ ran_startHour = 6
+ ran_startMin = 19
+ ran_startDay=20
+ ran_startMonth = 11 
+This appt.getValid() should be equal to result = true
+Actual appt.getValid() = true
+
+ Appt Values: 
+ startYear = 8549
+ ran_startHour = 7
+ ran_startMin = 62
+ ran_startDay=85
+ ran_startMonth = 12 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 3638
+ ran_startHour = 2
+ ran_startMin = 12
+ ran_startDay=78
+ ran_startMonth = 2 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 4099
+ ran_startHour = 55
+ ran_startMin = 14
+ ran_startDay=32
+ ran_startMonth = 7 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 1513
+ ran_startHour = 87
+ ran_startMin = 49
+ ran_startDay=-2
+ ran_startMonth = 4 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 4587
+ ran_startHour = 38
+ ran_startMin = 26
+ ran_startDay=34
+ ran_startMonth = 10 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 8494
+ ran_startHour = 41
+ ran_startMin = 38
+ ran_startDay=27
+ ran_startMonth = 8 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 2376
+ ran_startHour = 17
+ ran_startMin = 70
+ ran_startDay=45
+ ran_startMonth = 1 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 4273
+ ran_startHour = 58
+ ran_startMin = 9
+ ran_startDay=14
+ ran_startMonth = 7 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+ Seed:1520717539801
+
+ Appt Values: 
+ startYear = 7196
+ ran_startHour = 51
+ ran_startMin = 80
+ ran_startDay=66
+ ran_startMonth = 11 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 570
+ ran_startHour = 0
+ ran_startMin = 66
+ ran_startDay=45
+ ran_startMonth = 11 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 9193
+ ran_startHour = 4
+ ran_startMin = 5
+ ran_startDay=14
+ ran_startMonth = 7 
+This appt.getValid() should be equal to result = true
+Actual appt.getValid() = true
+
+ Appt Values: 
+ startYear = 2808
+ ran_startHour = 52
+ ran_startMin = 83
+ ran_startDay=76
+ ran_startMonth = 8 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 9999
+ ran_startHour = 56
+ ran_startMin = 2
+ ran_startDay=84
+ ran_startMonth = 11 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 6225
+ ran_startHour = 0
+ ran_startMin = 15
+ ran_startDay=54
+ ran_startMonth = 9 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 9004
+ ran_startHour = 87
+ ran_startMin = 0
+ ran_startDay=14
+ ran_startMonth = 12 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 9620
+ ran_startHour = 4
+ ran_startMin = -4
+ ran_startDay=31
+ ran_startMonth = 10 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 9875
+ ran_startHour = 31
+ ran_startMin = 30
+ ran_startDay=11
+ ran_startMonth = 4 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 2365
+ ran_startHour = 0
+ ran_startMin = 20
+ ran_startDay=36
+ ran_startMonth = 9 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 8296
+ ran_startHour = 74
+ ran_startMin = 46
+ ran_startDay=67
+ ran_startMonth = 2 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 4591
+ ran_startHour = -3
+ ran_startMin = 68
+ ran_startDay=2
+ ran_startMonth = 1 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 952
+ ran_startHour = 67
+ ran_startMin = 45
+ ran_startDay=86
+ ran_startMonth = 1 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 5181
+ ran_startHour = 64
+ ran_startMin = 71
+ ran_startDay=73
+ ran_startMonth = 2 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 2144
+ ran_startHour = 11
+ ran_startMin = 84
+ ran_startDay=13
+ ran_startMonth = 5 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 5746
+ ran_startHour = 50
+ ran_startMin = 46
+ ran_startDay=3
+ ran_startMonth = 7 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 5702
+ ran_startHour = 22
+ ran_startMin = 50
+ ran_startDay=85
+ ran_startMonth = 9 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 5799
+ ran_startHour = 43
+ ran_startMin = 36
+ ran_startDay=25
+ ran_startMonth = 11 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 8438
+ ran_startHour = 74
+ ran_startMin = 8
+ ran_startDay=49
+ ran_startMonth = 1 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 4700
+ ran_startHour = 39
+ ran_startMin = 39
+ ran_startDay=7
+ ran_startMonth = 9 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 4411
+ ran_startHour = 38
+ ran_startMin = 23
+ ran_startDay=-5
+ ran_startMonth = 4 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 4247
+ ran_startHour = 2
+ ran_startMin = 88
+ ran_startDay=43
+ ran_startMonth = 1 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 9047
+ ran_startHour = 74
+ ran_startMin = 29
+ ran_startDay=7
+ ran_startMonth = 11 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+ Seed:1520717539805
+
+ Appt Values: 
+ startYear = 8456
+ ran_startHour = 67
+ ran_startMin = 66
+ ran_startDay=46
+ ran_startMonth = 6 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 5329
+ ran_startHour = 61
+ ran_startMin = 71
+ ran_startDay=44
+ ran_startMonth = 3 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 6336
+ ran_startHour = 87
+ ran_startMin = 56
+ ran_startDay=11
+ ran_startMonth = 9 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 2802
+ ran_startHour = 82
+ ran_startMin = 13
+ ran_startDay=66
+ ran_startMonth = 6 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 422
+ ran_startHour = 81
+ ran_startMin = 73
+ ran_startDay=-1
+ ran_startMonth = 9 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 5822
+ ran_startHour = 64
+ ran_startMin = 33
+ ran_startDay=74
+ ran_startMonth = 8 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 9888
+ ran_startHour = 31
+ ran_startMin = 73
+ ran_startDay=15
+ ran_startMonth = 8 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 3623
+ ran_startHour = 33
+ ran_startMin = 20
+ ran_startDay=83
+ ran_startMonth = 1 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 8990
+ ran_startHour = 18
+ ran_startMin = 8
+ ran_startDay=76
+ ran_startMonth = 7 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 2847
+ ran_startHour = 87
+ ran_startMin = 19
+ ran_startDay=31
+ ran_startMonth = 10 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 6243
+ ran_startHour = 83
+ ran_startMin = 87
+ ran_startDay=10
+ ran_startMonth = 2 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 7876
+ ran_startHour = 18
+ ran_startMin = 88
+ ran_startDay=19
+ ran_startMonth = 3 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 6263
+ ran_startHour = 88
+ ran_startMin = 44
+ ran_startDay=89
+ ran_startMonth = 3 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 7048
+ ran_startHour = 18
+ ran_startMin = 76
+ ran_startDay=50
+ ran_startMonth = 9 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 4644
+ ran_startHour = 11
+ ran_startMin = 40
+ ran_startDay=28
+ ran_startMonth = 1 
+This appt.getValid() should be equal to result = true
+Actual appt.getValid() = true
+
+ Appt Values: 
+ startYear = 6073
+ ran_startHour = 41
+ ran_startMin = 79
+ ran_startDay=52
+ ran_startMonth = 5 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 2940
+ ran_startHour = 12
+ ran_startMin = 35
+ ran_startDay=12
+ ran_startMonth = 2 
+This appt.getValid() should be equal to result = true
+Actual appt.getValid() = true
+
+ Appt Values: 
+ startYear = 2907
+ ran_startHour = 83
+ ran_startMin = 7
+ ran_startDay=62
+ ran_startMonth = 4 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 5980
+ ran_startHour = 71
+ ran_startMin = 62
+ ran_startDay=27
+ ran_startMonth = 12 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 4150
+ ran_startHour = 9
+ ran_startMin = 11
+ ran_startDay=29
+ ran_startMonth = 9 
+This appt.getValid() should be equal to result = true
+Actual appt.getValid() = true
+
+ Appt Values: 
+ startYear = 6648
+ ran_startHour = 19
+ ran_startMin = 71
+ ran_startDay=88
+ ran_startMonth = 7 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 6856
+ ran_startHour = 3
+ ran_startMin = 51
+ ran_startDay=49
+ ran_startMonth = 7 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 1677
+ ran_startHour = -1
+ ran_startMin = 28
+ ran_startDay=42
+ ran_startMonth = 10 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+ Seed:1520717539806
+
+ Appt Values: 
+ startYear = 966
+ ran_startHour = 4
+ ran_startMin = 67
+ ran_startDay=25
+ ran_startMonth = 7 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 9014
+ ran_startHour = 68
+ ran_startMin = 56
+ ran_startDay=46
+ ran_startMonth = 5 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 620
+ ran_startHour = 51
+ ran_startMin = 51
+ ran_startDay=24
+ ran_startMonth = 4 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 8081
+ ran_startHour = 67
+ ran_startMin = 34
+ ran_startDay=22
+ ran_startMonth = 5 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 7284
+ ran_startHour = -3
+ ran_startMin = 29
+ ran_startDay=12
+ ran_startMonth = 5 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 8764
+ ran_startHour = 63
+ ran_startMin = -5
+ ran_startDay=23
+ ran_startMonth = 1 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 6297
+ ran_startHour = 78
+ ran_startMin = 10
+ ran_startDay=70
+ ran_startMonth = 12 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 6309
+ ran_startHour = 54
+ ran_startMin = 3
+ ran_startDay=59
+ ran_startMonth = 1 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 1626
+ ran_startHour = 41
+ ran_startMin = 78
+ ran_startDay=50
+ ran_startMonth = 3 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 1042
+ ran_startHour = 26
+ ran_startMin = 75
+ ran_startDay=3
+ ran_startMonth = 12 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 3860
+ ran_startHour = 57
+ ran_startMin = 7
+ ran_startDay=56
+ ran_startMonth = 9 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 3336
+ ran_startHour = 10
+ ran_startMin = 19
+ ran_startDay=-3
+ ran_startMonth = 3 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 5221
+ ran_startHour = 15
+ ran_startMin = 27
+ ran_startDay=42
+ ran_startMonth = 2 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 8430
+ ran_startHour = 16
+ ran_startMin = 26
+ ran_startDay=3
+ ran_startMonth = 4 
+This appt.getValid() should be equal to result = true
+Actual appt.getValid() = true
+
+ Appt Values: 
+ startYear = 5846
+ ran_startHour = 81
+ ran_startMin = 46
+ ran_startDay=60
+ ran_startMonth = 6 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 4706
+ ran_startHour = 84
+ ran_startMin = 58
+ ran_startDay=81
+ ran_startMonth = 3 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 3557
+ ran_startHour = -3
+ ran_startMin = 28
+ ran_startDay=17
+ ran_startMonth = 2 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 188
+ ran_startHour = 15
+ ran_startMin = 67
+ ran_startDay=71
+ ran_startMonth = 1 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 6859
+ ran_startHour = 33
+ ran_startMin = 67
+ ran_startDay=35
+ ran_startMonth = 10 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 4023
+ ran_startHour = 83
+ ran_startMin = 15
+ ran_startDay=29
+ ran_startMonth = 2 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+ Seed:1520717539807
+
+ Appt Values: 
+ startYear = 8199
+ ran_startHour = 41
+ ran_startMin = 89
+ ran_startDay=88
+ ran_startMonth = 1 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 7376
+ ran_startHour = 22
+ ran_startMin = 12
+ ran_startDay=90
+ ran_startMonth = 7 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 7160
+ ran_startHour = 82
+ ran_startMin = 27
+ ran_startDay=4
+ ran_startMonth = 2 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 7634
+ ran_startHour = 35
+ ran_startMin = 63
+ ran_startDay=23
+ ran_startMonth = 8 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 6987
+ ran_startHour = 70
+ ran_startMin = 1
+ ran_startDay=82
+ ran_startMonth = 4 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 8
+ ran_startHour = 23
+ ran_startMin = 12
+ ran_startDay=73
+ ran_startMonth = 7 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 7147
+ ran_startHour = 8
+ ran_startMin = 76
+ ran_startDay=13
+ ran_startMonth = 8 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 4944
+ ran_startHour = 31
+ ran_startMin = 3
+ ran_startDay=16
+ ran_startMonth = 6 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 4370
+ ran_startHour = 34
+ ran_startMin = 56
+ ran_startDay=18
+ ran_startMonth = 11 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 6173
+ ran_startHour = 85
+ ran_startMin = 61
+ ran_startDay=8
+ ran_startMonth = 2 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 5421
+ ran_startHour = 85
+ ran_startMin = -5
+ ran_startDay=87
+ ran_startMonth = 8 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 5029
+ ran_startHour = 12
+ ran_startMin = 19
+ ran_startDay=46
+ ran_startMonth = 4 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 7965
+ ran_startHour = 24
+ ran_startMin = 38
+ ran_startDay=-3
+ ran_startMonth = 6 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 3180
+ ran_startHour = 77
+ ran_startMin = 65
+ ran_startDay=59
+ ran_startMonth = 7 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 4024
+ ran_startHour = 12
+ ran_startMin = 3
+ ran_startDay=73
+ ran_startMonth = 12 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 4999
+ ran_startHour = 52
+ ran_startMin = 25
+ ran_startDay=15
+ ran_startMonth = 6 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 1536
+ ran_startHour = -1
+ ran_startMin = 84
+ ran_startDay=54
+ ran_startMonth = 4 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 3424
+ ran_startHour = 76
+ ran_startMin = 79
+ ran_startDay=-5
+ ran_startMonth = 5 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 9289
+ ran_startHour = 34
+ ran_startMin = 53
+ ran_startDay=62
+ ran_startMonth = 12 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 8551
+ ran_startHour = 56
+ ran_startMin = 64
+ ran_startDay=43
+ ran_startMonth = 11 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 4577
+ ran_startHour = 74
+ ran_startMin = 14
+ ran_startDay=72
+ ran_startMonth = 6 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 5752
+ ran_startHour = 28
+ ran_startMin = 33
+ ran_startDay=60
+ ran_startMonth = 1 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 2243
+ ran_startHour = 60
+ ran_startMin = 39
+ ran_startDay=65
+ ran_startMonth = 3 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 3461
+ ran_startHour = 52
+ ran_startMin = 85
+ ran_startDay=12
+ ran_startMonth = 7 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 1061
+ ran_startHour = 44
+ ran_startMin = -5
+ ran_startDay=76
+ ran_startMonth = 4 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 3795
+ ran_startHour = 63
+ ran_startMin = -4
+ ran_startDay=22
+ ran_startMonth = 7 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 8263
+ ran_startHour = 34
+ ran_startMin = 36
+ ran_startDay=22
+ ran_startMonth = 7 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 7264
+ ran_startHour = -2
+ ran_startMin = 37
+ ran_startDay=87
+ ran_startMonth = 2 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 5492
+ ran_startHour = 39
+ ran_startMin = 31
+ ran_startDay=8
+ ran_startMonth = 2 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 2842
+ ran_startHour = 83
+ ran_startMin = 19
+ ran_startDay=56
+ ran_startMonth = 9 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 7851
+ ran_startHour = 46
+ ran_startMin = 9
+ ran_startDay=69
+ ran_startMonth = 1 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 9961
+ ran_startHour = 17
+ ran_startMin = 28
+ ran_startDay=84
+ ran_startMonth = 10 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+ Seed:1520717539808
+
+ Appt Values: 
+ startYear = 7399
+ ran_startHour = 14
+ ran_startMin = 11
+ ran_startDay=38
+ ran_startMonth = 4 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 6150
+ ran_startHour = 42
+ ran_startMin = 63
+ ran_startDay=83
+ ran_startMonth = 2 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 6760
+ ran_startHour = 68
+ ran_startMin = 56
+ ran_startDay=53
+ ran_startMonth = 11 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 8980
+ ran_startHour = 77
+ ran_startMin = 88
+ ran_startDay=13
+ ran_startMonth = 5 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 6422
+ ran_startHour = 78
+ ran_startMin = 7
+ ran_startDay=59
+ ran_startMonth = 10 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 9169
+ ran_startHour = 38
+ ran_startMin = 81
+ ran_startDay=90
+ ran_startMonth = 3 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 1733
+ ran_startHour = 2
+ ran_startMin = 20
+ ran_startDay=13
+ ran_startMonth = 8 
+This appt.getValid() should be equal to result = true
+Actual appt.getValid() = true
+
+ Appt Values: 
+ startYear = 834
+ ran_startHour = 73
+ ran_startMin = 43
+ ran_startDay=53
+ ran_startMonth = 9 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 9290
+ ran_startHour = 82
+ ran_startMin = 33
+ ran_startDay=52
+ ran_startMonth = 9 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 7143
+ ran_startHour = 9
+ ran_startMin = 49
+ ran_startDay=-1
+ ran_startMonth = 2 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 2485
+ ran_startHour = 33
+ ran_startMin = 32
+ ran_startDay=30
+ ran_startMonth = 11 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 3776
+ ran_startHour = 87
+ ran_startMin = 26
+ ran_startDay=16
+ ran_startMonth = 12 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 3807
+ ran_startHour = 41
+ ran_startMin = 68
+ ran_startDay=38
+ ran_startMonth = 6 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 6620
+ ran_startHour = 69
+ ran_startMin = 9
+ ran_startDay=10
+ ran_startMonth = 8 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 1197
+ ran_startHour = 23
+ ran_startMin = 78
+ ran_startDay=90
+ ran_startMonth = 3 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 3200
+ ran_startHour = 62
+ ran_startMin = 34
+ ran_startDay=56
+ ran_startMonth = 10 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 4114
+ ran_startHour = 33
+ ran_startMin = 90
+ ran_startDay=57
+ ran_startMonth = 9 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 1266
+ ran_startHour = 57
+ ran_startMin = 18
+ ran_startDay=27
+ ran_startMonth = 9 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 5234
+ ran_startHour = 39
+ ran_startMin = 89
+ ran_startDay=89
+ ran_startMonth = 9 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 3198
+ ran_startHour = 0
+ ran_startMin = 25
+ ran_startDay=69
+ ran_startMonth = 9 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 5983
+ ran_startHour = 1
+ ran_startMin = 76
+ ran_startDay=41
+ ran_startMonth = 3 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 8702
+ ran_startHour = 29
+ ran_startMin = 11
+ ran_startDay=38
+ ran_startMonth = 2 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+ Seed:1520717539810
+
+ Appt Values: 
+ startYear = 2009
+ ran_startHour = 47
+ ran_startMin = -2
+ ran_startDay=5
+ ran_startMonth = 12 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 1251
+ ran_startHour = 38
+ ran_startMin = 89
+ ran_startDay=70
+ ran_startMonth = 12 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 8102
+ ran_startHour = 60
+ ran_startMin = 46
+ ran_startDay=42
+ ran_startMonth = 7 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 6503
+ ran_startHour = 64
+ ran_startMin = 84
+ ran_startDay=33
+ ran_startMonth = 2 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 2631
+ ran_startHour = 13
+ ran_startMin = 62
+ ran_startDay=83
+ ran_startMonth = 8 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 5784
+ ran_startHour = 20
+ ran_startMin = 18
+ ran_startDay=46
+ ran_startMonth = 8 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 1715
+ ran_startHour = 8
+ ran_startMin = 89
+ ran_startDay=20
+ ran_startMonth = 6 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 628
+ ran_startHour = 78
+ ran_startMin = 32
+ ran_startDay=78
+ ran_startMonth = 8 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 4517
+ ran_startHour = 25
+ ran_startMin = 57
+ ran_startDay=32
+ ran_startMonth = 2 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 1313
+ ran_startHour = 29
+ ran_startMin = 23
+ ran_startDay=56
+ ran_startMonth = 5 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 498
+ ran_startHour = 40
+ ran_startMin = 29
+ ran_startDay=34
+ ran_startMonth = 11 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 7079
+ ran_startHour = 0
+ ran_startMin = 15
+ ran_startDay=85
+ ran_startMonth = 9 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 6696
+ ran_startHour = 4
+ ran_startMin = 11
+ ran_startDay=86
+ ran_startMonth = 10 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 157
+ ran_startHour = 34
+ ran_startMin = 31
+ ran_startDay=89
+ ran_startMonth = 10 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 1689
+ ran_startHour = 58
+ ran_startMin = 80
+ ran_startDay=76
+ ran_startMonth = 6 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 8577
+ ran_startHour = 43
+ ran_startMin = 76
+ ran_startDay=78
+ ran_startMonth = 2 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 8000
+ ran_startHour = 60
+ ran_startMin = 57
+ ran_startDay=50
+ ran_startMonth = 5 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 9338
+ ran_startHour = 52
+ ran_startMin = 27
+ ran_startDay=13
+ ran_startMonth = 5 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 6754
+ ran_startHour = 17
+ ran_startMin = 43
+ ran_startDay=18
+ ran_startMonth = 3 
+This appt.getValid() should be equal to result = true
+Actual appt.getValid() = true
+
+ Appt Values: 
+ startYear = 3322
+ ran_startHour = 79
+ ran_startMin = 51
+ ran_startDay=63
+ ran_startMonth = 11 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 2966
+ ran_startHour = 68
+ ran_startMin = 67
+ ran_startDay=28
+ ran_startMonth = 1 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+ Seed:1520717539811
+
+ Appt Values: 
+ startYear = 6130
+ ran_startHour = 68
+ ran_startMin = 57
+ ran_startDay=64
+ ran_startMonth = 11 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 8666
+ ran_startHour = 18
+ ran_startMin = 74
+ ran_startDay=69
+ ran_startMonth = 1 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 2416
+ ran_startHour = 76
+ ran_startMin = 57
+ ran_startDay=12
+ ran_startMonth = 10 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 8274
+ ran_startHour = 21
+ ran_startMin = 17
+ ran_startDay=35
+ ran_startMonth = 12 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 4194
+ ran_startHour = 24
+ ran_startMin = 21
+ ran_startDay=48
+ ran_startMonth = 9 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 2302
+ ran_startHour = 41
+ ran_startMin = 14
+ ran_startDay=42
+ ran_startMonth = 10 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 6570
+ ran_startHour = 57
+ ran_startMin = 65
+ ran_startDay=80
+ ran_startMonth = 8 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 5943
+ ran_startHour = 33
+ ran_startMin = 54
+ ran_startDay=74
+ ran_startMonth = 6 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 2004
+ ran_startHour = 45
+ ran_startMin = 2
+ ran_startDay=-5
+ ran_startMonth = 1 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 8003
+ ran_startHour = 3
+ ran_startMin = 41
+ ran_startDay=-2
+ ran_startMonth = 9 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 306
+ ran_startHour = 30
+ ran_startMin = 68
+ ran_startDay=40
+ ran_startMonth = 10 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 9459
+ ran_startHour = 66
+ ran_startMin = -1
+ ran_startDay=6
+ ran_startMonth = 12 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 670
+ ran_startHour = 73
+ ran_startMin = 16
+ ran_startDay=60
+ ran_startMonth = 9 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 5542
+ ran_startHour = 74
+ ran_startMin = 42
+ ran_startDay=80
+ ran_startMonth = 2 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 2056
+ ran_startHour = 18
+ ran_startMin = 3
+ ran_startDay=47
+ ran_startMonth = 6 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 2456
+ ran_startHour = 61
+ ran_startMin = 6
+ ran_startDay=87
+ ran_startMonth = 5 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 7320
+ ran_startHour = 17
+ ran_startMin = 72
+ ran_startDay=15
+ ran_startMonth = 6 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 9681
+ ran_startHour = 38
+ ran_startMin = 21
+ ran_startDay=70
+ ran_startMonth = 2 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 9068
+ ran_startHour = 26
+ ran_startMin = 56
+ ran_startDay=76
+ ran_startMonth = 10 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 6285
+ ran_startHour = 71
+ ran_startMin = 70
+ ran_startDay=39
+ ran_startMonth = 2 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 5920
+ ran_startHour = 73
+ ran_startMin = -3
+ ran_startDay=53
+ ran_startMonth = 12 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 9781
+ ran_startHour = 15
+ ran_startMin = 12
+ ran_startDay=15
+ ran_startMonth = 6 
+This appt.getValid() should be equal to result = true
+Actual appt.getValid() = true
+
+ Appt Values: 
+ startYear = 6627
+ ran_startHour = 87
+ ran_startMin = 47
+ ran_startDay=54
+ ran_startMonth = 2 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 1307
+ ran_startHour = 82
+ ran_startMin = 81
+ ran_startDay=82
+ ran_startMonth = 9 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 4895
+ ran_startHour = 42
+ ran_startMin = 25
+ ran_startDay=86
+ ran_startMonth = 9 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 1678
+ ran_startHour = 80
+ ran_startMin = 5
+ ran_startDay=89
+ ran_startMonth = 9 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+ Seed:1520717539814
+
+ Appt Values: 
+ startYear = 335
+ ran_startHour = 4
+ ran_startMin = 85
+ ran_startDay=19
+ ran_startMonth = 5 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 8077
+ ran_startHour = 56
+ ran_startMin = -3
+ ran_startDay=68
+ ran_startMonth = 7 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 2737
+ ran_startHour = 76
+ ran_startMin = 8
+ ran_startDay=87
+ ran_startMonth = 3 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 6916
+ ran_startHour = 39
+ ran_startMin = 41
+ ran_startDay=54
+ ran_startMonth = 8 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 3490
+ ran_startHour = 59
+ ran_startMin = 21
+ ran_startDay=33
+ ran_startMonth = 10 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 5389
+ ran_startHour = 39
+ ran_startMin = 27
+ ran_startDay=14
+ ran_startMonth = 12 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 2764
+ ran_startHour = 27
+ ran_startMin = 43
+ ran_startDay=49
+ ran_startMonth = 4 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 5183
+ ran_startHour = 85
+ ran_startMin = 89
+ ran_startDay=41
+ ran_startMonth = 10 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 4155
+ ran_startHour = 35
+ ran_startMin = 18
+ ran_startDay=64
+ ran_startMonth = 4 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 380
+ ran_startHour = 48
+ ran_startMin = 58
+ ran_startDay=9
+ ran_startMonth = 6 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 8351
+ ran_startHour = 66
+ ran_startMin = 74
+ ran_startDay=69
+ ran_startMonth = 9 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 3408
+ ran_startHour = 61
+ ran_startMin = 79
+ ran_startDay=20
+ ran_startMonth = 7 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 4992
+ ran_startHour = 88
+ ran_startMin = 0
+ ran_startDay=13
+ ran_startMonth = 4 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 5863
+ ran_startHour = 86
+ ran_startMin = 43
+ ran_startDay=75
+ ran_startMonth = 11 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 5966
+ ran_startHour = 17
+ ran_startMin = -1
+ ran_startDay=87
+ ran_startMonth = 9 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 9327
+ ran_startHour = 49
+ ran_startMin = 48
+ ran_startDay=5
+ ran_startMonth = 6 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 4646
+ ran_startHour = 85
+ ran_startMin = 71
+ ran_startDay=64
+ ran_startMonth = 7 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 9168
+ ran_startHour = 36
+ ran_startMin = 45
+ ran_startDay=85
+ ran_startMonth = 6 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 6456
+ ran_startHour = 12
+ ran_startMin = 37
+ ran_startDay=71
+ ran_startMonth = 3 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+ Seed:1520717539815
+
+ Appt Values: 
+ startYear = 209
+ ran_startHour = 22
+ ran_startMin = 45
+ ran_startDay=45
+ ran_startMonth = 9 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 3022
+ ran_startHour = 63
+ ran_startMin = 61
+ ran_startDay=85
+ ran_startMonth = 9 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 6325
+ ran_startHour = 63
+ ran_startMin = 89
+ ran_startDay=85
+ ran_startMonth = 11 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 526
+ ran_startHour = 21
+ ran_startMin = 86
+ ran_startDay=35
+ ran_startMonth = 2 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 8196
+ ran_startHour = -1
+ ran_startMin = 46
+ ran_startDay=46
+ ran_startMonth = 5 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 7512
+ ran_startHour = 36
+ ran_startMin = 29
+ ran_startDay=29
+ ran_startMonth = 5 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 8735
+ ran_startHour = 83
+ ran_startMin = 15
+ ran_startDay=78
+ ran_startMonth = 2 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 8289
+ ran_startHour = 24
+ ran_startMin = 79
+ ran_startDay=41
+ ran_startMonth = 5 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 9825
+ ran_startHour = 16
+ ran_startMin = 89
+ ran_startDay=81
+ ran_startMonth = 8 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 1472
+ ran_startHour = 16
+ ran_startMin = 87
+ ran_startDay=51
+ ran_startMonth = 5 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 8874
+ ran_startHour = 46
+ ran_startMin = 30
+ ran_startDay=44
+ ran_startMonth = 6 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 5211
+ ran_startHour = 2
+ ran_startMin = 86
+ ran_startDay=81
+ ran_startMonth = 7 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 816
+ ran_startHour = 10
+ ran_startMin = 27
+ ran_startDay=37
+ ran_startMonth = 10 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 4568
+ ran_startHour = 52
+ ran_startMin = 5
+ ran_startDay=3
+ ran_startMonth = 8 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 5714
+ ran_startHour = 51
+ ran_startMin = 44
+ ran_startDay=12
+ ran_startMonth = 12 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 6136
+ ran_startHour = 29
+ ran_startMin = 83
+ ran_startDay=75
+ ran_startMonth = 4 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 778
+ ran_startHour = 7
+ ran_startMin = 38
+ ran_startDay=10
+ ran_startMonth = 12 
+This appt.getValid() should be equal to result = true
+Actual appt.getValid() = true
+
+ Appt Values: 
+ startYear = 8962
+ ran_startHour = 82
+ ran_startMin = 69
+ ran_startDay=59
+ ran_startMonth = 10 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 2042
+ ran_startHour = 20
+ ran_startMin = 88
+ ran_startDay=80
+ ran_startMonth = 5 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 2299
+ ran_startHour = 71
+ ran_startMin = -2
+ ran_startDay=69
+ ran_startMonth = 4 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 7781
+ ran_startHour = 26
+ ran_startMin = 79
+ ran_startDay=21
+ ran_startMonth = 3 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 6483
+ ran_startHour = 79
+ ran_startMin = 22
+ ran_startDay=10
+ ran_startMonth = 7 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 9537
+ ran_startHour = 26
+ ran_startMin = 2
+ ran_startDay=70
+ ran_startMonth = 2 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 4491
+ ran_startHour = 49
+ ran_startMin = 80
+ ran_startDay=30
+ ran_startMonth = 2 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+ Seed:1520717539818
+
+ Appt Values: 
+ startYear = 7191
+ ran_startHour = -2
+ ran_startMin = 80
+ ran_startDay=64
+ ran_startMonth = 2 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 2143
+ ran_startHour = 46
+ ran_startMin = 57
+ ran_startDay=81
+ ran_startMonth = 2 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 2448
+ ran_startHour = 3
+ ran_startMin = -2
+ ran_startDay=75
+ ran_startMonth = 10 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 7697
+ ran_startHour = 36
+ ran_startMin = 48
+ ran_startDay=68
+ ran_startMonth = 5 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 6028
+ ran_startHour = 34
+ ran_startMin = 9
+ ran_startDay=39
+ ran_startMonth = 3 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 2452
+ ran_startHour = 88
+ ran_startMin = 86
+ ran_startDay=58
+ ran_startMonth = 11 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 4796
+ ran_startHour = 80
+ ran_startMin = 38
+ ran_startDay=21
+ ran_startMonth = 10 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 7331
+ ran_startHour = 8
+ ran_startMin = 30
+ ran_startDay=29
+ ran_startMonth = 7 
+This appt.getValid() should be equal to result = true
+Actual appt.getValid() = true
+
+ Appt Values: 
+ startYear = 2142
+ ran_startHour = 81
+ ran_startMin = 3
+ ran_startDay=22
+ ran_startMonth = 7 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 5587
+ ran_startHour = 43
+ ran_startMin = 75
+ ran_startDay=36
+ ran_startMonth = 12 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 9102
+ ran_startHour = 12
+ ran_startMin = 51
+ ran_startDay=43
+ ran_startMonth = 9 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 9981
+ ran_startHour = 59
+ ran_startMin = 84
+ ran_startDay=59
+ ran_startMonth = 5 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 4281
+ ran_startHour = 10
+ ran_startMin = 17
+ ran_startDay=81
+ ran_startMonth = 3 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 6354
+ ran_startHour = 61
+ ran_startMin = -2
+ ran_startDay=83
+ ran_startMonth = 4 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 1893
+ ran_startHour = 77
+ ran_startMin = 53
+ ran_startDay=52
+ ran_startMonth = 6 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 8548
+ ran_startHour = -1
+ ran_startMin = 55
+ ran_startDay=13
+ ran_startMonth = 9 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 2796
+ ran_startHour = 58
+ ran_startMin = 32
+ ran_startDay=83
+ ran_startMonth = 8 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 9785
+ ran_startHour = 42
+ ran_startMin = 74
+ ran_startDay=86
+ ran_startMonth = 2 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 118
+ ran_startHour = 65
+ ran_startMin = 19
+ ran_startDay=-3
+ ran_startMonth = 10 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 8759
+ ran_startHour = 42
+ ran_startMin = 63
+ ran_startDay=45
+ ran_startMonth = 2 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 7361
+ ran_startHour = 58
+ ran_startMin = 83
+ ran_startDay=2
+ ran_startMonth = 5 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 7173
+ ran_startHour = 63
+ ran_startMin = 76
+ ran_startDay=5
+ ran_startMonth = 3 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 2282
+ ran_startHour = 69
+ ran_startMin = 46
+ ran_startDay=22
+ ran_startMonth = 4 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 45
+ ran_startHour = 53
+ ran_startMin = 57
+ ran_startDay=58
+ ran_startMonth = 11 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 1423
+ ran_startHour = 20
+ ran_startMin = -1
+ ran_startDay=11
+ ran_startMonth = 3 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 1472
+ ran_startHour = 39
+ ran_startMin = 32
+ ran_startDay=30
+ ran_startMonth = 11 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 5727
+ ran_startHour = 65
+ ran_startMin = 56
+ ran_startDay=27
+ ran_startMonth = 3 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 197
+ ran_startHour = 24
+ ran_startMin = -4
+ ran_startDay=19
+ ran_startMonth = 8 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+ Seed:1520717539825
+
+ Appt Values: 
+ startYear = 5812
+ ran_startHour = 44
+ ran_startMin = 67
+ ran_startDay=89
+ ran_startMonth = 4 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 9687
+ ran_startHour = 61
+ ran_startMin = 25
+ ran_startDay=56
+ ran_startMonth = 8 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 8368
+ ran_startHour = 19
+ ran_startMin = 80
+ ran_startDay=27
+ ran_startMonth = 10 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 9041
+ ran_startHour = 27
+ ran_startMin = 60
+ ran_startDay=85
+ ran_startMonth = 8 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 6459
+ ran_startHour = 37
+ ran_startMin = 85
+ ran_startDay=3
+ ran_startMonth = 5 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 5006
+ ran_startHour = 58
+ ran_startMin = 30
+ ran_startDay=5
+ ran_startMonth = 9 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 8405
+ ran_startHour = 29
+ ran_startMin = 49
+ ran_startDay=33
+ ran_startMonth = 1 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 8730
+ ran_startHour = 69
+ ran_startMin = 44
+ ran_startDay=50
+ ran_startMonth = 7 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 2652
+ ran_startHour = 40
+ ran_startMin = 37
+ ran_startDay=66
+ ran_startMonth = 8 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 8262
+ ran_startHour = 9
+ ran_startMin = 79
+ ran_startDay=4
+ ran_startMonth = 12 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 2424
+ ran_startHour = 21
+ ran_startMin = 13
+ ran_startDay=18
+ ran_startMonth = 8 
+This appt.getValid() should be equal to result = true
+Actual appt.getValid() = true
+
+ Appt Values: 
+ startYear = 4502
+ ran_startHour = 57
+ ran_startMin = 90
+ ran_startDay=86
+ ran_startMonth = 3 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 9321
+ ran_startHour = 51
+ ran_startMin = 62
+ ran_startDay=-2
+ ran_startMonth = 12 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 6590
+ ran_startHour = 27
+ ran_startMin = 73
+ ran_startDay=14
+ ran_startMonth = 2 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 3949
+ ran_startHour = 4
+ ran_startMin = 7
+ ran_startDay=63
+ ran_startMonth = 6 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 8694
+ ran_startHour = 35
+ ran_startMin = 52
+ ran_startDay=0
+ ran_startMonth = 3 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 1777
+ ran_startHour = 42
+ ran_startMin = 45
+ ran_startDay=1
+ ran_startMonth = 2 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 7256
+ ran_startHour = 30
+ ran_startMin = 50
+ ran_startDay=45
+ ran_startMonth = 5 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 2125
+ ran_startHour = 20
+ ran_startMin = 32
+ ran_startDay=-4
+ ran_startMonth = 9 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 6473
+ ran_startHour = 23
+ ran_startMin = 11
+ ran_startDay=40
+ ran_startMonth = 4 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 5371
+ ran_startHour = 12
+ ran_startMin = 28
+ ran_startDay=-4
+ ran_startMonth = 8 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 2182
+ ran_startHour = 23
+ ran_startMin = 89
+ ran_startDay=20
+ ran_startMonth = 12 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 8582
+ ran_startHour = 85
+ ran_startMin = 66
+ ran_startDay=41
+ ran_startMonth = 6 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 8431
+ ran_startHour = 19
+ ran_startMin = 61
+ ran_startDay=81
+ ran_startMonth = 1 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 6883
+ ran_startHour = 9
+ ran_startMin = 45
+ ran_startDay=34
+ ran_startMonth = 12 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 4421
+ ran_startHour = 6
+ ran_startMin = 78
+ ran_startDay=17
+ ran_startMonth = 9 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 7705
+ ran_startHour = 11
+ ran_startMin = 8
+ ran_startDay=36
+ ran_startMonth = 4 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+ Seed:1520717539828
+
+ Appt Values: 
+ startYear = 588
+ ran_startHour = 70
+ ran_startMin = 73
+ ran_startDay=60
+ ran_startMonth = 8 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 5659
+ ran_startHour = 70
+ ran_startMin = 30
+ ran_startDay=44
+ ran_startMonth = 9 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 4017
+ ran_startHour = 73
+ ran_startMin = -2
+ ran_startDay=80
+ ran_startMonth = 5 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 3060
+ ran_startHour = 76
+ ran_startMin = 88
+ ran_startDay=27
+ ran_startMonth = 9 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 4606
+ ran_startHour = -1
+ ran_startMin = 8
+ ran_startDay=78
+ ran_startMonth = 4 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 399
+ ran_startHour = 61
+ ran_startMin = 67
+ ran_startDay=86
+ ran_startMonth = 4 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 9605
+ ran_startHour = 19
+ ran_startMin = -3
+ ran_startDay=58
+ ran_startMonth = 12 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 7169
+ ran_startHour = 48
+ ran_startMin = -4
+ ran_startDay=-5
+ ran_startMonth = 3 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 3293
+ ran_startHour = 32
+ ran_startMin = 51
+ ran_startDay=86
+ ran_startMonth = 2 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 2177
+ ran_startHour = 76
+ ran_startMin = 60
+ ran_startDay=46
+ ran_startMonth = 1 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 6914
+ ran_startHour = 18
+ ran_startMin = 50
+ ran_startDay=6
+ ran_startMonth = 2 
+This appt.getValid() should be equal to result = true
+Actual appt.getValid() = true
+
+ Appt Values: 
+ startYear = 873
+ ran_startHour = 39
+ ran_startMin = 70
+ ran_startDay=53
+ ran_startMonth = 1 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 4616
+ ran_startHour = 80
+ ran_startMin = 52
+ ran_startDay=20
+ ran_startMonth = 5 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 7980
+ ran_startHour = 5
+ ran_startMin = 21
+ ran_startDay=50
+ ran_startMonth = 1 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 8162
+ ran_startHour = 16
+ ran_startMin = 3
+ ran_startDay=4
+ ran_startMonth = 10 
+This appt.getValid() should be equal to result = true
+Actual appt.getValid() = true
+
+ Appt Values: 
+ startYear = 2417
+ ran_startHour = 54
+ ran_startMin = 20
+ ran_startDay=-4
+ ran_startMonth = 5 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 9615
+ ran_startHour = 28
+ ran_startMin = 86
+ ran_startDay=51
+ ran_startMonth = 1 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 4090
+ ran_startHour = 35
+ ran_startMin = 27
+ ran_startDay=88
+ ran_startMonth = 12 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 78
+ ran_startHour = -3
+ ran_startMin = 44
+ ran_startDay=70
+ ran_startMonth = 6 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 6543
+ ran_startHour = -2
+ ran_startMin = 90
+ ran_startDay=11
+ ran_startMonth = 7 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 6998
+ ran_startHour = 9
+ ran_startMin = 77
+ ran_startDay=36
+ ran_startMonth = 7 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 5479
+ ran_startHour = 83
+ ran_startMin = 36
+ ran_startDay=9
+ ran_startMonth = 7 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+ Seed:1520717539830
+
+ Appt Values: 
+ startYear = 7288
+ ran_startHour = 85
+ ran_startMin = 82
+ ran_startDay=14
+ ran_startMonth = 6 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 5850
+ ran_startHour = 1
+ ran_startMin = 63
+ ran_startDay=87
+ ran_startMonth = 9 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 3459
+ ran_startHour = 17
+ ran_startMin = 17
+ ran_startDay=30
+ ran_startMonth = 8 
+This appt.getValid() should be equal to result = true
+Actual appt.getValid() = true
+
+ Appt Values: 
+ startYear = 1064
+ ran_startHour = -1
+ ran_startMin = 51
+ ran_startDay=65
+ ran_startMonth = 9 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 774
+ ran_startHour = 72
+ ran_startMin = 81
+ ran_startDay=3
+ ran_startMonth = 8 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 7930
+ ran_startHour = 88
+ ran_startMin = 26
+ ran_startDay=-2
+ ran_startMonth = 11 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 6475
+ ran_startHour = 0
+ ran_startMin = 74
+ ran_startDay=87
+ ran_startMonth = 4 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 9078
+ ran_startHour = 58
+ ran_startMin = 69
+ ran_startDay=5
+ ran_startMonth = 10 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 1476
+ ran_startHour = 37
+ ran_startMin = 18
+ ran_startDay=64
+ ran_startMonth = 6 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 3783
+ ran_startHour = 41
+ ran_startMin = 42
+ ran_startDay=26
+ ran_startMonth = 9 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 9137
+ ran_startHour = 72
+ ran_startMin = 16
+ ran_startDay=88
+ ran_startMonth = 4 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 1808
+ ran_startHour = 24
+ ran_startMin = 36
+ ran_startDay=21
+ ran_startMonth = 1 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 8546
+ ran_startHour = 77
+ ran_startMin = 24
+ ran_startDay=89
+ ran_startMonth = 12 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 6078
+ ran_startHour = 17
+ ran_startMin = 14
+ ran_startDay=-2
+ ran_startMonth = 7 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 4049
+ ran_startHour = 70
+ ran_startMin = 66
+ ran_startDay=1
+ ran_startMonth = 1 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 866
+ ran_startHour = 84
+ ran_startMin = 83
+ ran_startDay=84
+ ran_startMonth = 9 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 9005
+ ran_startHour = 3
+ ran_startMin = 71
+ ran_startDay=-5
+ ran_startMonth = 9 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 6731
+ ran_startHour = 55
+ ran_startMin = 19
+ ran_startDay=82
+ ran_startMonth = 6 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 8923
+ ran_startHour = -3
+ ran_startMin = 49
+ ran_startDay=60
+ ran_startMonth = 2 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 5091
+ ran_startHour = 15
+ ran_startMin = 48
+ ran_startDay=12
+ ran_startMonth = 6 
+This appt.getValid() should be equal to result = true
+Actual appt.getValid() = true
+
+ Appt Values: 
+ startYear = 3907
+ ran_startHour = 10
+ ran_startMin = 20
+ ran_startDay=-4
+ ran_startMonth = 3 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 6142
+ ran_startHour = 61
+ ran_startMin = 21
+ ran_startDay=90
+ ran_startMonth = 5 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 2551
+ ran_startHour = 56
+ ran_startMin = 18
+ ran_startDay=55
+ ran_startMonth = 2 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 2100
+ ran_startHour = 48
+ ran_startMin = 85
+ ran_startDay=54
+ ran_startMonth = 7 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 4341
+ ran_startHour = 21
+ ran_startMin = 9
+ ran_startDay=29
+ ran_startMonth = 2 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 9563
+ ran_startHour = -3
+ ran_startMin = 67
+ ran_startDay=50
+ ran_startMonth = 4 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 9301
+ ran_startHour = 22
+ ran_startMin = 35
+ ran_startDay=13
+ ran_startMonth = 6 
+This appt.getValid() should be equal to result = true
+Actual appt.getValid() = true
+
+ Appt Values: 
+ startYear = 3462
+ ran_startHour = 58
+ ran_startMin = 56
+ ran_startDay=30
+ ran_startMonth = 2 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 1061
+ ran_startHour = 75
+ ran_startMin = 40
+ ran_startDay=52
+ ran_startMonth = 3 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 9487
+ ran_startHour = 54
+ ran_startMin = 7
+ ran_startDay=77
+ ran_startMonth = 12 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 3628
+ ran_startHour = 32
+ ran_startMin = 14
+ ran_startDay=0
+ ran_startMonth = 4 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 7100
+ ran_startHour = 3
+ ran_startMin = 71
+ ran_startDay=2
+ ran_startMonth = 8 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 9255
+ ran_startHour = 26
+ ran_startMin = 62
+ ran_startDay=15
+ ran_startMonth = 1 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 8001
+ ran_startHour = 46
+ ran_startMin = 75
+ ran_startDay=55
+ ran_startMonth = 3 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 9606
+ ran_startHour = 82
+ ran_startMin = 39
+ ran_startDay=21
+ ran_startMonth = 11 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+ Seed:1520717539832
+
+ Appt Values: 
+ startYear = 286
+ ran_startHour = 53
+ ran_startMin = 84
+ ran_startDay=75
+ ran_startMonth = 4 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 3466
+ ran_startHour = 14
+ ran_startMin = 90
+ ran_startDay=-1
+ ran_startMonth = 2 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 6222
+ ran_startHour = 45
+ ran_startMin = 24
+ ran_startDay=73
+ ran_startMonth = 9 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 7274
+ ran_startHour = 53
+ ran_startMin = 29
+ ran_startDay=63
+ ran_startMonth = 10 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 585
+ ran_startHour = 48
+ ran_startMin = 85
+ ran_startDay=21
+ ran_startMonth = 7 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 3916
+ ran_startHour = 81
+ ran_startMin = 71
+ ran_startDay=54
+ ran_startMonth = 7 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 2863
+ ran_startHour = 50
+ ran_startMin = -3
+ ran_startDay=36
+ ran_startMonth = 3 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 960
+ ran_startHour = 87
+ ran_startMin = 62
+ ran_startDay=42
+ ran_startMonth = 9 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 1210
+ ran_startHour = 18
+ ran_startMin = 48
+ ran_startDay=15
+ ran_startMonth = 3 
+This appt.getValid() should be equal to result = true
+Actual appt.getValid() = true
+
+ Appt Values: 
+ startYear = 2288
+ ran_startHour = 27
+ ran_startMin = 87
+ ran_startDay=69
+ ran_startMonth = 2 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 6601
+ ran_startHour = -1
+ ran_startMin = 63
+ ran_startDay=68
+ ran_startMonth = 6 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 89
+ ran_startHour = 15
+ ran_startMin = 44
+ ran_startDay=55
+ ran_startMonth = 3 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 1551
+ ran_startHour = -2
+ ran_startMin = 87
+ ran_startDay=-1
+ ran_startMonth = 3 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 4839
+ ran_startHour = 14
+ ran_startMin = 19
+ ran_startDay=30
+ ran_startMonth = 6 
+This appt.getValid() should be equal to result = true
+Actual appt.getValid() = true
+
+ Appt Values: 
+ startYear = 6537
+ ran_startHour = 72
+ ran_startMin = 74
+ ran_startDay=80
+ ran_startMonth = 4 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 6923
+ ran_startHour = 68
+ ran_startMin = 90
+ ran_startDay=48
+ ran_startMonth = 11 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 3098
+ ran_startHour = 36
+ ran_startMin = 11
+ ran_startDay=-1
+ ran_startMonth = 10 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 9588
+ ran_startHour = 45
+ ran_startMin = 31
+ ran_startDay=48
+ ran_startMonth = 5 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 7803
+ ran_startHour = 19
+ ran_startMin = 8
+ ran_startDay=21
+ ran_startMonth = 12 
+This appt.getValid() should be equal to result = true
+Actual appt.getValid() = true
+
+ Appt Values: 
+ startYear = 9078
+ ran_startHour = 18
+ ran_startMin = -5
+ ran_startDay=87
+ ran_startMonth = 4 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 2792
+ ran_startHour = 38
+ ran_startMin = 51
+ ran_startDay=85
+ ran_startMonth = 1 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 8941
+ ran_startHour = 44
+ ran_startMin = 50
+ ran_startDay=-2
+ ran_startMonth = 11 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 6547
+ ran_startHour = 21
+ ran_startMin = 65
+ ran_startDay=2
+ ran_startMonth = 7 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 7888
+ ran_startHour = 67
+ ran_startMin = 46
+ ran_startDay=3
+ ran_startMonth = 2 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 8341
+ ran_startHour = 16
+ ran_startMin = 37
+ ran_startDay=57
+ ran_startMonth = 7 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 7505
+ ran_startHour = 27
+ ran_startMin = 53
+ ran_startDay=56
+ ran_startMonth = 2 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 9818
+ ran_startHour = 9
+ ran_startMin = 75
+ ran_startDay=89
+ ran_startMonth = 1 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 1406
+ ran_startHour = 80
+ ran_startMin = 21
+ ran_startDay=29
+ ran_startMonth = 8 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 2024
+ ran_startHour = 77
+ ran_startMin = 65
+ ran_startDay=26
+ ran_startMonth = 10 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 6883
+ ran_startHour = 9
+ ran_startMin = 56
+ ran_startDay=-4
+ ran_startMonth = 11 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+
+ Appt Values: 
+ startYear = 1516
+ ran_startHour = 0
+ ran_startMin = 12
+ ran_startDay=9
+ ran_startMonth = 8 
+This appt.getValid() should be equal to result = true
+Actual appt.getValid() = false
+</system-out>
+  </testcase>
+</testsuite>

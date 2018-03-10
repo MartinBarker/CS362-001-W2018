@@ -1,0 +1,7348 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="1" failures="1" name="calendar.ApptRandomTest" time="0.922" errors="0" skipped="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_161\jre\bin"/>
+    <property name="java.vm.version" value="25.161-b12"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="D:\School\WINTER 2018\362\ass5\myrepo\CS362-001-W2018\projects\barkemar\assignment-5\sissone\Calendar"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="D:\School\WINTER 2018\362\ass5\myrepo\CS362-001-W2018\projects\barkemar\assignment-5\sissone\Calendar"/>
+    <property name="java.runtime.version" value="1.8.0_161-b12"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_161\jre\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\marti\AppData\Local\Temp\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="classworlds.conf" value="D:\Downloads\apache-maven-3.5.2\bin\..\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_161\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Haskell\bin;C:\Program Files\Haskell Platform\8.2.2\lib\extralibs\bin;C:\Program Files\Haskell Platform\8.2.2\bin;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Python36\Scripts;C:\youtube-dl\bin;D:\Software\;&quot;C:\Program Files;C:\Winnt;C:\Winnt\System32&quot;;D:\Software\010 Editor;C:\TDM-GCC-64\bin;C:\Program Files\Python36;C:\Program Files\Haskell Platform\8.2.2\mingw\bin;D:\Downloads\apache-maven-3.5.2\bin;D:\Downloads\apache-maven-3.5.2\bin;C:\Program Files\nodejs\;C:\Program Files\Java\jdk-9.0.4\bin;C:\Users\marti\AppData\Roaming\cabal\bin;C:\Users\marti\AppData\Roaming\local\bin;C:\Users\marti\AppData\Local\Programs\Python\Python36-32\Scripts\;C:\Users\marti\AppData\Local\Programs\Python\Python36-32\;C:\Program Files (x86)\GnuWin32\;C:\Users\marti\AppData\Roaming\npm;C:\Users\marti\AppData\Local\atom\bin;."/>
+    <property name="maven.conf" value="D:\Downloads\apache-maven-3.5.2\bin\../conf"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.0"/>
+    <property name="library.jansi.path" value="D:\Downloads\apache-maven-3.5.2\bin\..\lib\jansi-native"/>
+    <property name="user.home" value="C:\Users\marti"/>
+    <property name="user.timezone" value="America/Los_Angeles"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="user.name" value="marti"/>
+    <property name="java.class.path" value="D:\Downloads\apache-maven-3.5.2\bin\..\boot\plexus-classworlds-2.5.2.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_161\jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_161"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_161\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_161\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_161\jre\classes"/>
+    <property name="sun.stderr.encoding" value="cp437"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="D:\Downloads\apache-maven-3.5.2\bin\.."/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.stdout.encoding" value="cp437"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase classname="calendar.ApptRandomTest" name="radnomtest" time="0.922">
+    <failure message="expected:&lt;true&gt; but was:&lt;false&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;true&gt; but was:&lt;false&gt;
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:834)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at calendar.ApptRandomTest.radnomtest(ApptRandomTest.java:181)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</failure>
+    <system-out>Start testing...
+ Seed:1520707670234
+new appt constructed
+methodname=setTitle
+methodname=setRecurrence
+methodname=setRecurDays
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 7314
+ ran_startHour = 77
+ ran_startMin = 9
+ ran_startDay=77
+ ran_startMonth = 2 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurrence
+methodname=setTitle
+methodname=setTitle
+methodname=setTitle
+methodname=setRecurrence
+methodname=setRecurrence
+methodname=setRecurrence
+methodname=setTitle
+methodname=setTitle
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 6711
+ ran_startHour = 4
+ ran_startMin = -2
+ ran_startDay=89
+ ran_startMonth = 9 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurrence
+methodname=setRecurDays
+methodname=setTitle
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 6257
+ ran_startHour = 69
+ ran_startMin = 28
+ ran_startDay=46
+ ran_startMonth = 8 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurrence
+methodname=setRecurrence
+methodname=setRecurDays
+methodname=setRecurDays
+methodname=setTitle
+methodname=setTitle
+methodname=setTitle
+methodname=setRecurDays
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 9145
+ ran_startHour = 4
+ ran_startMin = 76
+ ran_startDay=32
+ ran_startMonth = 8 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 9331
+ ran_startHour = 33
+ ran_startMin = 46
+ ran_startDay=78
+ ran_startMonth = 8 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 9739
+ ran_startHour = 69
+ ran_startMin = -2
+ ran_startDay=2
+ ran_startMonth = 8 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurrence
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 1813
+ ran_startHour = 5
+ ran_startMin = 43
+ ran_startDay=61
+ ran_startMonth = 1 
+(test)NumDaysInMonth = 31
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurrence
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 3203
+ ran_startHour = 33
+ ran_startMin = 9
+ ran_startDay=36
+ ran_startMonth = 4 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurDays
+methodname=setRecurDays
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 7247
+ ran_startHour = 74
+ ran_startMin = 53
+ ran_startDay=82
+ ran_startMonth = 7 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurDays
+methodname=setRecurDays
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 7596
+ ran_startHour = 3
+ ran_startMin = 65
+ ran_startDay=61
+ ran_startMonth = 11 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setTitle
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 320
+ ran_startHour = 78
+ ran_startMin = 76
+ ran_startDay=56
+ ran_startMonth = 5 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurDays
+methodname=setRecurrence
+methodname=setRecurDays
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 4614
+ ran_startHour = 78
+ ran_startMin = 44
+ ran_startDay=79
+ ran_startMonth = 4 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setTitle
+methodname=setTitle
+methodname=setRecurrence
+methodname=setRecurDays
+methodname=setTitle
+methodname=setRecurDays
+methodname=setRecurrence
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 8148
+ ran_startHour = 29
+ ran_startMin = 24
+ ran_startDay=12
+ ran_startMonth = 5 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 1437
+ ran_startHour = -3
+ ran_startMin = -4
+ ran_startDay=46
+ ran_startMonth = 2 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurDays
+methodname=setRecurDays
+methodname=setTitle
+methodname=setRecurDays
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 2990
+ ran_startHour = 6
+ ran_startMin = 33
+ ran_startDay=39
+ ran_startMonth = 8 
+(test)NumDaysInMonth = 31
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 1672
+ ran_startHour = 80
+ ran_startMin = -4
+ ran_startDay=57
+ ran_startMonth = 10 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurDays
+methodname=setRecurrence
+methodname=setRecurrence
+methodname=setRecurrence
+methodname=setTitle
+methodname=setRecurrence
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 2963
+ ran_startHour = 76
+ ran_startMin = 53
+ ran_startDay=53
+ ran_startMonth = 1 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurDays
+methodname=setRecurDays
+methodname=setRecurrence
+methodname=setTitle
+methodname=setRecurDays
+methodname=setRecurrence
+methodname=setRecurDays
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 4762
+ ran_startHour = 4
+ ran_startMin = 45
+ ran_startDay=50
+ ran_startMonth = 11 
+(test)NumDaysInMonth = 30
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurDays
+methodname=setTitle
+methodname=setRecurrence
+methodname=setRecurrence
+methodname=setRecurrence
+methodname=setRecurDays
+methodname=setRecurrence
+methodname=setRecurDays
+methodname=setRecurDays
+methodname=setRecurrence
+methodname=setRecurDays
+methodname=setRecurDays
+methodname=setRecurrence
+methodname=setTitle
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 6317
+ ran_startHour = 13
+ ran_startMin = 2
+ ran_startDay=64
+ ran_startMonth = 12 
+(test)NumDaysInMonth = 31
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setTitle
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 3544
+ ran_startHour = 39
+ ran_startMin = 15
+ ran_startDay=26
+ ran_startMonth = 1 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 6785
+ ran_startHour = 67
+ ran_startMin = 6
+ ran_startDay=59
+ ran_startMonth = 4 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 3108
+ ran_startHour = 43
+ ran_startMin = 20
+ ran_startDay=73
+ ran_startMonth = 5 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurrence
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 948
+ ran_startHour = 57
+ ran_startMin = 81
+ ran_startDay=49
+ ran_startMonth = 10 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 7764
+ ran_startHour = 86
+ ran_startMin = 74
+ ran_startDay=75
+ ran_startMonth = 10 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 2551
+ ran_startHour = 41
+ ran_startMin = 64
+ ran_startDay=88
+ ran_startMonth = 6 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurDays
+methodname=setRecurrence
+ Seed:1520707670251
+new appt constructed
+methodname=setRecurrence
+methodname=setRecurDays
+methodname=setRecurrence
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 5412
+ ran_startHour = 8
+ ran_startMin = 47
+ ran_startDay=23
+ ran_startMonth = 8 
+(test)NumDaysInMonth = 31
+This appt.getValid() should be equal to result = true
+Actual appt.getValid() = true
+methodname=setRecurrence
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 7340
+ ran_startHour = 13
+ ran_startMin = 61
+ ran_startDay=27
+ ran_startMonth = 8 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 9775
+ ran_startHour = 30
+ ran_startMin = 7
+ ran_startDay=-1
+ ran_startMonth = 11 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurDays
+methodname=setTitle
+methodname=setTitle
+methodname=setTitle
+methodname=setRecurDays
+methodname=setTitle
+methodname=setRecurDays
+methodname=setRecurrence
+methodname=setTitle
+methodname=setRecurrence
+methodname=setRecurDays
+methodname=setRecurrence
+methodname=setRecurrence
+methodname=setRecurDays
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 8329
+ ran_startHour = 83
+ ran_startMin = 6
+ ran_startDay=45
+ ran_startMonth = 8 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurDays
+methodname=setRecurDays
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 8921
+ ran_startHour = 42
+ ran_startMin = 34
+ ran_startDay=17
+ ran_startMonth = 3 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 7376
+ ran_startHour = 53
+ ran_startMin = 37
+ ran_startDay=82
+ ran_startMonth = 1 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setTitle
+methodname=setRecurrence
+methodname=setRecurrence
+methodname=setRecurDays
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 6216
+ ran_startHour = 69
+ ran_startMin = 19
+ ran_startDay=17
+ ran_startMonth = 9 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setTitle
+methodname=setRecurrence
+methodname=setRecurrence
+methodname=setTitle
+methodname=setRecurrence
+methodname=setRecurDays
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 6774
+ ran_startHour = 0
+ ran_startMin = 38
+ ran_startDay=89
+ ran_startMonth = 11 
+(test)NumDaysInMonth = 30
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurrence
+methodname=setRecurrence
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 4496
+ ran_startHour = 28
+ ran_startMin = 82
+ ran_startDay=46
+ ran_startMonth = 3 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurrence
+methodname=setRecurrence
+methodname=setTitle
+methodname=setTitle
+methodname=setRecurrence
+methodname=setTitle
+methodname=setRecurDays
+methodname=setRecurrence
+methodname=setRecurrence
+methodname=setRecurDays
+methodname=setTitle
+methodname=setRecurrence
+methodname=setRecurDays
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 1779
+ ran_startHour = 83
+ ran_startMin = 24
+ ran_startDay=28
+ ran_startMonth = 8 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurrence
+methodname=setTitle
+methodname=setRecurDays
+methodname=setRecurDays
+methodname=setRecurDays
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 1759
+ ran_startHour = 30
+ ran_startMin = 41
+ ran_startDay=14
+ ran_startMonth = 1 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setTitle
+methodname=setRecurDays
+methodname=setTitle
+methodname=setRecurDays
+methodname=setRecurrence
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 794
+ ran_startHour = 5
+ ran_startMin = -5
+ ran_startDay=64
+ ran_startMonth = 8 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurrence
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 8403
+ ran_startHour = 85
+ ran_startMin = 62
+ ran_startDay=49
+ ran_startMonth = 8 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurrence
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 9760
+ ran_startHour = 18
+ ran_startMin = 18
+ ran_startDay=82
+ ran_startMonth = 11 
+(test)NumDaysInMonth = 30
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setTitle
+methodname=setRecurrence
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 6076
+ ran_startHour = 55
+ ran_startMin = 79
+ ran_startDay=45
+ ran_startMonth = 3 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurrence
+methodname=setRecurrence
+methodname=setRecurrence
+methodname=setRecurrence
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 2757
+ ran_startHour = 39
+ ran_startMin = 1
+ ran_startDay=29
+ ran_startMonth = 4 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurrence
+methodname=setRecurrence
+methodname=setRecurrence
+methodname=setRecurDays
+methodname=setRecurDays
+methodname=setRecurDays
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 1786
+ ran_startHour = 16
+ ran_startMin = 8
+ ran_startDay=65
+ ran_startMonth = 8 
+(test)NumDaysInMonth = 31
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setTitle
+methodname=setRecurDays
+methodname=setTitle
+methodname=setTitle
+methodname=setRecurDays
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 5641
+ ran_startHour = 39
+ ran_startMin = 28
+ ran_startDay=59
+ ran_startMonth = 6 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurrence
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 2133
+ ran_startHour = 13
+ ran_startMin = 74
+ ran_startDay=88
+ ran_startMonth = 3 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setTitle
+methodname=setTitle
+methodname=setTitle
+methodname=setTitle
+methodname=setRecurrence
+methodname=setTitle
+ Seed:1520707670257
+new appt constructed
+methodname=setTitle
+methodname=setRecurDays
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 3744
+ ran_startHour = 22
+ ran_startMin = 18
+ ran_startDay=45
+ ran_startMonth = 3 
+(test)NumDaysInMonth = 31
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurrence
+methodname=setTitle
+methodname=setRecurDays
+methodname=setRecurrence
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 2105
+ ran_startHour = 63
+ ran_startMin = 48
+ ran_startDay=32
+ ran_startMonth = 10 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 5966
+ ran_startHour = 21
+ ran_startMin = 79
+ ran_startDay=82
+ ran_startMonth = 7 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 6938
+ ran_startHour = 0
+ ran_startMin = 89
+ ran_startDay=81
+ ran_startMonth = 9 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurrence
+methodname=setRecurDays
+methodname=setRecurrence
+methodname=setRecurrence
+methodname=setTitle
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 8009
+ ran_startHour = 59
+ ran_startMin = 31
+ ran_startDay=50
+ ran_startMonth = 2 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setTitle
+methodname=setRecurDays
+methodname=setRecurrence
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 5543
+ ran_startHour = 6
+ ran_startMin = 67
+ ran_startDay=77
+ ran_startMonth = 4 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurrence
+methodname=setRecurrence
+methodname=setTitle
+methodname=setTitle
+methodname=setTitle
+methodname=setTitle
+methodname=setTitle
+methodname=setRecurDays
+methodname=setTitle
+methodname=setRecurrence
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 3744
+ ran_startHour = 83
+ ran_startMin = 44
+ ran_startDay=30
+ ran_startMonth = 8 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 3595
+ ran_startHour = 74
+ ran_startMin = 65
+ ran_startDay=19
+ ran_startMonth = 3 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurDays
+methodname=setTitle
+methodname=setTitle
+methodname=setTitle
+methodname=setTitle
+methodname=setRecurDays
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 4090
+ ran_startHour = 44
+ ran_startMin = 87
+ ran_startDay=77
+ ran_startMonth = 9 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurDays
+methodname=setTitle
+methodname=setRecurrence
+methodname=setRecurrence
+methodname=setTitle
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 2411
+ ran_startHour = 48
+ ran_startMin = 12
+ ran_startDay=29
+ ran_startMonth = 5 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 4807
+ ran_startHour = 2
+ ran_startMin = 29
+ ran_startDay=89
+ ran_startMonth = 9 
+(test)NumDaysInMonth = 30
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setTitle
+methodname=setRecurDays
+methodname=setRecurDays
+methodname=setRecurrence
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 4724
+ ran_startHour = -1
+ ran_startMin = 41
+ ran_startDay=75
+ ran_startMonth = 2 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurrence
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 5713
+ ran_startHour = 34
+ ran_startMin = 32
+ ran_startDay=47
+ ran_startMonth = 2 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 2345
+ ran_startHour = 73
+ ran_startMin = 82
+ ran_startDay=35
+ ran_startMonth = 7 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurDays
+methodname=setTitle
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 9594
+ ran_startHour = 53
+ ran_startMin = 46
+ ran_startDay=65
+ ran_startMonth = 3 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 1883
+ ran_startHour = 71
+ ran_startMin = 69
+ ran_startDay=19
+ ran_startMonth = 6 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setTitle
+methodname=setRecurDays
+methodname=setRecurDays
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 4724
+ ran_startHour = 73
+ ran_startMin = 36
+ ran_startDay=47
+ ran_startMonth = 9 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurrence
+methodname=setRecurDays
+methodname=setRecurDays
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 4248
+ ran_startHour = 51
+ ran_startMin = 11
+ ran_startDay=14
+ ran_startMonth = 1 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurrence
+methodname=setRecurrence
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 1170
+ ran_startHour = 24
+ ran_startMin = 9
+ ran_startDay=19
+ ran_startMonth = 4 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 3005
+ ran_startHour = 87
+ ran_startMin = 7
+ ran_startDay=51
+ ran_startMonth = 8 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurDays
+methodname=setTitle
+methodname=setTitle
+methodname=setTitle
+methodname=setTitle
+methodname=setTitle
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 6246
+ ran_startHour = 31
+ ran_startMin = 77
+ ran_startDay=11
+ ran_startMonth = 12 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurrence
+methodname=setTitle
+methodname=setTitle
+methodname=setRecurrence
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 1519
+ ran_startHour = 76
+ ran_startMin = 9
+ ran_startDay=51
+ ran_startMonth = 4 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setTitle
+methodname=setRecurDays
+methodname=setRecurDays
+methodname=setRecurDays
+methodname=setRecurrence
+methodname=setRecurrence
+methodname=setRecurDays
+methodname=setRecurDays
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 1421
+ ran_startHour = 31
+ ran_startMin = 49
+ ran_startDay=55
+ ran_startMonth = 2 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurDays
+methodname=setRecurrence
+methodname=setTitle
+methodname=setTitle
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 6157
+ ran_startHour = 3
+ ran_startMin = 39
+ ran_startDay=43
+ ran_startMonth = 10 
+(test)NumDaysInMonth = 31
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurrence
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 8836
+ ran_startHour = 81
+ ran_startMin = 64
+ ran_startDay=65
+ ran_startMonth = 6 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurDays
+methodname=setRecurDays
+ Seed:1520707670292
+new appt constructed
+methodname=setRecurrence
+methodname=setRecurDays
+methodname=setRecurDays
+methodname=setRecurrence
+methodname=setTitle
+methodname=setTitle
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 851
+ ran_startHour = 62
+ ran_startMin = -3
+ ran_startDay=12
+ ran_startMonth = 8 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 4330
+ ran_startHour = 18
+ ran_startMin = 11
+ ran_startDay=26
+ ran_startMonth = 8 
+(test)NumDaysInMonth = 31
+This appt.getValid() should be equal to result = true
+Actual appt.getValid() = true
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 38
+ ran_startHour = -2
+ ran_startMin = -4
+ ran_startDay=15
+ ran_startMonth = 8 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setTitle
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 4275
+ ran_startHour = 4
+ ran_startMin = 22
+ ran_startDay=-3
+ ran_startMonth = 10 
+(test)NumDaysInMonth = 31
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurDays
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 5427
+ ran_startHour = 21
+ ran_startMin = 15
+ ran_startDay=-4
+ ran_startMonth = 1 
+(test)NumDaysInMonth = 31
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 7062
+ ran_startHour = 1
+ ran_startMin = 46
+ ran_startDay=69
+ ran_startMonth = 7 
+(test)NumDaysInMonth = 31
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurrence
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 861
+ ran_startHour = 82
+ ran_startMin = 88
+ ran_startDay=9
+ ran_startMonth = 9 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurDays
+methodname=setRecurrence
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 4054
+ ran_startHour = 86
+ ran_startMin = 13
+ ran_startDay=-1
+ ran_startMonth = 9 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 9316
+ ran_startHour = 20
+ ran_startMin = 29
+ ran_startDay=90
+ ran_startMonth = 8 
+(test)NumDaysInMonth = 31
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurrence
+methodname=setRecurDays
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 7514
+ ran_startHour = 42
+ ran_startMin = 64
+ ran_startDay=67
+ ran_startMonth = 12 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setTitle
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 7901
+ ran_startHour = 3
+ ran_startMin = 14
+ ran_startDay=25
+ ran_startMonth = 5 
+(test)NumDaysInMonth = 31
+This appt.getValid() should be equal to result = true
+Actual appt.getValid() = true
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 4892
+ ran_startHour = 45
+ ran_startMin = 80
+ ran_startDay=1
+ ran_startMonth = 2 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurrence
+methodname=setRecurrence
+methodname=setRecurrence
+methodname=setRecurrence
+methodname=setTitle
+methodname=setTitle
+methodname=setTitle
+methodname=setRecurDays
+methodname=setRecurDays
+methodname=setTitle
+methodname=setTitle
+methodname=setRecurrence
+methodname=setTitle
+methodname=setRecurDays
+methodname=setRecurDays
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 5956
+ ran_startHour = 74
+ ran_startMin = 51
+ ran_startDay=7
+ ran_startMonth = 3 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setTitle
+methodname=setRecurDays
+methodname=setRecurrence
+methodname=setRecurrence
+methodname=setTitle
+methodname=setRecurDays
+methodname=setTitle
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 3857
+ ran_startHour = 14
+ ran_startMin = 78
+ ran_startDay=14
+ ran_startMonth = 4 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 1283
+ ran_startHour = 80
+ ran_startMin = 28
+ ran_startDay=25
+ ran_startMonth = 8 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurDays
+methodname=setRecurDays
+methodname=setTitle
+methodname=setRecurDays
+methodname=setTitle
+methodname=setRecurrence
+methodname=setTitle
+methodname=setRecurDays
+methodname=setTitle
+methodname=setRecurDays
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 2903
+ ran_startHour = 32
+ ran_startMin = -3
+ ran_startDay=58
+ ran_startMonth = 3 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurrence
+methodname=setRecurDays
+methodname=setRecurrence
+methodname=setRecurrence
+methodname=setTitle
+methodname=setRecurDays
+methodname=setRecurrence
+methodname=setTitle
+methodname=setTitle
+methodname=setTitle
+methodname=setTitle
+methodname=setTitle
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 9930
+ ran_startHour = 34
+ ran_startMin = 9
+ ran_startDay=51
+ ran_startMonth = 8 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurrence
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 2899
+ ran_startHour = 43
+ ran_startMin = 34
+ ran_startDay=27
+ ran_startMonth = 5 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 8307
+ ran_startHour = 58
+ ran_startMin = 41
+ ran_startDay=22
+ ran_startMonth = 12 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 881
+ ran_startHour = 11
+ ran_startMin = 79
+ ran_startDay=17
+ ran_startMonth = 4 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setTitle
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 672
+ ran_startHour = 87
+ ran_startMin = 33
+ ran_startDay=61
+ ran_startMonth = 9 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setTitle
+methodname=setRecurDays
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 9420
+ ran_startHour = 46
+ ran_startMin = 31
+ ran_startDay=84
+ ran_startMonth = 6 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 2228
+ ran_startHour = 11
+ ran_startMin = 0
+ ran_startDay=89
+ ran_startMonth = 10 
+(test)NumDaysInMonth = 31
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 1530
+ ran_startHour = 63
+ ran_startMin = -1
+ ran_startDay=37
+ ran_startMonth = 2 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurrence
+methodname=setRecurrence
+methodname=setRecurrence
+methodname=setRecurDays
+methodname=setRecurDays
+methodname=setTitle
+methodname=setTitle
+methodname=setRecurrence
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 4431
+ ran_startHour = 27
+ ran_startMin = 55
+ ran_startDay=46
+ ran_startMonth = 9 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurrence
+methodname=setRecurrence
+methodname=setRecurDays
+methodname=setTitle
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 7118
+ ran_startHour = 41
+ ran_startMin = 58
+ ran_startDay=40
+ ran_startMonth = 2 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+ Seed:1520707670320
+new appt constructed
+methodname=setRecurrence
+methodname=setRecurDays
+methodname=setRecurrence
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 8433
+ ran_startHour = 0
+ ran_startMin = 67
+ ran_startDay=34
+ ran_startMonth = 11 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setTitle
+methodname=setRecurDays
+methodname=setRecurrence
+methodname=setTitle
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 2965
+ ran_startHour = 67
+ ran_startMin = 20
+ ran_startDay=71
+ ran_startMonth = 4 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 2794
+ ran_startHour = 77
+ ran_startMin = 53
+ ran_startDay=9
+ ran_startMonth = 9 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurrence
+methodname=setRecurrence
+methodname=setRecurrence
+methodname=setTitle
+methodname=setRecurrence
+methodname=setTitle
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 1967
+ ran_startHour = 0
+ ran_startMin = 33
+ ran_startDay=69
+ ran_startMonth = 11 
+(test)NumDaysInMonth = 30
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurrence
+methodname=setTitle
+methodname=setTitle
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 6438
+ ran_startHour = 37
+ ran_startMin = 75
+ ran_startDay=58
+ ran_startMonth = 1 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 8997
+ ran_startHour = 43
+ ran_startMin = 35
+ ran_startDay=14
+ ran_startMonth = 5 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setTitle
+methodname=setTitle
+methodname=setRecurDays
+methodname=setRecurDays
+methodname=setTitle
+methodname=setRecurrence
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 7497
+ ran_startHour = 73
+ ran_startMin = 27
+ ran_startDay=34
+ ran_startMonth = 11 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 9537
+ ran_startHour = 47
+ ran_startMin = 67
+ ran_startDay=52
+ ran_startMonth = 11 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 6371
+ ran_startHour = 7
+ ran_startMin = 80
+ ran_startDay=75
+ ran_startMonth = 8 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurrence
+methodname=setRecurDays
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 5741
+ ran_startHour = 44
+ ran_startMin = 45
+ ran_startDay=15
+ ran_startMonth = 7 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurDays
+methodname=setRecurDays
+methodname=setTitle
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 6746
+ ran_startHour = 11
+ ran_startMin = 35
+ ran_startDay=24
+ ran_startMonth = 6 
+(test)NumDaysInMonth = 30
+This appt.getValid() should be equal to result = true
+Actual appt.getValid() = true
+methodname=setRecurDays
+methodname=setRecurrence
+methodname=setRecurDays
+methodname=setRecurDays
+methodname=setTitle
+methodname=setRecurrence
+methodname=setTitle
+methodname=setRecurDays
+methodname=setRecurDays
+methodname=setRecurrence
+methodname=setTitle
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 9015
+ ran_startHour = 72
+ ran_startMin = 76
+ ran_startDay=-3
+ ran_startMonth = 12 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 2106
+ ran_startHour = 48
+ ran_startMin = 85
+ ran_startDay=49
+ ran_startMonth = 2 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurrence
+methodname=setRecurDays
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 7848
+ ran_startHour = 36
+ ran_startMin = 6
+ ran_startDay=43
+ ran_startMonth = 12 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurrence
+methodname=setRecurDays
+methodname=setRecurrence
+methodname=setRecurrence
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 9448
+ ran_startHour = 5
+ ran_startMin = 63
+ ran_startDay=61
+ ran_startMonth = 5 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 278
+ ran_startHour = -3
+ ran_startMin = 7
+ ran_startDay=38
+ ran_startMonth = 1 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setTitle
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 9233
+ ran_startHour = 62
+ ran_startMin = -4
+ ran_startDay=84
+ ran_startMonth = 3 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 8626
+ ran_startHour = 29
+ ran_startMin = 61
+ ran_startDay=15
+ ran_startMonth = 2 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurDays
+methodname=setTitle
+methodname=setTitle
+methodname=setRecurrence
+methodname=setTitle
+methodname=setTitle
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 1174
+ ran_startHour = 42
+ ran_startMin = 32
+ ran_startDay=-4
+ ran_startMonth = 4 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 6069
+ ran_startHour = 65
+ ran_startMin = 55
+ ran_startDay=60
+ ran_startMonth = 7 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setTitle
+methodname=setRecurDays
+methodname=setTitle
+methodname=setRecurDays
+methodname=setRecurrence
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 5331
+ ran_startHour = 20
+ ran_startMin = 20
+ ran_startDay=19
+ ran_startMonth = 10 
+(test)NumDaysInMonth = 31
+This appt.getValid() should be equal to result = true
+Actual appt.getValid() = true
+methodname=setRecurDays
+methodname=setRecurDays
+methodname=setTitle
+methodname=setTitle
+methodname=setRecurDays
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 6294
+ ran_startHour = 68
+ ran_startMin = 46
+ ran_startDay=39
+ ran_startMonth = 7 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurrence
+methodname=setTitle
+methodname=setRecurDays
+methodname=setRecurrence
+methodname=setRecurDays
+methodname=setRecurrence
+methodname=setRecurrence
+methodname=setRecurrence
+methodname=setRecurDays
+methodname=setRecurrence
+methodname=setRecurrence
+methodname=setTitle
+methodname=setRecurDays
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 755
+ ran_startHour = 14
+ ran_startMin = 16
+ ran_startDay=27
+ ran_startMonth = 5 
+(test)NumDaysInMonth = 31
+This appt.getValid() should be equal to result = true
+Actual appt.getValid() = true
+methodname=setRecurDays
+methodname=setRecurrence
+methodname=setRecurrence
+ Seed:1520707670345
+new appt constructed
+methodname=setRecurDays
+methodname=setTitle
+methodname=setTitle
+methodname=setRecurDays
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 252
+ ran_startHour = 74
+ ran_startMin = 13
+ ran_startDay=47
+ ran_startMonth = 8 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setTitle
+methodname=setTitle
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 4978
+ ran_startHour = 48
+ ran_startMin = 51
+ ran_startDay=14
+ ran_startMonth = 5 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setTitle
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 6534
+ ran_startHour = 22
+ ran_startMin = 6
+ ran_startDay=-3
+ ran_startMonth = 5 
+(test)NumDaysInMonth = 31
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 8026
+ ran_startHour = 38
+ ran_startMin = 76
+ ran_startDay=29
+ ran_startMonth = 12 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurDays
+methodname=setTitle
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 570
+ ran_startHour = 44
+ ran_startMin = 54
+ ran_startDay=57
+ ran_startMonth = 4 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setTitle
+methodname=setTitle
+methodname=setRecurrence
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 2823
+ ran_startHour = 55
+ ran_startMin = 4
+ ran_startDay=55
+ ran_startMonth = 7 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurrence
+methodname=setRecurrence
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 6606
+ ran_startHour = 19
+ ran_startMin = 86
+ ran_startDay=1
+ ran_startMonth = 11 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 6226
+ ran_startHour = 10
+ ran_startMin = 43
+ ran_startDay=39
+ ran_startMonth = 6 
+(test)NumDaysInMonth = 30
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurrence
+methodname=setTitle
+methodname=setRecurrence
+methodname=setRecurDays
+methodname=setTitle
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 7092
+ ran_startHour = 25
+ ran_startMin = 5
+ ran_startDay=32
+ ran_startMonth = 6 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 2125
+ ran_startHour = 41
+ ran_startMin = -2
+ ran_startDay=14
+ ran_startMonth = 5 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setTitle
+methodname=setRecurrence
+methodname=setRecurDays
+methodname=setRecurDays
+methodname=setRecurDays
+methodname=setTitle
+methodname=setRecurDays
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 5404
+ ran_startHour = 85
+ ran_startMin = 12
+ ran_startDay=24
+ ran_startMonth = 4 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurrence
+methodname=setRecurrence
+methodname=setRecurrence
+methodname=setRecurrence
+methodname=setTitle
+methodname=setRecurrence
+methodname=setRecurrence
+methodname=setTitle
+methodname=setRecurrence
+methodname=setTitle
+methodname=setRecurDays
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 3401
+ ran_startHour = 25
+ ran_startMin = 14
+ ran_startDay=33
+ ran_startMonth = 8 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurrence
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 5
+ ran_startHour = 19
+ ran_startMin = 57
+ ran_startDay=78
+ ran_startMonth = 7 
+(test)NumDaysInMonth = 31
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurrence
+methodname=setRecurDays
+methodname=setRecurrence
+methodname=setRecurrence
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 4285
+ ran_startHour = -2
+ ran_startMin = 42
+ ran_startDay=65
+ ran_startMonth = 9 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurrence
+methodname=setRecurDays
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 5206
+ ran_startHour = 15
+ ran_startMin = 32
+ ran_startDay=53
+ ran_startMonth = 2 
+(test)NumDaysInMonth = 28
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 4855
+ ran_startHour = 60
+ ran_startMin = 37
+ ran_startDay=64
+ ran_startMonth = 2 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurrence
+methodname=setRecurDays
+methodname=setRecurrence
+methodname=setRecurDays
+methodname=setRecurrence
+methodname=setRecurDays
+methodname=setRecurrence
+methodname=setTitle
+methodname=setRecurrence
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 8701
+ ran_startHour = 16
+ ran_startMin = 41
+ ran_startDay=17
+ ran_startMonth = 2 
+(test)NumDaysInMonth = 28
+This appt.getValid() should be equal to result = true
+Actual appt.getValid() = true
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 6967
+ ran_startHour = 44
+ ran_startMin = 90
+ ran_startDay=67
+ ran_startMonth = 2 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setTitle
+methodname=setRecurDays
+methodname=setRecurDays
+methodname=setRecurrence
+methodname=setTitle
+methodname=setRecurDays
+methodname=setTitle
+methodname=setTitle
+methodname=setRecurDays
+methodname=setRecurDays
+methodname=setRecurrence
+methodname=setRecurrence
+methodname=setRecurrence
+methodname=setRecurrence
+methodname=setRecurrence
+methodname=setTitle
+methodname=setRecurDays
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 5300
+ ran_startHour = 81
+ ran_startMin = 79
+ ran_startDay=-5
+ ran_startMonth = 1 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurDays
+methodname=setRecurDays
+methodname=setRecurDays
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 3344
+ ran_startHour = 30
+ ran_startMin = 84
+ ran_startDay=65
+ ran_startMonth = 8 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setTitle
+methodname=setRecurDays
+methodname=setRecurDays
+methodname=setTitle
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 9539
+ ran_startHour = 76
+ ran_startMin = 61
+ ran_startDay=66
+ ran_startMonth = 11 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setTitle
+methodname=setRecurDays
+ Seed:1520707670350
+new appt constructed
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 1216
+ ran_startHour = 68
+ ran_startMin = 75
+ ran_startDay=66
+ ran_startMonth = 9 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 672
+ ran_startHour = 54
+ ran_startMin = 7
+ ran_startDay=20
+ ran_startMonth = 9 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurDays
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 4867
+ ran_startHour = 12
+ ran_startMin = 0
+ ran_startDay=59
+ ran_startMonth = 3 
+(test)NumDaysInMonth = 31
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 5459
+ ran_startHour = 86
+ ran_startMin = 29
+ ran_startDay=37
+ ran_startMonth = 11 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setTitle
+methodname=setRecurDays
+methodname=setRecurrence
+methodname=setRecurDays
+methodname=setRecurDays
+methodname=setRecurDays
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 7814
+ ran_startHour = 46
+ ran_startMin = 11
+ ran_startDay=70
+ ran_startMonth = 8 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setTitle
+methodname=setTitle
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 1805
+ ran_startHour = 79
+ ran_startMin = 37
+ ran_startDay=-5
+ ran_startMonth = 5 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurDays
+methodname=setRecurDays
+methodname=setTitle
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 5304
+ ran_startHour = 6
+ ran_startMin = 73
+ ran_startDay=4
+ ran_startMonth = 4 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurDays
+methodname=setRecurDays
+methodname=setTitle
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 9750
+ ran_startHour = 77
+ ran_startMin = 13
+ ran_startDay=8
+ ran_startMonth = 12 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 6288
+ ran_startHour = 17
+ ran_startMin = 29
+ ran_startDay=73
+ ran_startMonth = 6 
+(test)NumDaysInMonth = 30
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setTitle
+methodname=setRecurDays
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 4089
+ ran_startHour = 21
+ ran_startMin = 68
+ ran_startDay=4
+ ran_startMonth = 7 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurrence
+methodname=setRecurrence
+methodname=setRecurDays
+methodname=setRecurrence
+methodname=setRecurrence
+methodname=setRecurrence
+methodname=setRecurDays
+methodname=setRecurrence
+methodname=setRecurDays
+methodname=setRecurrence
+methodname=setRecurDays
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 5011
+ ran_startHour = 28
+ ran_startMin = 32
+ ran_startDay=3
+ ran_startMonth = 12 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setTitle
+methodname=setRecurDays
+methodname=setRecurDays
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 1420
+ ran_startHour = 55
+ ran_startMin = 73
+ ran_startDay=82
+ ran_startMonth = 10 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurrence
+methodname=setRecurDays
+methodname=setTitle
+methodname=setRecurrence
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 335
+ ran_startHour = 5
+ ran_startMin = 88
+ ran_startDay=67
+ ran_startMonth = 2 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 3770
+ ran_startHour = -2
+ ran_startMin = 33
+ ran_startDay=21
+ ran_startMonth = 12 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 9
+ ran_startHour = 61
+ ran_startMin = 86
+ ran_startDay=46
+ ran_startMonth = 6 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurrence
+methodname=setTitle
+methodname=setTitle
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 8564
+ ran_startHour = 88
+ ran_startMin = 26
+ ran_startDay=31
+ ran_startMonth = 10 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurrence
+methodname=setRecurDays
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 6413
+ ran_startHour = 63
+ ran_startMin = 41
+ ran_startDay=32
+ ran_startMonth = 8 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurrence
+methodname=setRecurrence
+methodname=setTitle
+methodname=setRecurDays
+methodname=setTitle
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 8026
+ ran_startHour = 26
+ ran_startMin = -1
+ ran_startDay=27
+ ran_startMonth = 2 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurrence
+methodname=setTitle
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 3682
+ ran_startHour = 29
+ ran_startMin = 63
+ ran_startDay=41
+ ran_startMonth = 11 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setTitle
+methodname=setRecurrence
+methodname=setRecurrence
+methodname=setRecurrence
+methodname=setRecurDays
+methodname=setTitle
+methodname=setRecurrence
+methodname=setRecurDays
+methodname=setRecurDays
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 9362
+ ran_startHour = 51
+ ran_startMin = 42
+ ran_startDay=70
+ ran_startMonth = 8 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurrence
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 293
+ ran_startHour = 24
+ ran_startMin = 2
+ ran_startDay=43
+ ran_startMonth = 5 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurDays
+methodname=setRecurrence
+methodname=setRecurDays
+methodname=setRecurrence
+methodname=setRecurrence
+methodname=setRecurDays
+methodname=setRecurrence
+methodname=setTitle
+methodname=setTitle
+methodname=setTitle
+methodname=setTitle
+methodname=setRecurDays
+methodname=setRecurDays
+methodname=setRecurDays
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 5147
+ ran_startHour = 32
+ ran_startMin = 60
+ ran_startDay=35
+ ran_startMonth = 3 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 8915
+ ran_startHour = 6
+ ran_startMin = 86
+ ran_startDay=44
+ ran_startMonth = 12 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurDays
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 1323
+ ran_startHour = 42
+ ran_startMin = 29
+ ran_startDay=53
+ ran_startMonth = 3 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setTitle
+methodname=setTitle
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 4454
+ ran_startHour = 8
+ ran_startMin = 86
+ ran_startDay=20
+ ran_startMonth = 10 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setTitle
+ Seed:1520707670359
+new appt constructed
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 9827
+ ran_startHour = 26
+ ran_startMin = 39
+ ran_startDay=-1
+ ran_startMonth = 3 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setTitle
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 883
+ ran_startHour = 13
+ ran_startMin = 79
+ ran_startDay=12
+ ran_startMonth = 11 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurrence
+methodname=setRecurrence
+methodname=setTitle
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 866
+ ran_startHour = -1
+ ran_startMin = 67
+ ran_startDay=65
+ ran_startMonth = 9 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setTitle
+methodname=setRecurDays
+methodname=setRecurDays
+methodname=setRecurrence
+methodname=setRecurrence
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 4282
+ ran_startHour = 54
+ ran_startMin = 37
+ ran_startDay=30
+ ran_startMonth = 11 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurDays
+methodname=setRecurDays
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 2406
+ ran_startHour = 38
+ ran_startMin = 7
+ ran_startDay=69
+ ran_startMonth = 7 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setTitle
+methodname=setRecurrence
+methodname=setRecurrence
+methodname=setRecurDays
+methodname=setRecurrence
+methodname=setRecurrence
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 1801
+ ran_startHour = 86
+ ran_startMin = 82
+ ran_startDay=-5
+ ran_startMonth = 6 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 2471
+ ran_startHour = 9
+ ran_startMin = 65
+ ran_startDay=57
+ ran_startMonth = 9 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 3361
+ ran_startHour = 36
+ ran_startMin = 37
+ ran_startDay=87
+ ran_startMonth = 6 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurrence
+methodname=setTitle
+methodname=setRecurrence
+methodname=setRecurDays
+methodname=setRecurrence
+methodname=setTitle
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 9146
+ ran_startHour = 80
+ ran_startMin = 74
+ ran_startDay=8
+ ran_startMonth = 9 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurDays
+methodname=setTitle
+methodname=setTitle
+methodname=setRecurrence
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 6092
+ ran_startHour = 39
+ ran_startMin = 13
+ ran_startDay=73
+ ran_startMonth = 5 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setTitle
+methodname=setRecurDays
+methodname=setRecurDays
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 4329
+ ran_startHour = 81
+ ran_startMin = 8
+ ran_startDay=1
+ ran_startMonth = 9 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurrence
+methodname=setRecurDays
+methodname=setTitle
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 6358
+ ran_startHour = 59
+ ran_startMin = -5
+ ran_startDay=0
+ ran_startMonth = 1 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurDays
+methodname=setTitle
+methodname=setRecurrence
+methodname=setRecurrence
+methodname=setTitle
+methodname=setRecurDays
+methodname=setTitle
+methodname=setRecurDays
+methodname=setRecurrence
+methodname=setTitle
+methodname=setRecurrence
+methodname=setTitle
+methodname=setRecurrence
+methodname=setRecurDays
+methodname=setTitle
+methodname=setRecurrence
+methodname=setRecurDays
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 5375
+ ran_startHour = 3
+ ran_startMin = 35
+ ran_startDay=36
+ ran_startMonth = 11 
+(test)NumDaysInMonth = 30
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurDays
+methodname=setTitle
+methodname=setTitle
+methodname=setRecurrence
+methodname=setRecurrence
+methodname=setTitle
+methodname=setTitle
+methodname=setRecurDays
+methodname=setTitle
+methodname=setTitle
+methodname=setRecurrence
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 70
+ ran_startHour = 21
+ ran_startMin = 42
+ ran_startDay=71
+ ran_startMonth = 5 
+(test)NumDaysInMonth = 31
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setTitle
+methodname=setTitle
+methodname=setRecurDays
+methodname=setRecurrence
+methodname=setTitle
+methodname=setTitle
+methodname=setRecurrence
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 5428
+ ran_startHour = 86
+ ran_startMin = 9
+ ran_startDay=39
+ ran_startMonth = 2 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurDays
+methodname=setTitle
+methodname=setRecurrence
+methodname=setTitle
+methodname=setRecurrence
+methodname=setRecurrence
+methodname=setRecurrence
+methodname=setTitle
+methodname=setTitle
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 6366
+ ran_startHour = 73
+ ran_startMin = 4
+ ran_startDay=80
+ ran_startMonth = 10 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setTitle
+methodname=setRecurrence
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 6377
+ ran_startHour = 67
+ ran_startMin = 21
+ ran_startDay=66
+ ran_startMonth = 7 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 2561
+ ran_startHour = 9
+ ran_startMin = 46
+ ran_startDay=7
+ ran_startMonth = 12 
+(test)NumDaysInMonth = 31
+This appt.getValid() should be equal to result = true
+Actual appt.getValid() = true
+methodname=setRecurDays
+methodname=setRecurDays
+methodname=setRecurDays
+ Seed:1520707670364
+new appt constructed
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 1240
+ ran_startHour = 15
+ ran_startMin = 74
+ ran_startDay=8
+ ran_startMonth = 2 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setTitle
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 8559
+ ran_startHour = 87
+ ran_startMin = 23
+ ran_startDay=23
+ ran_startMonth = 11 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setTitle
+methodname=setRecurDays
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 8749
+ ran_startHour = 22
+ ran_startMin = 17
+ ran_startDay=62
+ ran_startMonth = 5 
+(test)NumDaysInMonth = 31
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setTitle
+methodname=setRecurrence
+methodname=setRecurrence
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 3858
+ ran_startHour = 4
+ ran_startMin = 68
+ ran_startDay=15
+ ran_startMonth = 9 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 4004
+ ran_startHour = 19
+ ran_startMin = 8
+ ran_startDay=26
+ ran_startMonth = 10 
+(test)NumDaysInMonth = 31
+This appt.getValid() should be equal to result = true
+Actual appt.getValid() = true
+methodname=setRecurrence
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 3719
+ ran_startHour = 45
+ ran_startMin = 31
+ ran_startDay=4
+ ran_startMonth = 1 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurrence
+methodname=setRecurrence
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 6536
+ ran_startHour = 39
+ ran_startMin = 89
+ ran_startDay=9
+ ran_startMonth = 12 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setTitle
+methodname=setRecurDays
+methodname=setRecurrence
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 7736
+ ran_startHour = 52
+ ran_startMin = 84
+ ran_startDay=48
+ ran_startMonth = 3 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 3465
+ ran_startHour = 54
+ ran_startMin = -5
+ ran_startDay=80
+ ran_startMonth = 5 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurrence
+methodname=setRecurrence
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 6202
+ ran_startHour = 86
+ ran_startMin = 27
+ ran_startDay=-2
+ ran_startMonth = 5 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 290
+ ran_startHour = 6
+ ran_startMin = 36
+ ran_startDay=-5
+ ran_startMonth = 6 
+(test)NumDaysInMonth = 30
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setTitle
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 3328
+ ran_startHour = 7
+ ran_startMin = 51
+ ran_startDay=18
+ ran_startMonth = 5 
+(test)NumDaysInMonth = 31
+This appt.getValid() should be equal to result = true
+Actual appt.getValid() = true
+methodname=setRecurDays
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 4768
+ ran_startHour = 78
+ ran_startMin = 37
+ ran_startDay=20
+ ran_startMonth = 4 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setTitle
+methodname=setRecurrence
+methodname=setRecurrence
+methodname=setRecurrence
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 1577
+ ran_startHour = 58
+ ran_startMin = 38
+ ran_startDay=0
+ ran_startMonth = 9 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurrence
+methodname=setRecurrence
+methodname=setRecurDays
+methodname=setTitle
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 4463
+ ran_startHour = 26
+ ran_startMin = 70
+ ran_startDay=88
+ ran_startMonth = 8 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setTitle
+methodname=setRecurrence
+methodname=setRecurDays
+methodname=setTitle
+methodname=setTitle
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 3560
+ ran_startHour = 49
+ ran_startMin = 83
+ ran_startDay=24
+ ran_startMonth = 7 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 4005
+ ran_startHour = 9
+ ran_startMin = 90
+ ran_startDay=25
+ ran_startMonth = 7 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 2230
+ ran_startHour = 2
+ ran_startMin = 11
+ ran_startDay=77
+ ran_startMonth = 8 
+(test)NumDaysInMonth = 31
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setTitle
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 4303
+ ran_startHour = 66
+ ran_startMin = 2
+ ran_startDay=12
+ ran_startMonth = 10 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setTitle
+methodname=setRecurrence
+methodname=setRecurrence
+methodname=setRecurDays
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 5209
+ ran_startHour = 57
+ ran_startMin = 71
+ ran_startDay=12
+ ran_startMonth = 5 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 9071
+ ran_startHour = 15
+ ran_startMin = 88
+ ran_startDay=60
+ ran_startMonth = 3 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurrence
+methodname=setRecurrence
+methodname=setTitle
+methodname=setRecurDays
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 3892
+ ran_startHour = 77
+ ran_startMin = 73
+ ran_startDay=4
+ ran_startMonth = 12 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurDays
+methodname=setTitle
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 4798
+ ran_startHour = 43
+ ran_startMin = 66
+ ran_startDay=-1
+ ran_startMonth = 12 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 2648
+ ran_startHour = 59
+ ran_startMin = 39
+ ran_startDay=36
+ ran_startMonth = 2 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurrence
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 2879
+ ran_startHour = 0
+ ran_startMin = 31
+ ran_startDay=17
+ ran_startMonth = 8 
+(test)NumDaysInMonth = 31
+This appt.getValid() should be equal to result = true
+Actual appt.getValid() = true
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 4182
+ ran_startHour = 19
+ ran_startMin = -2
+ ran_startDay=58
+ ran_startMonth = 4 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurDays
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 6987
+ ran_startHour = 23
+ ran_startMin = 81
+ ran_startDay=54
+ ran_startMonth = 6 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 4835
+ ran_startHour = 45
+ ran_startMin = 45
+ ran_startDay=-1
+ ran_startMonth = 9 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 3967
+ ran_startHour = 85
+ ran_startMin = 8
+ ran_startDay=33
+ ran_startMonth = 9 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 9446
+ ran_startHour = 57
+ ran_startMin = 14
+ ran_startDay=47
+ ran_startMonth = 2 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurrence
+methodname=setRecurDays
+methodname=setRecurDays
+methodname=setRecurDays
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 2979
+ ran_startHour = 2
+ ran_startMin = 35
+ ran_startDay=80
+ ran_startMonth = 6 
+(test)NumDaysInMonth = 30
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurDays
+methodname=setRecurDays
+methodname=setRecurrence
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 4418
+ ran_startHour = 83
+ ran_startMin = 70
+ ran_startDay=63
+ ran_startMonth = 7 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setTitle
+methodname=setTitle
+methodname=setTitle
+methodname=setRecurDays
+methodname=setRecurrence
+methodname=setRecurrence
+methodname=setTitle
+methodname=setRecurrence
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 2557
+ ran_startHour = 76
+ ran_startMin = 81
+ ran_startDay=-3
+ ran_startMonth = 4 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurDays
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 7767
+ ran_startHour = 27
+ ran_startMin = 25
+ ran_startDay=0
+ ran_startMonth = 12 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 4226
+ ran_startHour = 47
+ ran_startMin = 28
+ ran_startDay=43
+ ran_startMonth = 3 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 8527
+ ran_startHour = 17
+ ran_startMin = 83
+ ran_startDay=73
+ ran_startMonth = 12 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurrence
+methodname=setRecurDays
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 3351
+ ran_startHour = 54
+ ran_startMin = 63
+ ran_startDay=26
+ ran_startMonth = 5 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurrence
+methodname=setRecurDays
+methodname=setRecurrence
+ Seed:1520707670367
+new appt constructed
+methodname=setRecurDays
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 2144
+ ran_startHour = 2
+ ran_startMin = 6
+ ran_startDay=86
+ ran_startMonth = 8 
+(test)NumDaysInMonth = 31
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 9928
+ ran_startHour = 58
+ ran_startMin = 61
+ ran_startDay=44
+ ran_startMonth = 3 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 350
+ ran_startHour = 3
+ ran_startMin = 64
+ ran_startDay=62
+ ran_startMonth = 9 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setTitle
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 5855
+ ran_startHour = 80
+ ran_startMin = -3
+ ran_startDay=45
+ ran_startMonth = 6 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurrence
+methodname=setRecurrence
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 6688
+ ran_startHour = 55
+ ran_startMin = 48
+ ran_startDay=84
+ ran_startMonth = 1 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setTitle
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 5936
+ ran_startHour = 71
+ ran_startMin = 0
+ ran_startDay=31
+ ran_startMonth = 7 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setTitle
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 2348
+ ran_startHour = 83
+ ran_startMin = 24
+ ran_startDay=17
+ ran_startMonth = 12 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setTitle
+methodname=setTitle
+methodname=setRecurDays
+methodname=setRecurrence
+methodname=setRecurDays
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 9532
+ ran_startHour = 65
+ ran_startMin = 60
+ ran_startDay=65
+ ran_startMonth = 4 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurDays
+methodname=setTitle
+methodname=setRecurDays
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 6596
+ ran_startHour = 27
+ ran_startMin = 39
+ ran_startDay=82
+ ran_startMonth = 3 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setTitle
+methodname=setRecurrence
+methodname=setRecurDays
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 2309
+ ran_startHour = 16
+ ran_startMin = 34
+ ran_startDay=5
+ ran_startMonth = 5 
+(test)NumDaysInMonth = 31
+This appt.getValid() should be equal to result = true
+Actual appt.getValid() = true
+methodname=setRecurDays
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 7127
+ ran_startHour = 31
+ ran_startMin = 49
+ ran_startDay=14
+ ran_startMonth = 1 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 2781
+ ran_startHour = 79
+ ran_startMin = 27
+ ran_startDay=23
+ ran_startMonth = 1 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurrence
+methodname=setTitle
+methodname=setRecurDays
+methodname=setTitle
+methodname=setRecurrence
+methodname=setTitle
+methodname=setRecurDays
+methodname=setRecurrence
+methodname=setRecurDays
+methodname=setRecurDays
+methodname=setRecurrence
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 9165
+ ran_startHour = 1
+ ran_startMin = 36
+ ran_startDay=62
+ ran_startMonth = 9 
+(test)NumDaysInMonth = 30
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setTitle
+methodname=setTitle
+methodname=setRecurDays
+methodname=setRecurDays
+methodname=setTitle
+methodname=setTitle
+methodname=setRecurDays
+methodname=setRecurrence
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 575
+ ran_startHour = 17
+ ran_startMin = 16
+ ran_startDay=73
+ ran_startMonth = 5 
+(test)NumDaysInMonth = 31
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurrence
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 9895
+ ran_startHour = 60
+ ran_startMin = 84
+ ran_startDay=72
+ ran_startMonth = 12 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurrence
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 2375
+ ran_startHour = 20
+ ran_startMin = 26
+ ran_startDay=-4
+ ran_startMonth = 8 
+(test)NumDaysInMonth = 31
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 8275
+ ran_startHour = 40
+ ran_startMin = 67
+ ran_startDay=31
+ ran_startMonth = 6 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurDays
+methodname=setTitle
+methodname=setRecurDays
+methodname=setRecurrence
+methodname=setRecurDays
+methodname=setRecurrence
+methodname=setRecurDays
+methodname=setRecurDays
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 5418
+ ran_startHour = 57
+ ran_startMin = 83
+ ran_startDay=23
+ ran_startMonth = 1 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurrence
+methodname=setRecurDays
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 2264
+ ran_startHour = 32
+ ran_startMin = 85
+ ran_startDay=24
+ ran_startMonth = 4 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurrence
+methodname=setRecurDays
+methodname=setTitle
+methodname=setTitle
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 5045
+ ran_startHour = 38
+ ran_startMin = 30
+ ran_startDay=73
+ ran_startMonth = 5 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 7928
+ ran_startHour = 64
+ ran_startMin = 45
+ ran_startDay=75
+ ran_startMonth = 4 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 850
+ ran_startHour = 14
+ ran_startMin = 83
+ ran_startDay=45
+ ran_startMonth = 10 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setTitle
+methodname=setRecurrence
+methodname=setRecurrence
+methodname=setRecurDays
+methodname=setTitle
+methodname=setRecurrence
+methodname=setRecurDays
+methodname=setRecurDays
+methodname=setRecurDays
+methodname=setRecurDays
+methodname=setRecurrence
+methodname=setRecurDays
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 4315
+ ran_startHour = 11
+ ran_startMin = 17
+ ran_startDay=55
+ ran_startMonth = 12 
+(test)NumDaysInMonth = 31
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurrence
+methodname=setRecurDays
+methodname=setTitle
+methodname=setRecurDays
+methodname=setRecurrence
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 5446
+ ran_startHour = 75
+ ran_startMin = -2
+ ran_startDay=16
+ ran_startMonth = 1 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setTitle
+methodname=setRecurDays
+methodname=setTitle
+methodname=setRecurrence
+methodname=setRecurrence
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 6313
+ ran_startHour = 77
+ ran_startMin = 22
+ ran_startDay=88
+ ran_startMonth = 10 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+ Seed:1520707670369
+new appt constructed
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 2604
+ ran_startHour = 19
+ ran_startMin = 14
+ ran_startDay=37
+ ran_startMonth = 4 
+(test)NumDaysInMonth = 30
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurDays
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 7897
+ ran_startHour = 42
+ ran_startMin = 45
+ ran_startDay=50
+ ran_startMonth = 6 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurDays
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 9441
+ ran_startHour = 34
+ ran_startMin = 55
+ ran_startDay=85
+ ran_startMonth = 2 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurrence
+methodname=setRecurrence
+methodname=setRecurDays
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 1423
+ ran_startHour = 25
+ ran_startMin = 1
+ ran_startDay=77
+ ran_startMonth = 2 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurDays
+methodname=setTitle
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 1910
+ ran_startHour = 86
+ ran_startMin = 39
+ ran_startDay=50
+ ran_startMonth = 9 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurrence
+methodname=setRecurrence
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 6701
+ ran_startHour = 3
+ ran_startMin = 31
+ ran_startDay=90
+ ran_startMonth = 8 
+(test)NumDaysInMonth = 31
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurrence
+methodname=setRecurDays
+methodname=setTitle
+methodname=setRecurrence
+methodname=setRecurrence
+methodname=setTitle
+methodname=setRecurrence
+methodname=setTitle
+methodname=setRecurDays
+methodname=setTitle
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 5513
+ ran_startHour = 43
+ ran_startMin = -1
+ ran_startDay=6
+ ran_startMonth = 2 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurDays
+methodname=setTitle
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 1445
+ ran_startHour = -1
+ ran_startMin = 1
+ ran_startDay=65
+ ran_startMonth = 11 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 7194
+ ran_startHour = 75
+ ran_startMin = 87
+ ran_startDay=87
+ ran_startMonth = 8 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 4566
+ ran_startHour = 72
+ ran_startMin = 63
+ ran_startDay=64
+ ran_startMonth = 9 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurrence
+methodname=setRecurDays
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 699
+ ran_startHour = -1
+ ran_startMin = 55
+ ran_startDay=70
+ ran_startMonth = 11 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurDays
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 4593
+ ran_startHour = 3
+ ran_startMin = 38
+ ran_startDay=5
+ ran_startMonth = 11 
+(test)NumDaysInMonth = 30
+This appt.getValid() should be equal to result = true
+Actual appt.getValid() = true
+methodname=setTitle
+methodname=setRecurrence
+methodname=setTitle
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 3192
+ ran_startHour = 87
+ ran_startMin = 9
+ ran_startDay=28
+ ran_startMonth = 8 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurrence
+methodname=setRecurrence
+methodname=setTitle
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 6623
+ ran_startHour = 29
+ ran_startMin = 50
+ ran_startDay=45
+ ran_startMonth = 6 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurDays
+methodname=setTitle
+methodname=setRecurDays
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 6002
+ ran_startHour = 18
+ ran_startMin = -3
+ ran_startDay=26
+ ran_startMonth = 4 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 2559
+ ran_startHour = -3
+ ran_startMin = 15
+ ran_startDay=19
+ ran_startMonth = 12 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurDays
+methodname=setTitle
+methodname=setRecurrence
+methodname=setRecurDays
+methodname=setTitle
+methodname=setRecurrence
+methodname=setTitle
+methodname=setRecurrence
+methodname=setTitle
+methodname=setRecurDays
+methodname=setTitle
+methodname=setRecurDays
+methodname=setTitle
+methodname=setTitle
+methodname=setRecurrence
+methodname=setTitle
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 9929
+ ran_startHour = 81
+ ran_startMin = 5
+ ran_startDay=54
+ ran_startMonth = 12 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setTitle
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 4142
+ ran_startHour = 50
+ ran_startMin = 74
+ ran_startDay=62
+ ran_startMonth = 5 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurrence
+methodname=setTitle
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 7361
+ ran_startHour = 22
+ ran_startMin = 54
+ ran_startDay=27
+ ran_startMonth = 8 
+(test)NumDaysInMonth = 31
+This appt.getValid() should be equal to result = true
+Actual appt.getValid() = true
+methodname=setTitle
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 7528
+ ran_startHour = 2
+ ran_startMin = 13
+ ran_startDay=40
+ ran_startMonth = 10 
+(test)NumDaysInMonth = 31
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurDays
+methodname=setRecurrence
+methodname=setTitle
+methodname=setRecurDays
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 3352
+ ran_startHour = 67
+ ran_startMin = 59
+ ran_startDay=53
+ ran_startMonth = 9 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 9855
+ ran_startHour = -1
+ ran_startMin = 52
+ ran_startDay=66
+ ran_startMonth = 8 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setTitle
+methodname=setTitle
+methodname=setTitle
+methodname=setRecurDays
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 7844
+ ran_startHour = 76
+ ran_startMin = 21
+ ran_startDay=88
+ ran_startMonth = 3 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurDays
+methodname=setRecurrence
+methodname=setRecurDays
+methodname=setRecurrence
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 7894
+ ran_startHour = 68
+ ran_startMin = 51
+ ran_startDay=0
+ ran_startMonth = 6 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setTitle
+methodname=setRecurrence
+methodname=setTitle
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 393
+ ran_startHour = 68
+ ran_startMin = 46
+ ran_startDay=42
+ ran_startMonth = 7 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setTitle
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 1481
+ ran_startHour = 63
+ ran_startMin = 3
+ ran_startDay=40
+ ran_startMonth = 1 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 255
+ ran_startHour = 29
+ ran_startMin = 52
+ ran_startDay=82
+ ran_startMonth = 1 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurrence
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 6673
+ ran_startHour = 63
+ ran_startMin = 24
+ ran_startDay=-1
+ ran_startMonth = 6 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurrence
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 6998
+ ran_startHour = 11
+ ran_startMin = 51
+ ran_startDay=30
+ ran_startMonth = 7 
+(test)NumDaysInMonth = 31
+This appt.getValid() should be equal to result = true
+Actual appt.getValid() = true
+ Seed:1520707670380
+new appt constructed
+methodname=setTitle
+methodname=setTitle
+methodname=setTitle
+methodname=setRecurrence
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 7184
+ ran_startHour = 47
+ ran_startMin = 41
+ ran_startDay=22
+ ran_startMonth = 9 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurrence
+methodname=setTitle
+methodname=setRecurDays
+methodname=setRecurDays
+methodname=setRecurDays
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 808
+ ran_startHour = 77
+ ran_startMin = -4
+ ran_startDay=1
+ ran_startMonth = 4 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 868
+ ran_startHour = 21
+ ran_startMin = 32
+ ran_startDay=55
+ ran_startMonth = 6 
+(test)NumDaysInMonth = 30
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurDays
+methodname=setRecurDays
+methodname=setTitle
+methodname=setRecurrence
+methodname=setRecurrence
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 3453
+ ran_startHour = 7
+ ran_startMin = 57
+ ran_startDay=2
+ ran_startMonth = 7 
+(test)NumDaysInMonth = 31
+This appt.getValid() should be equal to result = true
+Actual appt.getValid() = true
+methodname=setRecurrence
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 7250
+ ran_startHour = 68
+ ran_startMin = 5
+ ran_startDay=82
+ ran_startMonth = 7 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurrence
+methodname=setRecurrence
+methodname=setRecurDays
+methodname=setRecurDays
+methodname=setRecurDays
+methodname=setRecurDays
+methodname=setRecurrence
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 7098
+ ran_startHour = 37
+ ran_startMin = -5
+ ran_startDay=64
+ ran_startMonth = 3 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 7100
+ ran_startHour = 19
+ ran_startMin = 17
+ ran_startDay=7
+ ran_startMonth = 2 
+(test)NumDaysInMonth = 28
+This appt.getValid() should be equal to result = true
+Actual appt.getValid() = true
+methodname=setRecurDays
+methodname=setRecurrence
+methodname=setRecurrence
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 4628
+ ran_startHour = 0
+ ran_startMin = 37
+ ran_startDay=63
+ ran_startMonth = 12 
+(test)NumDaysInMonth = 31
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurDays
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 1016
+ ran_startHour = 28
+ ran_startMin = 47
+ ran_startDay=26
+ ran_startMonth = 11 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 4246
+ ran_startHour = 48
+ ran_startMin = 2
+ ran_startDay=80
+ ran_startMonth = 10 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurDays
+methodname=setRecurrence
+methodname=setRecurDays
+methodname=setTitle
+methodname=setRecurDays
+methodname=setRecurrence
+methodname=setRecurDays
+methodname=setRecurrence
+methodname=setTitle
+methodname=setRecurDays
+methodname=setRecurrence
+methodname=setTitle
+methodname=setRecurDays
+methodname=setRecurDays
+methodname=setTitle
+methodname=setTitle
+methodname=setRecurDays
+methodname=setRecurDays
+methodname=setRecurDays
+methodname=setRecurDays
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 2795
+ ran_startHour = 22
+ ran_startMin = 44
+ ran_startDay=8
+ ran_startMonth = 6 
+(test)NumDaysInMonth = 30
+This appt.getValid() should be equal to result = true
+Actual appt.getValid() = true
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 1800
+ ran_startHour = 39
+ ran_startMin = 21
+ ran_startDay=34
+ ran_startMonth = 5 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurDays
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 7907
+ ran_startHour = 82
+ ran_startMin = 53
+ ran_startDay=56
+ ran_startMonth = 12 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurDays
+methodname=setTitle
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 4714
+ ran_startHour = 4
+ ran_startMin = -4
+ ran_startDay=61
+ ran_startMonth = 11 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurDays
+methodname=setRecurDays
+methodname=setTitle
+methodname=setTitle
+methodname=setRecurrence
+methodname=setRecurDays
+methodname=setRecurDays
+methodname=setTitle
+methodname=setRecurrence
+methodname=setTitle
+methodname=setRecurrence
+methodname=setTitle
+methodname=setRecurDays
+methodname=setTitle
+methodname=setRecurrence
+methodname=setTitle
+methodname=setTitle
+methodname=setRecurrence
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 5388
+ ran_startHour = 76
+ ran_startMin = 47
+ ran_startDay=75
+ ran_startMonth = 12 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurrence
+methodname=setRecurrence
+methodname=setTitle
+methodname=setRecurrence
+methodname=setTitle
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 9456
+ ran_startHour = 32
+ ran_startMin = 43
+ ran_startDay=58
+ ran_startMonth = 8 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 3017
+ ran_startHour = 77
+ ran_startMin = 44
+ ran_startDay=8
+ ran_startMonth = 4 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 948
+ ran_startHour = 30
+ ran_startMin = 81
+ ran_startDay=63
+ ran_startMonth = 4 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 2922
+ ran_startHour = 54
+ ran_startMin = 83
+ ran_startDay=39
+ ran_startMonth = 9 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurDays
+methodname=setTitle
+methodname=setRecurrence
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 7140
+ ran_startHour = 39
+ ran_startMin = 18
+ ran_startDay=67
+ ran_startMonth = 8 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 7176
+ ran_startHour = 42
+ ran_startMin = 56
+ ran_startDay=61
+ ran_startMonth = 7 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 3017
+ ran_startHour = 26
+ ran_startMin = 56
+ ran_startDay=16
+ ran_startMonth = 4 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 1301
+ ran_startHour = 46
+ ran_startMin = 36
+ ran_startDay=32
+ ran_startMonth = 11 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setTitle
+methodname=setTitle
+ Seed:1520707670393
+new appt constructed
+methodname=setRecurrence
+methodname=setRecurrence
+methodname=setRecurDays
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 1263
+ ran_startHour = 17
+ ran_startMin = 16
+ ran_startDay=60
+ ran_startMonth = 2 
+(test)NumDaysInMonth = 28
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setTitle
+methodname=setRecurrence
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 3990
+ ran_startHour = 51
+ ran_startMin = 42
+ ran_startDay=67
+ ran_startMonth = 11 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurrence
+methodname=setTitle
+methodname=setRecurrence
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 9650
+ ran_startHour = 44
+ ran_startMin = 21
+ ran_startDay=24
+ ran_startMonth = 2 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 8551
+ ran_startHour = 42
+ ran_startMin = 83
+ ran_startDay=86
+ ran_startMonth = 11 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurrence
+methodname=setTitle
+methodname=setRecurDays
+methodname=setTitle
+methodname=setTitle
+methodname=setRecurrence
+methodname=setRecurDays
+methodname=setRecurDays
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 3277
+ ran_startHour = 11
+ ran_startMin = 75
+ ran_startDay=11
+ ran_startMonth = 1 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurrence
+methodname=setRecurrence
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 201
+ ran_startHour = 3
+ ran_startMin = 42
+ ran_startDay=5
+ ran_startMonth = 11 
+(test)NumDaysInMonth = 30
+This appt.getValid() should be equal to result = true
+Actual appt.getValid() = true
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 5072
+ ran_startHour = 67
+ ran_startMin = 33
+ ran_startDay=66
+ ran_startMonth = 4 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurrence
+methodname=setRecurrence
+methodname=setRecurDays
+methodname=setRecurDays
+methodname=setRecurrence
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 2735
+ ran_startHour = -1
+ ran_startMin = 70
+ ran_startDay=-4
+ ran_startMonth = 1 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurrence
+methodname=setRecurrence
+methodname=setRecurDays
+methodname=setRecurrence
+methodname=setTitle
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 7383
+ ran_startHour = 11
+ ran_startMin = -5
+ ran_startDay=39
+ ran_startMonth = 4 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setTitle
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 3987
+ ran_startHour = 41
+ ran_startMin = 63
+ ran_startDay=63
+ ran_startMonth = 7 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 9324
+ ran_startHour = 71
+ ran_startMin = 23
+ ran_startDay=2
+ ran_startMonth = 9 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setTitle
+methodname=setRecurrence
+methodname=setRecurDays
+methodname=setRecurDays
+methodname=setRecurDays
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 3494
+ ran_startHour = 23
+ ran_startMin = 60
+ ran_startDay=11
+ ran_startMonth = 10 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 2252
+ ran_startHour = 50
+ ran_startMin = 89
+ ran_startDay=15
+ ran_startMonth = 9 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurDays
+methodname=setRecurDays
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 674
+ ran_startHour = 22
+ ran_startMin = 30
+ ran_startDay=47
+ ran_startMonth = 7 
+(test)NumDaysInMonth = 31
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setTitle
+methodname=setRecurDays
+methodname=setRecurrence
+methodname=setRecurrence
+methodname=setRecurDays
+methodname=setTitle
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 242
+ ran_startHour = 74
+ ran_startMin = 69
+ ran_startDay=64
+ ran_startMonth = 6 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurDays
+methodname=setRecurDays
+methodname=setRecurDays
+methodname=setTitle
+methodname=setRecurrence
+methodname=setRecurrence
+methodname=setRecurDays
+methodname=setRecurrence
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 9094
+ ran_startHour = 9
+ ran_startMin = 14
+ ran_startDay=0
+ ran_startMonth = 3 
+(test)NumDaysInMonth = 31
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 7089
+ ran_startHour = 10
+ ran_startMin = 45
+ ran_startDay=-3
+ ran_startMonth = 5 
+(test)NumDaysInMonth = 31
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setTitle
+methodname=setRecurDays
+methodname=setRecurDays
+methodname=setRecurDays
+methodname=setRecurDays
+methodname=setRecurDays
+methodname=setTitle
+methodname=setRecurDays
+methodname=setRecurrence
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 9487
+ ran_startHour = 60
+ ran_startMin = 72
+ ran_startDay=69
+ ran_startMonth = 3 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurDays
+methodname=setTitle
+methodname=setRecurrence
+methodname=setTitle
+methodname=setTitle
+methodname=setTitle
+methodname=setRecurrence
+methodname=setRecurrence
+methodname=setRecurrence
+methodname=setRecurDays
+methodname=setRecurrence
+methodname=setRecurDays
+methodname=setRecurrence
+methodname=setTitle
+methodname=setRecurrence
+methodname=setRecurrence
+methodname=setRecurrence
+methodname=setTitle
+methodname=setTitle
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 8778
+ ran_startHour = 24
+ ran_startMin = 19
+ ran_startDay=50
+ ran_startMonth = 9 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurrence
+methodname=setTitle
+methodname=setRecurDays
+ Seed:1520707670400
+new appt constructed
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 7284
+ ran_startHour = 27
+ ran_startMin = 7
+ ran_startDay=86
+ ran_startMonth = 5 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setTitle
+methodname=setRecurrence
+methodname=setRecurDays
+methodname=setTitle
+methodname=setRecurrence
+methodname=setTitle
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 7299
+ ran_startHour = 61
+ ran_startMin = 82
+ ran_startDay=61
+ ran_startMonth = 3 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurrence
+methodname=setRecurDays
+methodname=setRecurDays
+methodname=setRecurrence
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 633
+ ran_startHour = 77
+ ran_startMin = 27
+ ran_startDay=84
+ ran_startMonth = 5 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurrence
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 784
+ ran_startHour = 50
+ ran_startMin = 14
+ ran_startDay=13
+ ran_startMonth = 9 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 5465
+ ran_startHour = 41
+ ran_startMin = 29
+ ran_startDay=35
+ ran_startMonth = 4 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setTitle
+methodname=setRecurrence
+methodname=setRecurDays
+methodname=setTitle
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 8722
+ ran_startHour = 18
+ ran_startMin = 78
+ ran_startDay=31
+ ran_startMonth = 11 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurDays
+methodname=setRecurDays
+methodname=setRecurrence
+methodname=setRecurDays
+methodname=setTitle
+methodname=setRecurDays
+methodname=setTitle
+methodname=setTitle
+methodname=setTitle
+methodname=setTitle
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 809
+ ran_startHour = 65
+ ran_startMin = 30
+ ran_startDay=5
+ ran_startMonth = 2 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setTitle
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 3804
+ ran_startHour = 71
+ ran_startMin = 62
+ ran_startDay=28
+ ran_startMonth = 3 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurrence
+methodname=setTitle
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 2671
+ ran_startHour = 6
+ ran_startMin = 14
+ ran_startDay=52
+ ran_startMonth = 7 
+(test)NumDaysInMonth = 31
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurDays
+methodname=setRecurrence
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 4354
+ ran_startHour = 59
+ ran_startMin = 47
+ ran_startDay=39
+ ran_startMonth = 12 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurDays
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 1079
+ ran_startHour = 19
+ ran_startMin = 66
+ ran_startDay=28
+ ran_startMonth = 12 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setTitle
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 5723
+ ran_startHour = 8
+ ran_startMin = 5
+ ran_startDay=18
+ ran_startMonth = 3 
+(test)NumDaysInMonth = 31
+This appt.getValid() should be equal to result = true
+Actual appt.getValid() = true
+methodname=setTitle
+methodname=setRecurrence
+methodname=setTitle
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 5149
+ ran_startHour = 51
+ ran_startMin = 37
+ ran_startDay=87
+ ran_startMonth = 6 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setTitle
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 7828
+ ran_startHour = 2
+ ran_startMin = 23
+ ran_startDay=60
+ ran_startMonth = 6 
+(test)NumDaysInMonth = 30
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurrence
+methodname=setRecurrence
+methodname=setRecurrence
+methodname=setRecurrence
+methodname=setTitle
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 9312
+ ran_startHour = 11
+ ran_startMin = 83
+ ran_startDay=-1
+ ran_startMonth = 7 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 1516
+ ran_startHour = 27
+ ran_startMin = 80
+ ran_startDay=55
+ ran_startMonth = 7 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setTitle
+methodname=setRecurDays
+methodname=setRecurrence
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 143
+ ran_startHour = 4
+ ran_startMin = 66
+ ran_startDay=35
+ ran_startMonth = 8 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurrence
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 4738
+ ran_startHour = 23
+ ran_startMin = 16
+ ran_startDay=52
+ ran_startMonth = 10 
+(test)NumDaysInMonth = 31
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurrence
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 8384
+ ran_startHour = 55
+ ran_startMin = 48
+ ran_startDay=64
+ ran_startMonth = 6 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setTitle
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 2260
+ ran_startHour = 3
+ ran_startMin = 76
+ ran_startDay=78
+ ran_startMonth = 9 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 1570
+ ran_startHour = 47
+ ran_startMin = 60
+ ran_startDay=75
+ ran_startMonth = 1 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurDays
+methodname=setRecurDays
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 1102
+ ran_startHour = 5
+ ran_startMin = 28
+ ran_startDay=58
+ ran_startMonth = 5 
+(test)NumDaysInMonth = 31
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurrence
+methodname=setTitle
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 966
+ ran_startHour = 23
+ ran_startMin = 44
+ ran_startDay=82
+ ran_startMonth = 6 
+(test)NumDaysInMonth = 30
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 3872
+ ran_startHour = 61
+ ran_startMin = 17
+ ran_startDay=17
+ ran_startMonth = 8 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 4191
+ ran_startHour = 30
+ ran_startMin = 87
+ ran_startDay=55
+ ran_startMonth = 5 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setTitle
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 5517
+ ran_startHour = 61
+ ran_startMin = 11
+ ran_startDay=20
+ ran_startMonth = 3 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurDays
+methodname=setTitle
+methodname=setRecurDays
+methodname=setRecurrence
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 8347
+ ran_startHour = 15
+ ran_startMin = 87
+ ran_startDay=72
+ ran_startMonth = 5 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 4012
+ ran_startHour = 31
+ ran_startMin = 41
+ ran_startDay=74
+ ran_startMonth = 4 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 4691
+ ran_startHour = 55
+ ran_startMin = 0
+ ran_startDay=77
+ ran_startMonth = 9 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setTitle
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 3921
+ ran_startHour = 88
+ ran_startMin = 84
+ ran_startDay=62
+ ran_startMonth = 11 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 7496
+ ran_startHour = 65
+ ran_startMin = 0
+ ran_startDay=6
+ ran_startMonth = 9 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurrence
+methodname=setRecurDays
+methodname=setRecurrence
+methodname=setTitle
+methodname=setTitle
+methodname=setTitle
+methodname=setTitle
+methodname=setTitle
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 5798
+ ran_startHour = 50
+ ran_startMin = 11
+ ran_startDay=24
+ ran_startMonth = 1 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurDays
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 5998
+ ran_startHour = 72
+ ran_startMin = 31
+ ran_startDay=16
+ ran_startMonth = 1 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurrence
+ Seed:1520707670426
+new appt constructed
+methodname=setRecurDays
+methodname=setRecurDays
+methodname=setTitle
+methodname=setRecurDays
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 3808
+ ran_startHour = 84
+ ran_startMin = 79
+ ran_startDay=-4
+ ran_startMonth = 4 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurrence
+methodname=setRecurrence
+methodname=setRecurDays
+methodname=setRecurDays
+methodname=setRecurrence
+methodname=setRecurDays
+methodname=setTitle
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 157
+ ran_startHour = 21
+ ran_startMin = 47
+ ran_startDay=11
+ ran_startMonth = 2 
+(test)NumDaysInMonth = 28
+This appt.getValid() should be equal to result = true
+Actual appt.getValid() = true
+methodname=setRecurDays
+methodname=setTitle
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 6237
+ ran_startHour = 78
+ ran_startMin = 19
+ ran_startDay=58
+ ran_startMonth = 5 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurrence
+methodname=setRecurDays
+methodname=setRecurDays
+methodname=setTitle
+methodname=setRecurDays
+methodname=setTitle
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 3219
+ ran_startHour = 52
+ ran_startMin = 59
+ ran_startDay=85
+ ran_startMonth = 12 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setTitle
+methodname=setRecurDays
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 100
+ ran_startHour = -1
+ ran_startMin = 66
+ ran_startDay=72
+ ran_startMonth = 8 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurDays
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 7712
+ ran_startHour = 68
+ ran_startMin = 35
+ ran_startDay=85
+ ran_startMonth = 12 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setTitle
+methodname=setRecurrence
+methodname=setTitle
+methodname=setRecurDays
+methodname=setRecurrence
+methodname=setRecurrence
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 617
+ ran_startHour = 31
+ ran_startMin = 80
+ ran_startDay=18
+ ran_startMonth = 9 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurrence
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 1929
+ ran_startHour = 25
+ ran_startMin = 61
+ ran_startDay=71
+ ran_startMonth = 5 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 8745
+ ran_startHour = 6
+ ran_startMin = 72
+ ran_startDay=80
+ ran_startMonth = 6 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setTitle
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 973
+ ran_startHour = 4
+ ran_startMin = 50
+ ran_startDay=83
+ ran_startMonth = 3 
+(test)NumDaysInMonth = 31
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurDays
+methodname=setRecurrence
+methodname=setRecurrence
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 8548
+ ran_startHour = 38
+ ran_startMin = 19
+ ran_startDay=86
+ ran_startMonth = 9 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurrence
+methodname=setRecurDays
+methodname=setTitle
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 4231
+ ran_startHour = 80
+ ran_startMin = 14
+ ran_startDay=35
+ ran_startMonth = 11 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setTitle
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 29
+ ran_startHour = 7
+ ran_startMin = 46
+ ran_startDay=32
+ ran_startMonth = 2 
+(test)NumDaysInMonth = 28
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 1061
+ ran_startHour = 14
+ ran_startMin = 58
+ ran_startDay=39
+ ran_startMonth = 3 
+(test)NumDaysInMonth = 31
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 1044
+ ran_startHour = 48
+ ran_startMin = 9
+ ran_startDay=50
+ ran_startMonth = 1 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 1037
+ ran_startHour = 82
+ ran_startMin = 4
+ ran_startDay=26
+ ran_startMonth = 11 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurrence
+methodname=setRecurDays
+methodname=setRecurDays
+methodname=setTitle
+methodname=setRecurDays
+methodname=setTitle
+methodname=setRecurrence
+methodname=setTitle
+methodname=setRecurrence
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 7656
+ ran_startHour = 46
+ ran_startMin = 58
+ ran_startDay=17
+ ran_startMonth = 11 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 7151
+ ran_startHour = 58
+ ran_startMin = 54
+ ran_startDay=57
+ ran_startMonth = 7 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurrence
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 5781
+ ran_startHour = 71
+ ran_startMin = 53
+ ran_startDay=75
+ ran_startMonth = 1 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 9841
+ ran_startHour = 65
+ ran_startMin = 48
+ ran_startDay=6
+ ran_startMonth = 9 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 7217
+ ran_startHour = 82
+ ran_startMin = 84
+ ran_startDay=90
+ ran_startMonth = 9 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setTitle
+methodname=setRecurrence
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 1409
+ ran_startHour = 51
+ ran_startMin = 63
+ ran_startDay=40
+ ran_startMonth = 11 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setTitle
+methodname=setRecurrence
+methodname=setRecurrence
+methodname=setRecurDays
+methodname=setRecurrence
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 1119
+ ran_startHour = 75
+ ran_startMin = 73
+ ran_startDay=49
+ ran_startMonth = 7 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurrence
+methodname=setTitle
+methodname=setRecurrence
+methodname=setRecurrence
+methodname=setRecurDays
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 5010
+ ran_startHour = 83
+ ran_startMin = 60
+ ran_startDay=71
+ ran_startMonth = 6 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setTitle
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 2006
+ ran_startHour = 11
+ ran_startMin = 48
+ ran_startDay=83
+ ran_startMonth = 3 
+(test)NumDaysInMonth = 31
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurDays
+methodname=setTitle
+methodname=setRecurDays
+methodname=setRecurDays
+methodname=setRecurDays
+methodname=setRecurDays
+methodname=setRecurDays
+methodname=setTitle
+methodname=setTitle
+methodname=setRecurrence
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 734
+ ran_startHour = 48
+ ran_startMin = 79
+ ran_startDay=36
+ ran_startMonth = 2 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 6880
+ ran_startHour = 76
+ ran_startMin = 38
+ ran_startDay=54
+ ran_startMonth = 3 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setTitle
+methodname=setTitle
+methodname=setRecurrence
+ Seed:1520707670432
+new appt constructed
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 86
+ ran_startHour = 58
+ ran_startMin = 78
+ ran_startDay=67
+ ran_startMonth = 10 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 9154
+ ran_startHour = 27
+ ran_startMin = 28
+ ran_startDay=4
+ ran_startMonth = 8 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setTitle
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 7001
+ ran_startHour = 9
+ ran_startMin = 55
+ ran_startDay=24
+ ran_startMonth = 10 
+(test)NumDaysInMonth = 31
+This appt.getValid() should be equal to result = true
+Actual appt.getValid() = true
+methodname=setTitle
+methodname=setRecurrence
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 3002
+ ran_startHour = 52
+ ran_startMin = 47
+ ran_startDay=41
+ ran_startMonth = 9 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setTitle
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 6320
+ ran_startHour = 53
+ ran_startMin = 82
+ ran_startDay=38
+ ran_startMonth = 12 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurrence
+methodname=setRecurrence
+methodname=setRecurrence
+methodname=setRecurrence
+methodname=setTitle
+methodname=setTitle
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 546
+ ran_startHour = 58
+ ran_startMin = 63
+ ran_startDay=58
+ ran_startMonth = 9 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setTitle
+methodname=setRecurrence
+methodname=setTitle
+methodname=setRecurrence
+methodname=setRecurDays
+methodname=setRecurDays
+methodname=setTitle
+methodname=setTitle
+methodname=setTitle
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 6444
+ ran_startHour = -2
+ ran_startMin = 90
+ ran_startDay=85
+ ran_startMonth = 5 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 123
+ ran_startHour = 53
+ ran_startMin = 23
+ ran_startDay=36
+ ran_startMonth = 10 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurDays
+methodname=setRecurDays
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 4371
+ ran_startHour = 40
+ ran_startMin = 78
+ ran_startDay=83
+ ran_startMonth = 7 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setTitle
+methodname=setRecurrence
+methodname=setRecurDays
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 8720
+ ran_startHour = 14
+ ran_startMin = -5
+ ran_startDay=38
+ ran_startMonth = 12 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setTitle
+methodname=setTitle
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 4968
+ ran_startHour = 27
+ ran_startMin = 25
+ ran_startDay=15
+ ran_startMonth = 7 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurrence
+methodname=setRecurrence
+methodname=setRecurDays
+methodname=setRecurrence
+methodname=setRecurDays
+methodname=setRecurrence
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 5291
+ ran_startHour = 33
+ ran_startMin = 14
+ ran_startDay=70
+ ran_startMonth = 8 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurDays
+methodname=setTitle
+methodname=setTitle
+methodname=setTitle
+methodname=setRecurDays
+methodname=setRecurrence
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 7567
+ ran_startHour = 39
+ ran_startMin = -4
+ ran_startDay=15
+ ran_startMonth = 9 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setTitle
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 1661
+ ran_startHour = 39
+ ran_startMin = 2
+ ran_startDay=66
+ ran_startMonth = 1 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurrence
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 5355
+ ran_startHour = 27
+ ran_startMin = 11
+ ran_startDay=18
+ ran_startMonth = 9 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurrence
+methodname=setRecurDays
+methodname=setRecurDays
+methodname=setTitle
+methodname=setRecurrence
+methodname=setRecurrence
+methodname=setRecurDays
+methodname=setRecurDays
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 7840
+ ran_startHour = 20
+ ran_startMin = 23
+ ran_startDay=44
+ ran_startMonth = 3 
+(test)NumDaysInMonth = 31
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setTitle
+methodname=setTitle
+methodname=setTitle
+methodname=setRecurrence
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 8739
+ ran_startHour = 81
+ ran_startMin = 27
+ ran_startDay=-4
+ ran_startMonth = 4 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 762
+ ran_startHour = 32
+ ran_startMin = 12
+ ran_startDay=10
+ ran_startMonth = 7 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurDays
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 1744
+ ran_startHour = 28
+ ran_startMin = 16
+ ran_startDay=66
+ ran_startMonth = 7 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 8618
+ ran_startHour = 48
+ ran_startMin = 27
+ ran_startDay=47
+ ran_startMonth = 8 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurDays
+methodname=setRecurDays
+methodname=setRecurDays
+methodname=setTitle
+methodname=setRecurrence
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 4768
+ ran_startHour = 57
+ ran_startMin = 8
+ ran_startDay=66
+ ran_startMonth = 5 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurDays
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 8735
+ ran_startHour = -3
+ ran_startMin = 40
+ ran_startDay=55
+ ran_startMonth = 12 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurDays
+methodname=setRecurDays
+methodname=setRecurrence
+methodname=setRecurDays
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 2268
+ ran_startHour = 82
+ ran_startMin = 15
+ ran_startDay=43
+ ran_startMonth = 5 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurrence
+methodname=setRecurDays
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 7491
+ ran_startHour = 13
+ ran_startMin = 43
+ ran_startDay=47
+ ran_startMonth = 12 
+(test)NumDaysInMonth = 31
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setTitle
+methodname=setRecurrence
+methodname=setRecurDays
+methodname=setRecurrence
+methodname=setTitle
+methodname=setRecurDays
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 9063
+ ran_startHour = 76
+ ran_startMin = 59
+ ran_startDay=60
+ ran_startMonth = 9 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 7083
+ ran_startHour = 64
+ ran_startMin = 88
+ ran_startDay=32
+ ran_startMonth = 3 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurDays
+methodname=setRecurDays
+methodname=setTitle
+ Seed:1520707670434
+new appt constructed
+methodname=setTitle
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 5364
+ ran_startHour = 83
+ ran_startMin = 40
+ ran_startDay=7
+ ran_startMonth = 9 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurrence
+methodname=setRecurDays
+methodname=setRecurDays
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 4869
+ ran_startHour = 80
+ ran_startMin = 68
+ ran_startDay=50
+ ran_startMonth = 12 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurDays
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 1181
+ ran_startHour = 10
+ ran_startMin = 68
+ ran_startDay=76
+ ran_startMonth = 8 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurDays
+methodname=setTitle
+methodname=setRecurDays
+methodname=setRecurrence
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 1031
+ ran_startHour = 70
+ ran_startMin = 59
+ ran_startDay=34
+ ran_startMonth = 6 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurDays
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 5523
+ ran_startHour = 47
+ ran_startMin = 30
+ ran_startDay=-4
+ ran_startMonth = 12 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurrence
+methodname=setTitle
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 9412
+ ran_startHour = 78
+ ran_startMin = 38
+ ran_startDay=30
+ ran_startMonth = 4 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setTitle
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 2800
+ ran_startHour = 4
+ ran_startMin = 57
+ ran_startDay=19
+ ran_startMonth = 8 
+(test)NumDaysInMonth = 31
+This appt.getValid() should be equal to result = true
+Actual appt.getValid() = true
+methodname=setRecurrence
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 4031
+ ran_startHour = 33
+ ran_startMin = -1
+ ran_startDay=71
+ ran_startMonth = 3 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurrence
+methodname=setTitle
+methodname=setTitle
+methodname=setTitle
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 6305
+ ran_startHour = 29
+ ran_startMin = 13
+ ran_startDay=89
+ ran_startMonth = 9 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurDays
+methodname=setRecurDays
+methodname=setRecurrence
+methodname=setRecurDays
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 1558
+ ran_startHour = 28
+ ran_startMin = 82
+ ran_startDay=55
+ ran_startMonth = 6 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setTitle
+methodname=setRecurrence
+methodname=setRecurDays
+methodname=setRecurrence
+methodname=setTitle
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 8698
+ ran_startHour = 19
+ ran_startMin = 63
+ ran_startDay=74
+ ran_startMonth = 2 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 574
+ ran_startHour = 79
+ ran_startMin = 66
+ ran_startDay=81
+ ran_startMonth = 11 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 8041
+ ran_startHour = 34
+ ran_startMin = 76
+ ran_startDay=17
+ ran_startMonth = 2 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurDays
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 3476
+ ran_startHour = 10
+ ran_startMin = 33
+ ran_startDay=19
+ ran_startMonth = 12 
+(test)NumDaysInMonth = 31
+This appt.getValid() should be equal to result = true
+Actual appt.getValid() = true
+methodname=setTitle
+methodname=setRecurrence
+methodname=setRecurDays
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 1058
+ ran_startHour = 67
+ ran_startMin = 33
+ ran_startDay=56
+ ran_startMonth = 11 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurDays
+methodname=setRecurrence
+methodname=setTitle
+methodname=setTitle
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 4638
+ ran_startHour = 0
+ ran_startMin = 76
+ ran_startDay=81
+ ran_startMonth = 4 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurDays
+methodname=setTitle
+methodname=setTitle
+methodname=setTitle
+methodname=setRecurDays
+methodname=setRecurrence
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 9701
+ ran_startHour = 1
+ ran_startMin = 5
+ ran_startDay=35
+ ran_startMonth = 6 
+(test)NumDaysInMonth = 30
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 821
+ ran_startHour = 11
+ ran_startMin = 32
+ ran_startDay=25
+ ran_startMonth = 9 
+(test)NumDaysInMonth = 30
+This appt.getValid() should be equal to result = true
+Actual appt.getValid() = true
+methodname=setRecurDays
+methodname=setTitle
+methodname=setRecurDays
+methodname=setRecurrence
+methodname=setTitle
+methodname=setRecurDays
+methodname=setTitle
+methodname=setRecurrence
+methodname=setRecurDays
+methodname=setRecurrence
+methodname=setRecurrence
+methodname=setRecurrence
+methodname=setRecurrence
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 8955
+ ran_startHour = 80
+ ran_startMin = 50
+ ran_startDay=12
+ ran_startMonth = 3 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 7368
+ ran_startHour = 31
+ ran_startMin = 60
+ ran_startDay=39
+ ran_startMonth = 1 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurrence
+methodname=setRecurDays
+methodname=setTitle
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 3305
+ ran_startHour = 52
+ ran_startMin = 44
+ ran_startDay=46
+ ran_startMonth = 1 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurrence
+methodname=setTitle
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 9495
+ ran_startHour = 57
+ ran_startMin = 3
+ ran_startDay=81
+ ran_startMonth = 4 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurDays
+methodname=setRecurDays
+methodname=setRecurrence
+methodname=setRecurDays
+methodname=setRecurDays
+methodname=setRecurrence
+methodname=setTitle
+methodname=setRecurrence
+methodname=setRecurrence
+methodname=setRecurrence
+methodname=setRecurrence
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 5822
+ ran_startHour = -1
+ ran_startMin = 28
+ ran_startDay=-2
+ ran_startMonth = 12 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurrence
+methodname=setRecurrence
+methodname=setRecurrence
+methodname=setRecurrence
+methodname=setRecurDays
+methodname=setRecurDays
+methodname=setRecurDays
+ Seed:1520707670435
+new appt constructed
+methodname=setRecurDays
+methodname=setTitle
+methodname=setRecurrence
+methodname=setRecurrence
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 5015
+ ran_startHour = 38
+ ran_startMin = 31
+ ran_startDay=12
+ ran_startMonth = 9 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurrence
+methodname=setTitle
+methodname=setRecurDays
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 4978
+ ran_startHour = 22
+ ran_startMin = 71
+ ran_startDay=20
+ ran_startMonth = 6 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurDays
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 6192
+ ran_startHour = 39
+ ran_startMin = 27
+ ran_startDay=70
+ ran_startMonth = 8 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurDays
+methodname=setRecurDays
+methodname=setRecurDays
+methodname=setRecurDays
+methodname=setRecurDays
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 5423
+ ran_startHour = 13
+ ran_startMin = 6
+ ran_startDay=24
+ ran_startMonth = 6 
+(test)NumDaysInMonth = 30
+This appt.getValid() should be equal to result = true
+Actual appt.getValid() = true
+methodname=setRecurrence
+methodname=setTitle
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 9531
+ ran_startHour = 26
+ ran_startMin = 54
+ ran_startDay=31
+ ran_startMonth = 7 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 7960
+ ran_startHour = 25
+ ran_startMin = 86
+ ran_startDay=63
+ ran_startMonth = 12 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurrence
+methodname=setRecurDays
+methodname=setRecurrence
+methodname=setTitle
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 9169
+ ran_startHour = 47
+ ran_startMin = 76
+ ran_startDay=45
+ ran_startMonth = 2 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 9908
+ ran_startHour = 57
+ ran_startMin = 90
+ ran_startDay=46
+ ran_startMonth = 6 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setTitle
+methodname=setRecurDays
+methodname=setRecurrence
+methodname=setRecurDays
+methodname=setRecurDays
+methodname=setRecurDays
+methodname=setTitle
+methodname=setRecurDays
+methodname=setTitle
+methodname=setRecurDays
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 9286
+ ran_startHour = 61
+ ran_startMin = 77
+ ran_startDay=33
+ ran_startMonth = 6 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurrence
+methodname=setTitle
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 4030
+ ran_startHour = 6
+ ran_startMin = 61
+ ran_startDay=17
+ ran_startMonth = 3 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurrence
+methodname=setTitle
+methodname=setTitle
+methodname=setRecurDays
+methodname=setRecurrence
+methodname=setRecurrence
+methodname=setTitle
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 5456
+ ran_startHour = 77
+ ran_startMin = 60
+ ran_startDay=88
+ ran_startMonth = 8 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 7352
+ ran_startHour = -1
+ ran_startMin = -5
+ ran_startDay=84
+ ran_startMonth = 12 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setTitle
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 969
+ ran_startHour = 58
+ ran_startMin = 59
+ ran_startDay=31
+ ran_startMonth = 9 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurDays
+methodname=setRecurrence
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 6817
+ ran_startHour = 75
+ ran_startMin = 48
+ ran_startDay=85
+ ran_startMonth = 5 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 122
+ ran_startHour = 43
+ ran_startMin = 50
+ ran_startDay=49
+ ran_startMonth = 4 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurDays
+methodname=setRecurDays
+methodname=setTitle
+methodname=setRecurrence
+methodname=setRecurrence
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 2991
+ ran_startHour = 64
+ ran_startMin = 42
+ ran_startDay=35
+ ran_startMonth = 4 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setTitle
+methodname=setRecurDays
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 843
+ ran_startHour = 83
+ ran_startMin = 84
+ ran_startDay=74
+ ran_startMonth = 12 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 8836
+ ran_startHour = 56
+ ran_startMin = 90
+ ran_startDay=83
+ ran_startMonth = 6 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurrence
+methodname=setTitle
+methodname=setRecurDays
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 6141
+ ran_startHour = 46
+ ran_startMin = 21
+ ran_startDay=85
+ ran_startMonth = 3 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurDays
+methodname=setTitle
+methodname=setTitle
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 6320
+ ran_startHour = 21
+ ran_startMin = 12
+ ran_startDay=45
+ ran_startMonth = 9 
+(test)NumDaysInMonth = 30
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 1892
+ ran_startHour = 77
+ ran_startMin = 66
+ ran_startDay=-2
+ ran_startMonth = 12 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 6111
+ ran_startHour = 75
+ ran_startMin = 9
+ ran_startDay=24
+ ran_startMonth = 1 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurrence
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 3949
+ ran_startHour = 88
+ ran_startMin = 3
+ ran_startDay=35
+ ran_startMonth = 10 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setTitle
+methodname=setRecurDays
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 4971
+ ran_startHour = 45
+ ran_startMin = 18
+ ran_startDay=87
+ ran_startMonth = 11 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurrence
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 384
+ ran_startHour = 20
+ ran_startMin = 74
+ ran_startDay=31
+ ran_startMonth = 6 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurDays
+methodname=setTitle
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 662
+ ran_startHour = 20
+ ran_startMin = 3
+ ran_startDay=89
+ ran_startMonth = 1 
+(test)NumDaysInMonth = 31
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setTitle
+methodname=setRecurrence
+methodname=setRecurrence
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 44
+ ran_startHour = 53
+ ran_startMin = 35
+ ran_startDay=72
+ ran_startMonth = 11 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurDays
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 6611
+ ran_startHour = 26
+ ran_startMin = 73
+ ran_startDay=6
+ ran_startMonth = 11 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 693
+ ran_startHour = 82
+ ran_startMin = 54
+ ran_startDay=58
+ ran_startMonth = 9 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurDays
+methodname=setRecurDays
+methodname=setRecurDays
+methodname=setTitle
+methodname=setRecurDays
+methodname=setTitle
+methodname=setTitle
+ Seed:1520707670436
+new appt constructed
+methodname=setRecurDays
+methodname=setRecurDays
+methodname=setTitle
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 3190
+ ran_startHour = 43
+ ran_startMin = 52
+ ran_startDay=35
+ ran_startMonth = 12 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurDays
+methodname=setRecurDays
+methodname=setRecurDays
+methodname=setTitle
+methodname=setTitle
+methodname=setRecurDays
+methodname=setRecurDays
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 6534
+ ran_startHour = 22
+ ran_startMin = 29
+ ran_startDay=77
+ ran_startMonth = 6 
+(test)NumDaysInMonth = 30
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setTitle
+methodname=setRecurrence
+methodname=setTitle
+methodname=setTitle
+methodname=setRecurrence
+methodname=setTitle
+methodname=setTitle
+methodname=setRecurDays
+methodname=setTitle
+methodname=setRecurDays
+methodname=setTitle
+methodname=setTitle
+methodname=setTitle
+methodname=setTitle
+methodname=setTitle
+methodname=setRecurDays
+methodname=setRecurDays
+methodname=setRecurrence
+methodname=setTitle
+methodname=setRecurrence
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 1162
+ ran_startHour = 63
+ ran_startMin = 61
+ ran_startDay=83
+ ran_startMonth = 4 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurrence
+methodname=setTitle
+methodname=setRecurDays
+methodname=setTitle
+methodname=setTitle
+methodname=setTitle
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 8927
+ ran_startHour = 76
+ ran_startMin = 56
+ ran_startDay=62
+ ran_startMonth = 8 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurDays
+methodname=setTitle
+methodname=setRecurrence
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 5162
+ ran_startHour = 62
+ ran_startMin = 36
+ ran_startDay=52
+ ran_startMonth = 9 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurDays
+methodname=setRecurrence
+methodname=setTitle
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 6885
+ ran_startHour = 71
+ ran_startMin = 64
+ ran_startDay=88
+ ran_startMonth = 5 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurDays
+methodname=setRecurDays
+methodname=setRecurDays
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 2269
+ ran_startHour = 2
+ ran_startMin = 49
+ ran_startDay=87
+ ran_startMonth = 10 
+(test)NumDaysInMonth = 31
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 4043
+ ran_startHour = 77
+ ran_startMin = 80
+ ran_startDay=74
+ ran_startMonth = 5 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurDays
+methodname=setTitle
+methodname=setTitle
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 5690
+ ran_startHour = 34
+ ran_startMin = 64
+ ran_startDay=4
+ ran_startMonth = 11 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurDays
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 1916
+ ran_startHour = 11
+ ran_startMin = -2
+ ran_startDay=5
+ ran_startMonth = 1 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 8814
+ ran_startHour = 88
+ ran_startMin = 22
+ ran_startDay=63
+ ran_startMonth = 7 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setTitle
+methodname=setRecurDays
+methodname=setRecurDays
+methodname=setRecurrence
+methodname=setTitle
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 6485
+ ran_startHour = 76
+ ran_startMin = 59
+ ran_startDay=76
+ ran_startMonth = 2 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurrence
+methodname=setTitle
+methodname=setTitle
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 945
+ ran_startHour = 51
+ ran_startMin = 53
+ ran_startDay=76
+ ran_startMonth = 7 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 1449
+ ran_startHour = 48
+ ran_startMin = 90
+ ran_startDay=33
+ ran_startMonth = 10 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 8664
+ ran_startHour = 26
+ ran_startMin = 25
+ ran_startDay=42
+ ran_startMonth = 6 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 6580
+ ran_startHour = 32
+ ran_startMin = 47
+ ran_startDay=48
+ ran_startMonth = 10 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurrence
+methodname=setTitle
+methodname=setRecurDays
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 3792
+ ran_startHour = 6
+ ran_startMin = 58
+ ran_startDay=32
+ ran_startMonth = 9 
+(test)NumDaysInMonth = 30
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurDays
+methodname=setRecurrence
+methodname=setTitle
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 5414
+ ran_startHour = 87
+ ran_startMin = 84
+ ran_startDay=37
+ ran_startMonth = 1 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurDays
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 4945
+ ran_startHour = 49
+ ran_startMin = 53
+ ran_startDay=87
+ ran_startMonth = 7 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurrence
+methodname=setRecurDays
+methodname=setRecurDays
+methodname=setRecurrence
+methodname=setRecurDays
+methodname=setRecurDays
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 5092
+ ran_startHour = 70
+ ran_startMin = 39
+ ran_startDay=55
+ ran_startMonth = 7 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setTitle
+methodname=setRecurDays
+methodname=setTitle
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 2451
+ ran_startHour = 24
+ ran_startMin = 45
+ ran_startDay=61
+ ran_startMonth = 1 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurDays
+methodname=setRecurrence
+methodname=setTitle
+methodname=setRecurDays
+methodname=setRecurrence
+methodname=setRecurDays
+ Seed:1520707670449
+new appt constructed
+methodname=setRecurDays
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 6522
+ ran_startHour = 8
+ ran_startMin = 64
+ ran_startDay=53
+ ran_startMonth = 4 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurrence
+methodname=setTitle
+methodname=setTitle
+methodname=setRecurrence
+methodname=setTitle
+methodname=setTitle
+methodname=setRecurDays
+methodname=setRecurrence
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 2522
+ ran_startHour = 49
+ ran_startMin = 68
+ ran_startDay=79
+ ran_startMonth = 7 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setTitle
+methodname=setTitle
+methodname=setRecurrence
+methodname=setRecurrence
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 9093
+ ran_startHour = 76
+ ran_startMin = 13
+ ran_startDay=88
+ ran_startMonth = 10 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setTitle
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 2241
+ ran_startHour = 81
+ ran_startMin = 37
+ ran_startDay=38
+ ran_startMonth = 2 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurrence
+methodname=setRecurrence
+methodname=setTitle
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 8354
+ ran_startHour = 15
+ ran_startMin = 76
+ ran_startDay=23
+ ran_startMonth = 7 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setTitle
+methodname=setTitle
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 7995
+ ran_startHour = 9
+ ran_startMin = 16
+ ran_startDay=16
+ ran_startMonth = 12 
+(test)NumDaysInMonth = 31
+This appt.getValid() should be equal to result = true
+Actual appt.getValid() = true
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 5880
+ ran_startHour = 51
+ ran_startMin = 87
+ ran_startDay=65
+ ran_startMonth = 10 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurDays
+methodname=setRecurrence
+methodname=setRecurDays
+methodname=setRecurrence
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 4915
+ ran_startHour = 35
+ ran_startMin = 35
+ ran_startDay=49
+ ran_startMonth = 11 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 8567
+ ran_startHour = 80
+ ran_startMin = -5
+ ran_startDay=85
+ ran_startMonth = 11 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurDays
+methodname=setRecurDays
+methodname=setRecurDays
+methodname=setRecurrence
+methodname=setRecurDays
+methodname=setTitle
+methodname=setRecurDays
+methodname=setRecurDays
+methodname=setRecurDays
+methodname=setRecurrence
+methodname=setRecurDays
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 8818
+ ran_startHour = 63
+ ran_startMin = 51
+ ran_startDay=34
+ ran_startMonth = 9 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurrence
+methodname=setRecurDays
+methodname=setTitle
+methodname=setRecurrence
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 2255
+ ran_startHour = 27
+ ran_startMin = 41
+ ran_startDay=50
+ ran_startMonth = 1 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurrence
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 6659
+ ran_startHour = 65
+ ran_startMin = 29
+ ran_startDay=13
+ ran_startMonth = 1 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setTitle
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 3802
+ ran_startHour = 50
+ ran_startMin = 66
+ ran_startDay=1
+ ran_startMonth = 8 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurrence
+methodname=setRecurrence
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 49
+ ran_startHour = 86
+ ran_startMin = 17
+ ran_startDay=23
+ ran_startMonth = 10 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurDays
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 7956
+ ran_startHour = 6
+ ran_startMin = 14
+ ran_startDay=-2
+ ran_startMonth = 2 
+(test)NumDaysInMonth = 29
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurDays
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 6257
+ ran_startHour = 26
+ ran_startMin = 9
+ ran_startDay=21
+ ran_startMonth = 2 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurrence
+methodname=setRecurrence
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 6287
+ ran_startHour = 19
+ ran_startMin = 59
+ ran_startDay=41
+ ran_startMonth = 11 
+(test)NumDaysInMonth = 30
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurDays
+methodname=setRecurrence
+methodname=setRecurDays
+methodname=setRecurrence
+methodname=setTitle
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 6799
+ ran_startHour = 77
+ ran_startMin = 46
+ ran_startDay=56
+ ran_startMonth = 7 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 286
+ ran_startHour = 2
+ ran_startMin = 73
+ ran_startDay=14
+ ran_startMonth = 9 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurDays
+methodname=setRecurrence
+methodname=setRecurrence
+methodname=setTitle
+methodname=setTitle
+methodname=setTitle
+methodname=setRecurDays
+methodname=setTitle
+methodname=setTitle
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 8269
+ ran_startHour = -2
+ ran_startMin = 74
+ ran_startDay=47
+ ran_startMonth = 8 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setTitle
+methodname=setRecurDays
+methodname=setTitle
+methodname=setTitle
+methodname=setRecurDays
+methodname=setRecurDays
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 5596
+ ran_startHour = 40
+ ran_startMin = -3
+ ran_startDay=52
+ ran_startMonth = 4 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 7872
+ ran_startHour = 49
+ ran_startMin = 6
+ ran_startDay=65
+ ran_startMonth = 8 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurrence
+methodname=setRecurrence
+methodname=setRecurDays
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 7602
+ ran_startHour = 44
+ ran_startMin = 9
+ ran_startDay=44
+ ran_startMonth = 12 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurDays
+methodname=setRecurDays
+methodname=setTitle
+methodname=setRecurrence
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 2535
+ ran_startHour = 23
+ ran_startMin = 7
+ ran_startDay=-2
+ ran_startMonth = 6 
+(test)NumDaysInMonth = 30
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setTitle
+methodname=setTitle
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 3285
+ ran_startHour = 45
+ ran_startMin = 75
+ ran_startDay=49
+ ran_startMonth = 8 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+ Seed:1520707670451
+new appt constructed
+methodname=setRecurrence
+methodname=setRecurrence
+methodname=setRecurrence
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 1234
+ ran_startHour = 34
+ ran_startMin = 41
+ ran_startDay=62
+ ran_startMonth = 7 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setTitle
+methodname=setRecurrence
+methodname=setRecurrence
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 4098
+ ran_startHour = 21
+ ran_startMin = 10
+ ran_startDay=40
+ ran_startMonth = 10 
+(test)NumDaysInMonth = 31
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurDays
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 4260
+ ran_startHour = 23
+ ran_startMin = 74
+ ran_startDay=6
+ ran_startMonth = 3 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurDays
+methodname=setRecurDays
+methodname=setTitle
+methodname=setRecurDays
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 3347
+ ran_startHour = 78
+ ran_startMin = 28
+ ran_startDay=78
+ ran_startMonth = 9 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurDays
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 7643
+ ran_startHour = 48
+ ran_startMin = 15
+ ran_startDay=65
+ ran_startMonth = 3 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurDays
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 3020
+ ran_startHour = 37
+ ran_startMin = 35
+ ran_startDay=4
+ ran_startMonth = 2 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 940
+ ran_startHour = 81
+ ran_startMin = 56
+ ran_startDay=0
+ ran_startMonth = 5 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setRecurDays
+methodname=setRecurDays
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 4227
+ ran_startHour = 57
+ ran_startMin = 58
+ ran_startDay=0
+ ran_startMonth = 10 
+This appt.getValid() should be equal to result = false
+Actual appt.getValid() = false
+methodname=setTitle
+methodname=setRecurrence
+methodname=setRecurrence
+methodname=isValid
+testing isvalid
+
+ Appt Values: 
+ startYear = 8885
+ ran_startHour = 14
+ ran_startMin = 54
+ ran_startDay=26
+ ran_startMonth = 1 
+(test)NumDaysInMonth = 31
+This appt.getValid() should be equal to result = true
+Actual appt.getValid() = false
+</system-out>
+  </testcase>
+</testsuite>
