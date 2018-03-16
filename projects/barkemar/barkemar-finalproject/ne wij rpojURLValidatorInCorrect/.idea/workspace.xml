@@ -12,21 +12,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="UrlValidatorTest.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="UrlValidatorTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../URLValidatorInCorrect/src/test/java/finalprojectB/UrlValidatorTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="886">
-              <caret line="69" column="68" lean-forward="false" selection-start-line="69" selection-start-column="68" selection-end-line="69" selection-end-column="68" />
+            <state relative-caret-position="257">
+              <caret line="32" column="76" lean-forward="false" selection-start-line="32" selection-start-column="76" selection-end-line="32" selection-end-column="76" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UrlValidator.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="UrlValidator.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../URLValidatorInCorrect/src/main/java/finalprojectB/UrlValidator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="610">
-              <caret line="353" column="51" lean-forward="false" selection-start-line="353" selection-start-column="51" selection-end-line="353" selection-end-column="51" />
+            <state relative-caret-position="-18">
+              <caret line="366" column="31" lean-forward="false" selection-start-line="366" selection-start-column="22" selection-end-line="366" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -37,8 +37,11 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>PATH_REGEX</find>
-      <find>path_patt</find>
       <find>isvalid(</find>
+      <find>path_patt</find>
+      <find>PATH_PATTERN</find>
+      <find>scheme_patt</find>
+      <find>isvalidsc</find>
     </findStrings>
   </component>
   <component name="GradleLocalSettings">
@@ -49,8 +52,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/../URLValidatorInCorrect/src/test/java/finalprojectB/UrlValidatorTest.java" />
         <option value="$PROJECT_DIR$/../URLValidatorInCorrect/src/main/java/finalprojectB/UrlValidator.java" />
+        <option value="$PROJECT_DIR$/../URLValidatorInCorrect/src/test/java/finalprojectB/UrlValidatorTest.java" />
       </list>
     </option>
   </component>
@@ -291,18 +294,18 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../URLValidatorInCorrect/src/test/java/finalprojectB/UrlValidatorTest.java">
+    <entry file="file://$PROJECT_DIR$/../URLValidatorInCorrect/src/main/java/finalprojectB/UrlValidator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="886">
-          <caret line="69" column="68" lean-forward="false" selection-start-line="69" selection-start-column="68" selection-end-line="69" selection-end-column="68" />
+        <state relative-caret-position="-18">
+          <caret line="366" column="31" lean-forward="false" selection-start-line="366" selection-start-column="22" selection-end-line="366" selection-end-column="31" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../URLValidatorInCorrect/src/main/java/finalprojectB/UrlValidator.java">
+    <entry file="file://$PROJECT_DIR$/../URLValidatorInCorrect/src/test/java/finalprojectB/UrlValidatorTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="610">
-          <caret line="353" column="51" lean-forward="false" selection-start-line="353" selection-start-column="51" selection-end-line="353" selection-end-column="51" />
+        <state relative-caret-position="257">
+          <caret line="32" column="76" lean-forward="false" selection-start-line="32" selection-start-column="76" selection-end-line="32" selection-end-column="76" />
           <folding />
         </state>
       </provider>

@@ -30,8 +30,8 @@ public class UrlValidatorTest extends TestCase {
 
 
 
-      System.out.println("\n~~~~~~~~~~~~\nurlVal_2 test start");
-      UrlValidator urlVal_2 = new UrlValidator(schemes, 0);
+      System.out.println("\n~~~~~~~~~~~~\nurlVal_2 test start OPTION SET = 1");
+      UrlValidator urlVal_2 = new UrlValidator(schemes, 1);
       boolean result2 = urlVal_2.isValid("http://www.google.com");
       System.out.println("result2 = "+result2);
       //assertTrue(urlVal.isValid("http://www.google.com"));
