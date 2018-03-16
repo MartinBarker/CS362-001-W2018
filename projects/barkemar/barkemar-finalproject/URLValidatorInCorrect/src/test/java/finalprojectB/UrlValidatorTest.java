@@ -58,10 +58,6 @@ public class UrlValidatorTest extends TestCase {
 
 
 
-
-
-
-
    //   boolean result = urlVal.isValid("http://www.google.com");
    //   System.out.println("result = "+result);
    }
@@ -71,6 +67,8 @@ public class UrlValidatorTest extends TestCase {
    public void testYourFirstPartition()
    {
 	 //You can use this function to implement your First Partition testing	   
+      System.out.println("__________first partrion testing__________");
+
 
    }
    
