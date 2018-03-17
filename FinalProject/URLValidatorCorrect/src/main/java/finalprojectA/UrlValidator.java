@@ -295,7 +295,7 @@ public class UrlValidator implements Serializable {
      * @return true if the url is valid.
      */
     public boolean isValid(String value) {
-        System.out.println("------------\n-------------\nin isValid(), value = "+value+"\n------\n");
+  //      System.out.println("------------\n-------------\nin isValid(), value = "+value+"\n------\n");
 
         if (value == null) {
             return false;
@@ -304,18 +304,26 @@ public class UrlValidator implements Serializable {
         // Check the whole url address structure
         Matcher urlMatcher = URL_PATTERN.matcher(value);
         if (!urlMatcher.matches()) {
+            System.out.println("isValid() | returning false because url does not match url_pattern");
             return false;
         }
 
         String scheme = urlMatcher.group(PARSE_URL_SCHEME);
+        System.out.println("scheme = "+scheme);
         if (!isValidScheme(scheme)) {
+            System.out.println("isValid() | returning false because scheme is not valid ");
             return false;
         }
 
         String authority = urlMatcher.group(PARSE_URL_AUTHORITY);
+
+        System.out.println("authortiy = "+authority);
         if ("file".equals(scheme)) {// Special case - file: allows an empty authority
+            System.out.println("file = scheme");
             if (authority != null) {
+                System.out.println("authority != null");
                 if (authority.contains(":")) { // but cannot allow trailing :
+                    System.out.println("authority contains :, returning false");
                     return false;
                 }
             }
@@ -323,6 +331,7 @@ public class UrlValidator implements Serializable {
         } else { // not file:
             // Validate the authority
             if (!isValidAuthority(authority)) {
+                System.out.println("isValid() | returning false because is not valid authortiy");
                 return false;
             }
         }
@@ -355,7 +364,7 @@ public class UrlValidator implements Serializable {
         if (scheme == null) {
             return false;
         }
-
+        System.out.println("allowedschemes = "+allowedSchemes);
         // TODO could be removed if external schemes were checked in the ctor before being stored
         if (!SCHEME_PATTERN.matcher(scheme).matches()) {
             return false;

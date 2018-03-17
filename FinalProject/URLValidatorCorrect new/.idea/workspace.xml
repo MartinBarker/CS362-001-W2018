@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3e57a2cf-a47d-40bb-9780-1a9f41aa92c7" name="Default" comment="" />
-    <ignored path="$PROJECT_DIR$/../URLValidatorInCorrect/target/" />
+    <list default="true" id="b28e349d-5ef7-4ebe-963b-fc55d6d7c547" name="Default" comment="" />
+    <ignored path="$PROJECT_DIR$/../URLValidatorCorrect/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,24 +13,17 @@
   <component name="FileEditorManager">
     <leaf>
       <file leaf-file-name="UrlValidatorTest.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/../URLValidatorInCorrect/src/test/java/finalprojectB/UrlValidatorTest.java">
+        <entry file="file://$PROJECT_DIR$/../URLValidatorCorrect/src/test/java/finalprojectA/UrlValidatorTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-408">
-              <caret line="18" column="4" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="184" selection-end-column="0" />
+            <state relative-caret-position="413">
+              <caret line="136" column="0" lean-forward="true" selection-start-line="110" selection-start-column="1" selection-end-line="136" selection-end-column="0" />
               <folding>
-                <element signature="e#431#432#0" expanded="true" />
-                <element signature="e#459#460#0" expanded="true" />
+                <element signature="e#0#13619#0" expanded="true" />
+                <element signature="e#1221#1222#0" expanded="true" />
+                <element signature="e#1249#1250#0" expanded="true" />
+                <element signature="e#9448#9449#0" expanded="true" />
+                <element signature="e#9477#9478#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UrlValidator.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../URLValidatorInCorrect/src/main/java/finalprojectB/UrlValidator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="58">
-              <caret line="356" column="34" lean-forward="false" selection-start-line="356" selection-start-column="22" selection-end-line="356" selection-end-column="34" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -39,19 +32,7 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>testurlpart</find>
-      <find>UrlValidator</find>
-      <find>schemes</find>
-      <find>isvalid</find>
-      <find>isValidScheme</find>
-      <find>isvalidscheme</find>
-      <find>isValidAuthority</find>
-      <find>isvalidaut</find>
-      <find>isvalid(</find>
-      <find>isvalidpat</find>
-      <find>isvalidq</find>
-      <find>isvalidf</find>
-      <find>isvalidschem</find>
+      <find>----</find>
     </findStrings>
   </component>
   <component name="GradleLocalSettings">
@@ -62,16 +43,16 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/../URLValidatorInCorrect/src/test/java/finalprojectB/UrlValidatorTest.java" />
-        <option value="$PROJECT_DIR$/../URLValidatorInCorrect/src/main/java/finalprojectB/UrlValidator.java" />
+        <option value="$PROJECT_DIR$/../URLValidatorCorrect/src/main/java/finalprojectA/UrlValidator.java" />
+        <option value="$PROJECT_DIR$/../URLValidatorCorrect/src/test/java/finalprojectA/UrlValidatorTest.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="113" />
-    <option name="y" value="58" />
-    <option name="width" value="1197" />
-    <option name="height" value="612" />
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="250" />
+    <option name="y" value="8" />
+    <option name="width" value="1099" />
+    <option name="height" value="709" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -92,68 +73,65 @@
         <subPane>
           <expand>
             <path>
-              <item name="intellig-project-URLValidatorInCorrect" type="b2602c69:ProjectViewProjectNode" />
-              <item name="URLValidatorInCorrect" type="462c0819:PsiDirectoryNode" />
+              <item name="URLValidatorCorrect new" type="b2602c69:ProjectViewProjectNode" />
+              <item name="URLValidatorCorrect" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="intellig-project-URLValidatorInCorrect" type="b2602c69:ProjectViewProjectNode" />
-              <item name="URLValidatorInCorrect" type="462c0819:PsiDirectoryNode" />
+              <item name="URLValidatorCorrect new" type="b2602c69:ProjectViewProjectNode" />
+              <item name="URLValidatorCorrect" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="intellig-project-URLValidatorInCorrect" type="b2602c69:ProjectViewProjectNode" />
-              <item name="URLValidatorInCorrect" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="intellig-project-URLValidatorInCorrect" type="b2602c69:ProjectViewProjectNode" />
-              <item name="URLValidatorInCorrect" type="462c0819:PsiDirectoryNode" />
+              <item name="URLValidatorCorrect new" type="b2602c69:ProjectViewProjectNode" />
+              <item name="URLValidatorCorrect" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="intellig-project-URLValidatorInCorrect" type="b2602c69:ProjectViewProjectNode" />
-              <item name="URLValidatorInCorrect" type="462c0819:PsiDirectoryNode" />
+              <item name="URLValidatorCorrect new" type="b2602c69:ProjectViewProjectNode" />
+              <item name="URLValidatorCorrect" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="finalprojectB" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="intellig-project-URLValidatorInCorrect" type="b2602c69:ProjectViewProjectNode" />
-              <item name="URLValidatorInCorrect" type="462c0819:PsiDirectoryNode" />
+              <item name="URLValidatorCorrect new" type="b2602c69:ProjectViewProjectNode" />
+              <item name="URLValidatorCorrect" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="finalprojectA" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="URLValidatorCorrect new" type="b2602c69:ProjectViewProjectNode" />
+              <item name="URLValidatorCorrect" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="intellig-project-URLValidatorInCorrect" type="b2602c69:ProjectViewProjectNode" />
-              <item name="URLValidatorInCorrect" type="462c0819:PsiDirectoryNode" />
+              <item name="URLValidatorCorrect new" type="b2602c69:ProjectViewProjectNode" />
+              <item name="URLValidatorCorrect" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="intellig-project-URLValidatorInCorrect" type="b2602c69:ProjectViewProjectNode" />
-              <item name="URLValidatorInCorrect" type="462c0819:PsiDirectoryNode" />
+              <item name="URLValidatorCorrect new" type="b2602c69:ProjectViewProjectNode" />
+              <item name="URLValidatorCorrect" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="finalprojectB" type="462c0819:PsiDirectoryNode" />
+              <item name="finalprojectA" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
     </panes>
-  </component>
-  <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -255,16 +233,17 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="3e57a2cf-a47d-40bb-9780-1a9f41aa92c7" name="Default" comment="" />
-      <created>1521129715353</created>
+      <changelist id="b28e349d-5ef7-4ebe-963b-fc55d6d7c547" name="Default" comment="" />
+      <created>1521228213303</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1521129715353</updated>
+      <updated>1521228213303</updated>
     </task>
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="113" y="58" width="1197" height="612" extended-state="0" />
+    <frame x="250" y="8" width="1099" height="709" extended-state="1" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -278,8 +257,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21899736" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3288364" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24927816" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -290,6 +268,7 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -301,21 +280,24 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../URLValidatorInCorrect/src/main/java/finalprojectB/UrlValidator.java">
+    <entry file="file://$PROJECT_DIR$/../URLValidatorCorrect/src/main/java/finalprojectA/UrlValidator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="58">
-          <caret line="356" column="34" lean-forward="false" selection-start-line="356" selection-start-column="22" selection-end-line="356" selection-end-column="34" />
+        <state relative-caret-position="166">
+          <caret line="297" column="96" lean-forward="false" selection-start-line="297" selection-start-column="92" selection-end-line="297" selection-end-column="96" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../URLValidatorInCorrect/src/test/java/finalprojectB/UrlValidatorTest.java">
+    <entry file="file://$PROJECT_DIR$/../URLValidatorCorrect/src/test/java/finalprojectA/UrlValidatorTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-408">
-          <caret line="18" column="4" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="184" selection-end-column="0" />
+        <state relative-caret-position="413">
+          <caret line="136" column="0" lean-forward="true" selection-start-line="110" selection-start-column="1" selection-end-line="136" selection-end-column="0" />
           <folding>
-            <element signature="e#431#432#0" expanded="true" />
-            <element signature="e#459#460#0" expanded="true" />
+            <element signature="e#0#13619#0" expanded="true" />
+            <element signature="e#1221#1222#0" expanded="true" />
+            <element signature="e#1249#1250#0" expanded="true" />
+            <element signature="e#9448#9449#0" expanded="true" />
+            <element signature="e#9477#9478#0" expanded="true" />
           </folding>
         </state>
       </provider>

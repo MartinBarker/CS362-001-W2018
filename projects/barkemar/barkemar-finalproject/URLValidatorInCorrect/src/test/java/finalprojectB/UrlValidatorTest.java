@@ -1,7 +1,13 @@
-
 package finalprojectB;
 
 import junit.framework.TestCase;
+
+import java.util.Collections;
+import java.util.HashSet;
+import java.util.Locale;
+import java.util.Set;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 //You can use this as a skeleton for your 3 different test approach
 //It is an optional to use this file, you can generate your own test file(s) to test the target function!
@@ -12,14 +18,26 @@ import junit.framework.TestCase;
 
 
 public class UrlValidatorTest extends TestCase {
-  // private final boolean printStatus = false;
-
+   // private final boolean printStatus = false;
+   private static final String URL_REGEX =
+           "^(([^:/?#]+):)?(//([^/?#]*))?([^?#]*)(\\?([^#]*))?(#(.*))?";
+   private static final Pattern URL_PATTERN = Pattern.compile(URL_REGEX);
    public UrlValidatorTest(String testName) {
       super(testName);
    }
 
-   
-   
+
+
+   /**
+    * Schema/Protocol (ie. http:, ftp:, file:, etc).
+    */
+   private static final int PARSE_URL_SCHEME = 2;
+
+   private static final String SCHEME_REGEX = "^\\p{Alpha}[\\p{Alnum}\\+\\-\\.]*";
+   private static final Pattern SCHEME_PATTERN = Pattern.compile(SCHEME_REGEX);
+   public static final long ALLOW_ALL_SCHEMES = 1 << 0;
+ //  private final Set<String> allowedSchemes; // Must be lower-case
+
    public void testManualTest()
    {
 //You can use this function to implement your manual testing
@@ -27,9 +45,7 @@ public class UrlValidatorTest extends TestCase {
 
       String[] schemes = {"http","https"};
       UrlValidator urlVal = new UrlValidator(schemes, 0);
-
-
-
+/*
       System.out.println("\n~~~~~~~~~~~~\nurlVal_2 test start OPTION SET = 1");
       UrlValidator urlVal_2 = new UrlValidator(schemes, 1);
       boolean result2 = urlVal_2.isValid("http://www.google.com");
@@ -37,8 +53,8 @@ public class UrlValidatorTest extends TestCase {
       //assertTrue(urlVal.isValid("http://www.google.com"));
 
       System.out.println("calling isvalidSceme: "+urlVal_2.isValidScheme("http"));
-     // System.out.println("calling isValidAuthority: "+urlVal_2.isValidAuthority("http"));
-     //  System.out.println("calling isValidAuthority: "+urlVal_2.isValidFragment("http"));
+      // System.out.println("calling isValidAuthority: "+urlVal_2.isValidAuthority("http"));
+      //  System.out.println("calling isValidAuthority: "+urlVal_2.isValidFragment("http"));
       System.out.println("urlVal_2 test over\n~~~~~~~~~~~~\n");
 
 
@@ -55,39 +71,146 @@ public class UrlValidatorTest extends TestCase {
       System.out.println("result4 = "+result4);
       //assertTrue(urlVal.isValid("http://www.google.com"));
       System.out.println("urlVal_4 test over\n~~~~~~~~~~~~\n");
+*/
 
 
-
-   //   boolean result = urlVal.isValid("http://www.google.com");
-   //   System.out.println("result = "+result);
+      //   boolean result = urlVal.isValid("http://www.google.com");
+      //   System.out.println("result = "+result);
    }
 
+   private boolean isOn(long flag) {
+      return (1 & flag) > 0;
+   }
 
-   
    public void testYourFirstPartition()
    {
-	 //You can use this function to implement your First Partition testing	   
       System.out.println("__________first partrion testing__________");
+      //String[] schemes = {"http","https","ftp"};
+
+      UrlValidator urlVal = new UrlValidator(null, null, 0);
+
+      boolean expected = true;
+      System.out.println("\n1) testing normal url (should = true)");
+      String site =  "http://www.google.com:80";
+
+      // Check the whole url address structure
+      Matcher urlMatcher = URL_PATTERN.matcher(site);
+      if (!urlMatcher.matches()) {
+         expected = false;
+         System.out.println("test: url address structure does not match");
+      }
+
+      String scheme = urlMatcher.group(PARSE_URL_SCHEME);
+      System.out.println("test: scheme = "+scheme);
+      System.out.println("test: urlVal.isValidScheme(scheme) = "+ urlVal.isValidScheme(scheme));
+/*      System.out.println("test: urlVal.isValidScheme(http) = "+ urlVal.isValidScheme("http"));
+      System.out.println("test: urlVal.isValidScheme(https) = "+ urlVal.isValidScheme("https"));
+      System.out.println("test: urlVal.isValidScheme(HTTP) = "+ urlVal.isValidScheme("HTTP"));
+      System.out.println("test: urlVal.isValidScheme(HTTPS) = "+ urlVal.isValidScheme("HTTPS"));
+      System.out.println("test: urlVal.isValidScheme(ftp) = "+ urlVal.isValidScheme("ftp"));
+      System.out.println("test: urlVal.isValidScheme(FTP) = "+ urlVal.isValidScheme("FTP"));
+*/
 
 
+
+      System.out.println("site = "+site);
+      boolean newresult = urlVal.isValid(site);
+      System.out.println("result = "+newresult);
+
+///////////////////  part 2   ///////////////////////////////////////////
+/*
+      System.out.println("\n2)");
+      String[] schemes = {"http","https","ftp", "file"};
+      UrlValidator urlVal2 = new UrlValidator(schemes, null, 1);
+      site =  "file:///blablabla";
+      System.out.println("site = "+site);
+      newresult = urlVal2.isValid(site);
+      System.out.println("result = "+newresult);
+
+*/
+
+/*
+      System.out.println("\n3) testing url (should = true)");
+      site =  "https://www.google.com:80";
+      System.out.println("site = "+site);
+      newresult = urlVal.isValid(site);
+      System.out.println("result = "+newresult);
+
+      System.out.println("\n2) testing url with uppercase scheme (should = true)");
+      site =  "HTTP://www.google.com:80";
+      System.out.println("site = "+site);
+      newresult = urlVal.isValid(site);
+      System.out.println("result = "+newresult);
+      //if scheme is uppercase, isvalid() should automatically test if the lowercase version is valid
+
+      System.out.println("\n3) testing url with uppercase scheme (should = true)");
+      site =  "HTTPS://www.google.com:80";
+      System.out.println("site = "+site);
+      newresult = urlVal.isValid(site);
+      System.out.println("result = "+newresult);
+*/
    }
-   
+
+   public void testProgrammingBased(){
+      System.out.println("___-testProgrammingBased___");
+    //  ResultPair testp = testUrlScheme[0];
+    //  System.out.println("scheme[0] = "+testp);
+      String[] sites = { "One", "Two", "Three" };
+      //create string of urls, test if each one is isvalid, assert equals with correct result
+
+
+
+      System.out.println("end");
+   }
+
+
+   protected boolean isValidScheme(String scheme) {
+      if (scheme == null) {
+         return false;
+      }
+
+      // TODO could be removed if external schemes were checked in the ctor before being stored
+      if (!SCHEME_PATTERN.matcher(scheme).matches()) {
+         return false;
+      }
+
+  //    if (isOff(ALLOW_ALL_SCHEMES) && !allowedSchemes.contains(scheme.toLowerCase(Locale.ENGLISH))) {
+  //       return false;
+  //    }
+
+      return true;
+   }
+/*
+   private boolean isOff(long flag) {
+      return (1 & flag) == 0;
+   }
+
+   Matcher matchURL(String value) {
+
+      return URL_PATTERN.matcher(value);
+   }
+*/
    public void testYourSecondPartition(){
-		 //You can use this function to implement your Second Partition testing	   
+      //You can use this function to implement your Second Partition testing
+     // System.out.println("testUrlPathOptions[0] = "+testUrlPathOptions[0]);
+
 
    }
-   //You need to create more test cases for your Partitions if you need to 
+   //You need to create more test cases for your Partitions if you need to
 
    public void testIsValid()
    {
-	   //You can use this function for programming based testing
-   //   testIsValid(testUrlParts, UrlValidator.ALLOW_ALL_SCHEMES);
-     // setUp();
-     // int options = UrlValidator.ALLOW_2_SLASHES + UrlValidator.ALLOW_ALL_SCHEMES + UrlValidator.NO_FRAGMENTS;
+      //You can use this function for programming based testing
+      //   testIsValid(testUrlParts, UrlValidator.ALLOW_ALL_SCHEMES);
+      // setUp();
+      // int options = UrlValidator.ALLOW_2_SLASHES + UrlValidator.ALLOW_ALL_SCHEMES + UrlValidator.NO_FRAGMENTS;
 
-     // testIsValid(testUrlPartsOptions, options);
+      // testIsValid(testUrlPartsOptions, options);
 
    }
+
+
+
 
    //-------------------- Test data for creating a composite URL
    /**
