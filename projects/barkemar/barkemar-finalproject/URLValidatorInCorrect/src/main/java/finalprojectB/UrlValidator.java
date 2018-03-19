@@ -134,7 +134,7 @@ public class UrlValidator implements Serializable {
     private static final Pattern SCHEME_PATTERN = Pattern.compile(SCHEME_REGEX);
 
     // Drop numeric, and  "+-." for now
-    // TODO does not allow for optional userinfo.
+    // TODO does not allow for optional userinfo. 
     // Validation of character set is done by isValidAuthority
     private static final String AUTHORITY_CHARS_REGEX = "\\p{Alnum}\\-\\."; // allows for IPV4 but not IPV6
     private static final String IPV6_REGEX = "[0-9a-fA-F:]+"; // do this as separate match because : could cause ambiguity with port prefix
@@ -147,7 +147,7 @@ public class UrlValidator implements Serializable {
     // since neither ':' nor '@' are allowed chars, we don't need to use non-greedy matching
     private static final String USERINFO_FIELD_REGEX =
             USERINFO_CHARS_REGEX + "+" + // At least one character for the name
-                    "(?::" + USERINFO_CHARS_REGEX + "*)?@"; // colon and password may be absent
+            "(?::" + USERINFO_CHARS_REGEX + "*)?@"; // colon and password may be absent
     private static final String AUTHORITY_REGEX =
             "(?:\\[("+IPV6_REGEX+")\\]|(?:(?:"+USERINFO_FIELD_REGEX+")?([" + AUTHORITY_CHARS_REGEX + "]*)))(?::(\\d*))?(.*)?";
     //             1                          e.g. user:pass@          2                                         3       4
@@ -189,7 +189,7 @@ public class UrlValidator implements Serializable {
     /**
      * If no schemes are provided, default to this set.
      */
-    private static final String[] DEFAULT_SCHEMES = {"http", "https", "ftp"}; // Must be lower-case
+   private static final String[] DEFAULT_SCHEMES = {"http", "https", "ftp"}; // Must be lower-case
 
 
 
@@ -279,8 +279,8 @@ public class UrlValidator implements Serializable {
             }
             allowedSchemes = new HashSet<String>(schemes.length);
             for(int i=0; i < schemes.length; i++) {
-                //allowedSchemes.add(schemes[i].toUpperCase(Locale.ENGLISH));  //ERROR
-                allowedSchemes.add(schemes[i].toLowerCase(Locale.ENGLISH)); // no error
+                allowedSchemes.add(schemes[i].toUpperCase(Locale.ENGLISH));
+
             }
         }
 
@@ -298,40 +298,26 @@ public class UrlValidator implements Serializable {
      * @return true if the url is valid.
      */
     public boolean isValid(String value) {
-        System.out.println("isValid() | testing value = "+value);
-        // System.out.println("isValid() |
         if (value == null) {
-            System.out.println("isValid() | returning false because value == null");
             return false;
         }
 
-        System.out.println("isValid() | checking whole url address structure.");
         // Check the whole url address structure
         Matcher urlMatcher = URL_PATTERN.matcher(value);
- //       System.out.println("isValid() | urlMatcher = "+ urlMatcher);
-        System.out.println("isValid() | urlMatcher.matches() = "+ urlMatcher.matches());
         if (!urlMatcher.matches()) {
-            System.out.println("isValid() | returning false because url does not match url_pattern");
             return false;
         }
 
-        System.out.println("isValid() | checking url scheme.");
         String scheme = urlMatcher.group(PARSE_URL_SCHEME);
-        System.out.println("isValid() | scheme = "+scheme);
-        System.out.println("isValid() | isValidScheme(scheme) = "+isValidScheme(scheme));
         if (!isValidScheme(scheme)) {
-            System.out.println("isValid() | returning false because scheme is not valid ");
             return false;
         }
-        System.out.println("after call to isvalidscheme");
-        String authority = urlMatcher.group(PARSE_URL_AUTHORITY);
-        System.out.println("authority = "+authority);
 
-        if ("http".equals(scheme)) {      //error     // Special case - file: allows an empty authority
-      //    if ("file".equals(scheme)) {  //no error  // Special case - file: allows an empty authority
+        String authority = urlMatcher.group(PARSE_URL_AUTHORITY);
+
+        if ("http".equals(scheme)) {// Special case - file: allows an empty authority
             if (authority != null) {
                 if (authority.contains(":")) { // but cannot allow trailing :
-                    System.out.println("isValid() | returning false because ???? 1");
                     return false;
                 }
             }
@@ -339,7 +325,6 @@ public class UrlValidator implements Serializable {
         } else { // not file:
             // Validate the authority
             if (!isValidAuthority(authority)) {
-                System.out.println("isValid() | returning false because authority is invalid");
                 return false;
             }
         }
@@ -369,22 +354,16 @@ public class UrlValidator implements Serializable {
      * @return true if valid.
      */
     protected boolean isValidScheme(String scheme) {
-        System.out.println("allowedschemes = "+allowedSchemes);
-
         if (scheme == null) {
             return false;
         }
 
         // TODO could be removed if external schemes were checked in the ctor before being stored
-        System.out.println("    isValidScheme || SCHEME_PATTERN.matcher(scheme).matches = "+SCHEME_PATTERN.matcher(scheme).matches());
         if (!SCHEME_PATTERN.matcher(scheme).matches()) {
-            System.out.println("    isValidScheme || returning false 1, pattern match");
             return false;
         }
 
-
         if (isOff(ALLOW_ALL_SCHEMES) && !allowedSchemes.contains(scheme.toLowerCase(Locale.ENGLISH))) {
-            System.out.println("    isValidScheme || returning false 2, ");
             return false;
         }
 
@@ -422,9 +401,9 @@ public class UrlValidator implements Serializable {
         String ipv6 = authorityMatcher.group(PARSE_AUTHORITY_IPV6);
         if (ipv6 != null) {
             InetAddressValidator inetAddressValidator = InetAddressValidator.getInstance();
-            if (!inetAddressValidator.isValidInet6Address(ipv6)) {
-                return false;
-            }
+                if (!inetAddressValidator.isValidInet6Address(ipv6)) {
+                    return false;
+                }
         } else {
             String hostLocation = authorityMatcher.group(PARSE_AUTHORITY_HOST_IP);
             // check if authority is hostname or IP address:
@@ -476,14 +455,14 @@ public class UrlValidator implements Serializable {
         try {
             URI uri = new URI(null,null,path,null);
             String norm = uri.normalize().getPath();
-            if (norm.startsWith("/../") // Trying to go via the parent dir
-                    || norm.equals("/..")) {   // Trying to go to the parent dir
+            if (norm.startsWith("/../") // Trying to go via the parent dir 
+             || norm.equals("/..")) {   // Trying to go to the parent dir
                 return false;
             }
         } catch (URISyntaxException e) {
             return false;
         }
-
+        
         int slash2Count = countToken("//", path);
         if (isOff(ALLOW_2_SLASHES) && (slash2Count > 0)) {
             return false;
