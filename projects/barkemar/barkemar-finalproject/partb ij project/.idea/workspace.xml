@@ -15,16 +15,16 @@
       <file leaf-file-name="UrlValidatorTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../URLValidatorInCorrect/src/test/java/finalprojectB/UrlValidatorTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="159">
-              <caret line="144" column="0" lean-forward="true" selection-start-line="144" selection-start-column="0" selection-end-line="144" selection-end-column="0" />
+            <state relative-caret-position="669">
+              <caret line="174" column="66" lean-forward="false" selection-start-line="174" selection-start-column="66" selection-end-line="174" selection-end-column="66" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#788#789#0" expanded="true" />
                 <element signature="e#816#817#0" expanded="true" />
                 <element signature="e#3034#3035#0" expanded="true" />
                 <element signature="e#3068#3069#0" expanded="true" />
-                <marker date="1521276279170" expanded="false" signature="6771:6780" ph=" { " />
-                <marker date="1521276279170" expanded="false" signature="6803:6808" ph=" }" />
+                <marker date="1521419522692" expanded="false" signature="7169:7178" ph=" { " />
+                <marker date="1521419522692" expanded="false" signature="7201:7206" ph=" }" />
               </folding>
             </state>
           </provider>
@@ -334,16 +334,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../URLValidatorInCorrect/src/test/java/finalprojectB/UrlValidatorTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="144" column="0" lean-forward="true" selection-start-line="144" selection-start-column="0" selection-end-line="144" selection-end-column="0" />
+        <state relative-caret-position="669">
+          <caret line="174" column="66" lean-forward="false" selection-start-line="174" selection-start-column="66" selection-end-line="174" selection-end-column="66" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#788#789#0" expanded="true" />
             <element signature="e#816#817#0" expanded="true" />
             <element signature="e#3034#3035#0" expanded="true" />
             <element signature="e#3068#3069#0" expanded="true" />
-            <marker date="1521276279170" expanded="false" signature="6771:6780" ph=" { " />
-            <marker date="1521276279170" expanded="false" signature="6803:6808" ph=" }" />
+            <marker date="1521419522692" expanded="false" signature="7169:7178" ph=" { " />
+            <marker date="1521419522692" expanded="false" signature="7201:7206" ph=" }" />
           </folding>
         </state>
       </provider>

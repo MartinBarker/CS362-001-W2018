@@ -152,12 +152,28 @@ public class UrlValidatorTest extends TestCase {
    }
 
    public void testProgrammingBased(){
-      System.out.println("___-testProgrammingBased___");
-    //  ResultPair testp = testUrlScheme[0];
-    //  System.out.println("scheme[0] = "+testp);
-      String[] sites = { "One", "Two", "Three" };
-      //create string of urls, test if each one is isvalid, assert equals with correct result
+      System.out.println("___testProgrammingBased___");
 
+   // TO DO:
+    //create a 2d array of urls and whether or not they are valid
+    // ex:
+      String[][] urls = new String[10][2];
+   //assign values
+      urls[0][0] = "site.com";
+      urls[0][1] = "valid";
+
+      urls[1][0] = "invalidurlblablabla";
+      urls[1][1] = "notvalid";
+      //etc ... multiple
+
+   //loop through testing them
+      // for loop going from i to 10 (since we have 10 elements in the array of urls)
+      //{
+            // if urls[i][1] == notvalid, set boolean expefcted = false
+            // else set boolean expected = true
+
+            //assertequals( urlVal.isValid( urls[i][0] ), expected )
+      //}
 
 
       System.out.println("end");
